@@ -61,7 +61,7 @@ G_E = load_csv(str(OUT / "golden_engine.csv"))
 SPEND = load_csv(str(OUT / "spend_log.csv"))
 
 
-def hbar(rows, label: str, value: str, title: str = "", pct: str | None = None, height_per=26, tooltip=None):
+def hbar(rows, label: str, value: str, title: str = "", pct: str | None = None, height_per=32, tooltip=None):
     """Horizontal bar chart, one hue, value labels at the bar end, hover tooltip."""
     df = pd.DataFrame(rows)
     if df.empty:
@@ -69,7 +69,7 @@ def hbar(rows, label: str, value: str, title: str = "", pct: str | None = None, 
         return
     shown = pct or value
     tip = tooltip or [label, value] + ([pct] if pct else [])
-    base = alt.Chart(df).encode(y=alt.Y(f"{label}:N", sort=None, title=None, axis=alt.Axis(labelLimit=260)))
+    base = alt.Chart(df).encode(y=alt.Y(f"{label}:N", sort=None, title=None, axis=alt.Axis(labelLimit=260, labelOverlap=False)))
     bars = base.mark_bar(color=BAR, cornerRadiusEnd=4, height={"band": 0.7}).encode(
         x=alt.X(f"{shown}:Q", title=None, axis=alt.Axis(grid=True, tickCount=4)), tooltip=tip)
     text = base.mark_text(align="left", dx=4).encode(x=f"{shown}:Q", text=alt.Text(f"{shown}:Q"))
@@ -336,7 +336,7 @@ with tabs[2]:
                     long.append({"Value": r["value"], "Group": name, "Share %": r[g]["pct"], "Posts": r[g]["n"]})
             df = pd.DataFrame(long)
             ch = alt.Chart(df).mark_bar(cornerRadiusEnd=3).encode(
-                y=alt.Y("Value:N", title=None, sort=None, axis=alt.Axis(labelLimit=220)),
+                y=alt.Y("Value:N", title=None, sort=None, axis=alt.Axis(labelLimit=220, labelOverlap=False)),
                 yOffset=alt.YOffset("Group:N", sort=["Continuers", "Drop-offs", "Considering"]),
                 x=alt.X("Share %:Q"),
                 color=alt.Color("Group:N", sort=["Continuers", "Drop-offs", "Considering"],
