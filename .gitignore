@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Data (never committed; only outputs/ and data/seeds/ are)
+data/raw/
+data/clean/
+data/clean/source_cap_overflow.jsonl
+data/context/raw/
+data/enriched/
+data/checkpoints/
+*.json.tmp
+*.csv.tmp
+
+# OS
+.DS_Store
+
+# Local code backups made before each build phase
+_backups/

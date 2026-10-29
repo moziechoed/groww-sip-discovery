@@ -1,0 +1,1824 @@
+{
+  "generated_at": "2026-10-29T04:15:25+00:00",
+  "method": {
+    "clusters": "primary stop scenario (KPI Tree v1) of each stop-event post; no_fund_stock_flag posts excluded",
+    "score": "100 x frequency x segment_fit x behavioural_specificity x actionability; score_display: top = 100",
+    "min_card_n": 15,
+    "prompt": "surface_v1_20261028.txt"
+  },
+  "cards": [
+    {
+      "cluster_id": 2,
+      "scenario_id": 2,
+      "scenario": "Returns below expectation",
+      "n": 64,
+      "status": "scored",
+      "pct_of_relevant": 3.7,
+      "pct_of_stop_events": 15.3,
+      "segment_fit": 0.42,
+      "specificity_share": 0.438,
+      "specificity_level": 2,
+      "kpi_branches": {
+        "A. Chose to stop": 64
+      },
+      "outcomes": {
+        "considering_stop": 37,
+        "stopped": 21,
+        "paused": 4,
+        "reduced": 2
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 27,
+        "considering_stop": 37
+      },
+      "journey_stages": {
+        "month_12_plus": 36,
+        "month_7_12": 3,
+        "month_4_6": 2,
+        "month_0_1": 1
+      },
+      "journey_stage_known_pct": 65.6,
+      "source_distribution": {
+        "reddit": 47,
+        "youtube": 13,
+        "play_store": 3,
+        "tradingqna": 1
+      },
+      "groww_tagged": 20,
+      "segment_coverage_pct": 23.4,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 2
+        },
+        {
+          "theme": "Other",
+          "n": 1
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Withdrawal rules and taxation charges",
+          "n": 2
+        },
+        {
+          "theme": "Unsure about market volatility strategy",
+          "n": 1
+        },
+        {
+          "theme": "Unsure about SIP and autopay rules",
+          "n": 1
+        }
+      ],
+      "median_date": "2026-01-30",
+      "quotes": [
+        {
+          "quote": "I decided to redeem my investment at a minimal loss of 0.26%.",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=8a1c2f93-0313-4209-8485-34cebca3b513",
+          "date": "2025-01-12",
+          "post_id": "play_store:8a1c2f93-0313-4209-8485-34cebca3b513",
+          "outcome": "stopped",
+          "journey_stage": "month_4_6"
+        },
+        {
+          "quote": "honestly the returns haven’t been great so far.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1tme0hz/sip_portfolio_review/",
+          "date": "2026-05-24",
+          "post_id": "reddit:t3_1tme0hz",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "stopped since returns were nominal.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1re5ttb/mf_portfolio_review/",
+          "date": "2026-02-25",
+          "post_id": "reddit:t3_1re5ttb",
+          "outcome": "stopped",
+          "journey_stage": "month_12_plus"
+        },
+        {
+          "quote": "Sip band kr ke rd ya fd kar dena chahiye",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=0v14qcO6RrE&lc=UgxblDpend3LXlGvd1R4AaABAg",
+          "date": "2026-01-30",
+          "post_id": "youtube:UgxblDpend3LXlGvd1R4AaABAg",
+          "outcome": "considering_stop",
+          "journey_stage": "month_12_plus"
+        },
+        {
+          "quote": "i closed the sip last year, should i redeem it because value is decreasing.",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=CEfFgNVIYzU&lc=UgzU-W24f07FzoAn6kx4AaABAg",
+          "date": "2025-08-30",
+          "post_id": "youtube:UgzU-W24f07FzoAn6kx4AaABAg",
+          "outcome": "stopped",
+          "journey_stage": "month_12_plus"
+        }
+      ],
+      "title": "Underperforming SIP returns prompt exit",
+      "description": "Investors stop SIPs and redeem funds after observing flat or negative investment returns over time.",
+      "actionability": 2,
+      "actionability_rationale": "Groww cannot influence market returns, but better contextual information on long-term investing concepts can help investors make informed choices.",
+      "guardrail_flags": [],
+      "factors": {
+        "frequency": 0.865,
+        "segment_fit": 0.42,
+        "behavioural_specificity": 0.667,
+        "actionability": 0.667
+      },
+      "score": 16.16,
+      "score_display": 100.0,
+      "rank": 1
+    },
+    {
+      "cluster_id": 8,
+      "scenario_id": 8,
+      "scenario": "Lost trust in the platform",
+      "n": 72,
+      "status": "scored",
+      "pct_of_relevant": 4.2,
+      "pct_of_stop_events": 17.2,
+      "segment_fit": 0.432,
+      "specificity_share": 0.042,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 43,
+        "B. Money didn't move": 21,
+        "Moved to another platform": 8
+      },
+      "outcomes": {
+        "stopped": 52,
+        "considering_stop": 11,
+        "unknown": 9
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 52,
+        "considering_stop": 11
+      },
+      "journey_stages": {
+        "month_0_1": 8,
+        "month_12_plus": 8,
+        "post_stop": 3
+      },
+      "journey_stage_known_pct": 26.4,
+      "source_distribution": {
+        "play_store": 54,
+        "reddit": 11,
+        "youtube": 6,
+        "tradingqna": 1
+      },
+      "groww_tagged": 62,
+      "segment_coverage_pct": 2.8,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Timely processing and responsive customer support",
+          "n": 12
+        },
+        {
+          "theme": "Consolidation of external folios and non-demat options",
+          "n": 6
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "n": 5
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Order status and payment processing delays",
+          "n": 17
+        },
+        {
+          "theme": "Demat mode and folio duplication",
+          "n": 7
+        },
+        {
+          "theme": "Demands for account and mandate updates",
+          "n": 4
+        }
+      ],
+      "median_date": "2025-10-09",
+      "quotes": [
+        {
+          "quote": "cancelled sip 's refund is needed",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=d09cf449-e33f-4539-a49d-2ecd7e85332a",
+          "date": "2025-11-28",
+          "post_id": "play_store:d09cf449-e33f-4539-a49d-2ecd7e85332a",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "i cancelled the sip before the deduction yet the amount was still debited",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=6649791f-6458-4b14-8829-3797627bc594",
+          "date": "2025-02-15",
+          "post_id": "play_store:6649791f-6458-4b14-8829-3797627bc594",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "don't no make SIP on @_groww , they are scammer for each bounce of tnx , they charge 500 + gst",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1nx6c0q/dont_no_make_sip_on_groww_its_a_scam/",
+          "date": "2025-10-03",
+          "post_id": "reddit:t3_1nx6c0q",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "The order was processing but money didn’t deduct…so I cancelled the order",
+          "source": "tradingqna",
+          "url": "https://tradingqna.com/t/refund-for-cancelled-order-in-coin-app/187237/5",
+          "date": "2025-10-03",
+          "post_id": "tradingqna:p_507813",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "sip vi band karna hai or purna mobile number band ho gaya hai",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=f1f-SnlEzog&lc=Ugy_SJAVU3u9SaFfVlV4AaABAg",
+          "date": "2026-08-13",
+          "post_id": "youtube:Ugy_SJAVU3u9SaFfVlV4AaABAg",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Unexplained debit and cancellation charges",
+      "description": "Investors cancel SIPs or abandon the platform after experiencing unexpected debit deductions, bounce fees, or delayed support.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can directly improve support turnaround, clarify debit timings, and provide transparent status updates for cancelled or pending orders.",
+      "guardrail_flags": [],
+      "factors": {
+        "frequency": 0.973,
+        "segment_fit": 0.432,
+        "behavioural_specificity": 0.333,
+        "actionability": 1.0
+      },
+      "score": 14.0,
+      "score_display": 86.6,
+      "rank": 2
+    },
+    {
+      "cluster_id": 11,
+      "scenario_id": 11,
+      "scenario": "Mandate or autopay problems",
+      "n": 65,
+      "status": "scored",
+      "pct_of_relevant": 3.8,
+      "pct_of_stop_events": 15.6,
+      "segment_fit": 0.452,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "B. Money didn't move": 56,
+        "A. Chose to stop": 5,
+        "Moved to another platform": 4
+      },
+      "outcomes": {
+        "unknown": 33,
+        "stopped": 27,
+        "considering_stop": 5
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 27,
+        "considering_stop": 5
+      },
+      "journey_stages": {
+        "month_0_1": 10,
+        "month_12_plus": 2,
+        "month_4_6": 2,
+        "month_2_3": 1,
+        "month_7_12": 1
+      },
+      "journey_stage_known_pct": 24.6,
+      "source_distribution": {
+        "play_store": 36,
+        "reddit": 21,
+        "youtube": 4,
+        "app_store": 3,
+        "tradingqna": 1
+      },
+      "groww_tagged": 44,
+      "segment_coverage_pct": 1.5,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Reliable autopay, mandates, and payment execution",
+          "n": 26
+        },
+        {
+          "theme": "Timely processing and responsive customer support",
+          "n": 11
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "n": 5
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Order status and payment processing delays",
+          "n": 24
+        },
+        {
+          "theme": "Demands for account and mandate updates",
+          "n": 6
+        },
+        {
+          "theme": "Demat mode and folio duplication",
+          "n": 4
+        }
+      ],
+      "median_date": "2025-12-10",
+      "quotes": [
+        {
+          "quote": "second installment was either not debited on time or took too long to reflect",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=57bbbb48-6065-4446-aa5f-5d739989f20b",
+          "date": "2025-05-13",
+          "post_id": "play_store:57bbbb48-6065-4446-aa5f-5d739989f20b",
+          "outcome": "unknown",
+          "journey_stage": "month_0_1"
+        },
+        {
+          "quote": "Unnesessary my Rs. 15000 got deducted as part of auto debit",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=d5079da6-92d3-4013-a92a-f49d9cccbe14",
+          "date": "2025-01-20",
+          "post_id": "play_store:d5079da6-92d3-4013-a92a-f49d9cccbe14",
+          "outcome": "unknown",
+          "journey_stage": "month_0_1"
+        },
+        {
+          "quote": "debiting multiple times for the same day",
+          "source": "app_store",
+          "url": "https://apps.apple.com/in/app/id1404871703?see-all=reviews",
+          "date": "2026-10-06",
+          "post_id": "app_store:14634150605",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "Ni cancil ho rha h mandate active bta rha h",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=H8TSrcokM5M&lc=UgwtWOoGLUt3RaaNAZl4AaABAg",
+          "date": "2026-01-20",
+          "post_id": "youtube:UgwtWOoGLUt3RaaNAZl4AaABAg",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "Mere nhi ho rahi Autopay",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=FNEA-cZaUes&lc=Ugx2UEiXK-FlIr1RGgV4AaABAg",
+          "date": "2025-11-27",
+          "post_id": "youtube:Ugx2UEiXK-FlIr1RGgV4AaABAg",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Autopay execution and duplicate debits",
+      "description": "Investors stop SIPs when autopay fails to debit on time, deducts duplicate amounts, or remains stuck during cancellation.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can directly improve mandate reliability, fix status syncing, and clarify bank autopay cancellation processes.",
+      "guardrail_flags": [],
+      "factors": {
+        "frequency": 0.878,
+        "segment_fit": 0.452,
+        "behavioural_specificity": 0.333,
+        "actionability": 1.0
+      },
+      "score": 13.22,
+      "score_display": 81.8,
+      "rank": 3
+    },
+    {
+      "cluster_id": 1,
+      "scenario_id": 1,
+      "scenario": "Money pressure or a life event",
+      "n": 74,
+      "status": "scored",
+      "pct_of_relevant": 4.3,
+      "pct_of_stop_events": 17.7,
+      "segment_fit": 0.494,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 66,
+        "C. Lapse and return": 8
+      },
+      "outcomes": {
+        "considering_stop": 43,
+        "stopped": 17,
+        "restarted": 8,
+        "paused": 4,
+        "reduced": 2
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 8,
+        "stopped_paused_reduced": 23,
+        "considering_stop": 43
+      },
+      "journey_stages": {
+        "month_12_plus": 19,
+        "month_2_3": 2,
+        "post_stop": 1
+      },
+      "journey_stage_known_pct": 29.7,
+      "source_distribution": {
+        "reddit": 62,
+        "youtube": 7,
+        "tradingqna": 3,
+        "play_store": 2
+      },
+      "groww_tagged": 9,
+      "segment_coverage_pct": 66.2,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Other",
+          "n": 4
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "n": 3
+        },
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 3
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Unsure about SIP and autopay rules",
+          "n": 1
+        },
+        {
+          "theme": "Unsure about market volatility strategy",
+          "n": 1
+        }
+      ],
+      "median_date": "2026-01-17",
+      "quotes": [
+        {
+          "quote": "focus on clearing the loan first before increasing investments.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1tkcqzr/suggestions_required_for_investing/",
+          "date": "2026-05-22",
+          "post_id": "reddit:t3_1tkcqzr",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I am expecting increase in expenses over the coming few months so I want to pause my SIP.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1h4t6nw/how_do_i_skip_sip/",
+          "date": "2024-12-02",
+          "post_id": "reddit:t3_1h4t6nw",
+          "outcome": "considering_stop",
+          "journey_stage": "month_2_3"
+        },
+        {
+          "quote": "I had to stop...hard to meet expenses",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=8NUXjDS23QE&lc=UgzbXNPCUH6TUC62N2h4AaABAg",
+          "date": "2026-05-03",
+          "post_id": "youtube:UgzbXNPCUH6TUC62N2h4AaABAg",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "My income changes a lot and I’m struggling to make a routine.",
+          "source": "tradingqna",
+          "url": "https://tradingqna.com/t/freelancers-fixed-monthly-sip-or-investing-only-when-income-is-good/198998",
+          "date": "2026-10-23",
+          "post_id": "tradingqna:t_198998",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "No job No money No Sip .",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=dC77fLBOjAI&lc=UgwcL35LcfB30yVcU9J4AaABAg",
+          "date": "2025-01-06",
+          "post_id": "youtube:UgwcL35LcfB30yVcU9J4AaABAg",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Investors face personal financial pressure",
+      "description": "Investors stop or pause their SIPs when facing unexpected expenses, job losses, or competing debt obligations.",
+      "actionability": 2,
+      "actionability_rationale": "Groww cannot solve an investor's personal cash crunch, but flexible pause and modification controls can reduce complete SIP cancellations.",
+      "guardrail_flags": [],
+      "factors": {
+        "frequency": 1.0,
+        "segment_fit": 0.494,
+        "behavioural_specificity": 0.333,
+        "actionability": 0.667
+      },
+      "score": 10.97,
+      "score_display": 67.9,
+      "rank": 4
+    },
+    {
+      "cluster_id": 3,
+      "scenario_id": 3,
+      "scenario": "Not understanding how a SIP works",
+      "n": 39,
+      "status": "scored",
+      "pct_of_relevant": 2.3,
+      "pct_of_stop_events": 9.3,
+      "segment_fit": 0.473,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 39
+      },
+      "outcomes": {
+        "considering_stop": 24,
+        "stopped": 12,
+        "paused": 3
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 15,
+        "considering_stop": 24
+      },
+      "journey_stages": {
+        "month_12_plus": 9,
+        "month_0_1": 4,
+        "month_7_12": 2,
+        "month_4_6": 1
+      },
+      "journey_stage_known_pct": 41.0,
+      "source_distribution": {
+        "reddit": 20,
+        "youtube": 15,
+        "play_store": 2,
+        "tradingqna": 2
+      },
+      "groww_tagged": 14,
+      "segment_coverage_pct": 23.1,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 12
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "n": 4
+        },
+        {
+          "theme": "Consolidation of external folios and non-demat options",
+          "n": 2
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Unsure about SIP and autopay rules",
+          "n": 10
+        },
+        {
+          "theme": "Withdrawal rules and taxation charges",
+          "n": 9
+        },
+        {
+          "theme": "Platform stability and safety fears",
+          "n": 2
+        }
+      ],
+      "median_date": "2026-01-08",
+      "quotes": [
+        {
+          "quote": "Sip band karni hai but amount kai year bad niklny hai to kya karey",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=ab1I8u4jd4s&lc=UgyGx1AZqibNus4_AZR4AaABAg",
+          "date": "2025-12-26",
+          "post_id": "youtube:UgyGx1AZqibNus4_AZR4AaABAg",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "why not cancel those SIPs from my account & start the SIPs of the same funds as new from her account.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1kyz5je/trasnferring_mututal_funds/",
+          "date": "2025-05-30",
+          "post_id": "reddit:t3_1kyz5je",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I have been doing sip for past 7 months how can I stop it",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1ohewoi/i_have_been_doing_sip_for_past_7_months_how_can_i/",
+          "date": "2025-10-27",
+          "post_id": "reddit:t3_1ohewoi",
+          "outcome": "considering_stop",
+          "journey_stage": "month_7_12"
+        },
+        {
+          "quote": "fir v ese stop karke sell kar sakte hai kya",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=XU3SHSBt9po&lc=UgwfoP-5af8XXkCbtet4AaABAg",
+          "date": "2026-08-31",
+          "post_id": "youtube:UgwfoP-5af8XXkCbtet4AaABAg",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I just want to pause for a few months.",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=66aca4e9-e96a-4e94-ada8-dd661f1f3d02",
+          "date": "2026-08-26",
+          "post_id": "play_store:66aca4e9-e96a-4e94-ada8-dd661f1f3d02",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Confusion around SIP management rules",
+      "description": "Investors cancel their SIPs due to lack of clarity on how to pause, stop, or withdraw funds.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can directly provide clear self-serve product guidance and intuitive in-app controls for pausing, stopping, and redeeming SIPs.",
+      "guardrail_flags": [],
+      "factors": {
+        "frequency": 0.527,
+        "segment_fit": 0.473,
+        "behavioural_specificity": 0.333,
+        "actionability": 1.0
+      },
+      "score": 8.3,
+      "score_display": 51.4,
+      "rank": 5
+    },
+    {
+      "cluster_id": 7,
+      "scenario_id": 7,
+      "scenario": "Stopped to fix the portfolio, never finished",
+      "n": 34,
+      "status": "scored",
+      "pct_of_relevant": 2.0,
+      "pct_of_stop_events": 8.1,
+      "segment_fit": 0.489,
+      "specificity_share": 0.088,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 34
+      },
+      "outcomes": {
+        "considering_stop": 17,
+        "stopped": 15,
+        "paused": 2
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 17,
+        "considering_stop": 17
+      },
+      "journey_stages": {
+        "month_12_plus": 15,
+        "month_7_12": 3,
+        "month_2_3": 1
+      },
+      "journey_stage_known_pct": 55.9,
+      "source_distribution": {
+        "reddit": 32,
+        "youtube": 2
+      },
+      "groww_tagged": 12,
+      "segment_coverage_pct": 52.9,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 3
+        },
+        {
+          "theme": "Consolidation of external folios and non-demat options",
+          "n": 1
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Demat mode and folio duplication",
+          "n": 1
+        },
+        {
+          "theme": "Demands for account and mandate updates",
+          "n": 1
+        },
+        {
+          "theme": "Unsure about market volatility strategy",
+          "n": 1
+        }
+      ],
+      "median_date": "2026-02-18",
+      "quotes": [
+        {
+          "quote": "I’ve stopped 10+ SIPs (letting old investments run without exit loads) and redirected all new money into this focused strategy.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1py3p0b/age26_25k_sip_aggressive_feedback_on_my_9fund/",
+          "date": "2025-12-28",
+          "post_id": "reddit:t3_1py3p0b",
+          "outcome": "stopped",
+          "journey_stage": "month_7_12"
+        },
+        {
+          "quote": "4L already invested in mutual funds, paused for now as I want to completely restructure",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1tpvv0s/need_advice_on_structuring_investments/",
+          "date": "2026-05-28",
+          "post_id": "reddit:t3_1tpvv0s",
+          "outcome": "paused",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "paise redeem karliya hon ab direct kaise lagao",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=3ppARgxmrU8&lc=UgxsSQm3BlcuDjZJ2rJ4AaABAg.AUjGIDHtV9sAUkhz8RtkLj",
+          "date": "2026-03-24",
+          "post_id": "youtube:UgxsSQm3BlcuDjZJ2rJ4AaABAg.AUjGIDHtV9sAUkhz8RtkLj",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "sip band karna hi aur regular chalo tha direct chalo karna hi",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=3ppARgxmrU8&lc=UgxsSQm3BlcuDjZJ2rJ4AaABAg",
+          "date": "2026-03-24",
+          "post_id": "youtube:UgxsSQm3BlcuDjZJ2rJ4AaABAg",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I have around 14 SIPs which I’m planning to stop as there’s a lot of clutter in my MF portfolio.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1oks1e3/planning_to_rejig_my_mf_sips/",
+          "date": "2025-10-31",
+          "post_id": "reddit:t3_1oks1e3",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Stopping SIPs to consolidate portfolio",
+      "description": "Investors stop existing SIPs to clear portfolio clutter or switch to direct plans but delay restarting.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can build seamless portfolio consolidation and fund-switching tools that allow investors to streamline investments without manual stops.",
+      "guardrail_flags": [],
+      "factors": {
+        "frequency": 0.459,
+        "segment_fit": 0.489,
+        "behavioural_specificity": 0.333,
+        "actionability": 1.0
+      },
+      "score": 7.47,
+      "score_display": 46.2,
+      "rank": 6
+    },
+    {
+      "cluster_id": 17,
+      "scenario_id": 17,
+      "scenario": "Moved to another platform",
+      "n": 22,
+      "status": "scored",
+      "pct_of_relevant": 1.3,
+      "pct_of_stop_events": 5.3,
+      "segment_fit": 0.408,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "Moved to another platform": 16,
+        "A. Chose to stop": 5,
+        "C. Lapse and return": 1
+      },
+      "outcomes": {
+        "considering_stop": 14,
+        "stopped": 7,
+        "restarted": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 1,
+        "stopped_paused_reduced": 7,
+        "considering_stop": 14
+      },
+      "journey_stages": {
+        "month_12_plus": 6,
+        "month_7_12": 1,
+        "month_4_6": 1
+      },
+      "journey_stage_known_pct": 36.4,
+      "source_distribution": {
+        "reddit": 13,
+        "play_store": 9
+      },
+      "groww_tagged": 15,
+      "segment_coverage_pct": 13.6,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Clear dashboard tracking and return analytics",
+          "n": 2
+        },
+        {
+          "theme": "Consolidation of external folios and non-demat options",
+          "n": 2
+        },
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 2
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Demat mode and folio duplication",
+          "n": 2
+        },
+        {
+          "theme": "Unsure about market volatility strategy",
+          "n": 1
+        },
+        {
+          "theme": "Unsure about SIP and autopay rules",
+          "n": 1
+        }
+      ],
+      "median_date": "2025-11-06",
+      "quotes": [
+        {
+          "quote": "Should I keep my current MF Investment untouched in Groww account and cancel all SIPs and Start fresh with SIPs in Zerodha (Coin)",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1pymsf2/need_advice/",
+          "date": "2025-12-29",
+          "post_id": "reddit:t3_1pymsf2",
+          "outcome": "considering_stop",
+          "journey_stage": "month_4_6"
+        },
+        {
+          "quote": "I had to resort to another platform to track my portfolio",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=2cdbf16c-bc75-496c-afab-388317f24fb5",
+          "date": "2026-10-06",
+          "post_id": "play_store:2cdbf16c-bc75-496c-afab-388317f24fb5",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I am planning to reedem from grow and put in coin",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=462b8a2b-80b6-46cf-9716-e87172f628a1",
+          "date": "2026-07-14",
+          "post_id": "play_store:462b8a2b-80b6-46cf-9716-e87172f628a1",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I'm thinking of switching from groww to zerodha.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1hm5u31/zerodha_coin_mandate_with_upi/",
+          "date": "2024-12-25",
+          "post_id": "reddit:t3_1hm5u31",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "time to avoid and switch to another app",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=24b09705-a803-4924-a275-2109ada09e40",
+          "date": "2025-11-06",
+          "post_id": "play_store:24b09705-a803-4924-a275-2109ada09e40",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Switching SIPs to competing platforms",
+      "description": "Investors stop their active SIPs and migrate to other platforms seeking better portfolio tracking or features.",
+      "actionability": 2,
+      "actionability_rationale": "Groww can improve dashboard tracking, return analytics, and external folio consolidation, though user platform preference is partially external.",
+      "guardrail_flags": [],
+      "factors": {
+        "frequency": 0.297,
+        "segment_fit": 0.408,
+        "behavioural_specificity": 0.333,
+        "actionability": 0.667
+      },
+      "score": 2.69,
+      "score_display": 16.6,
+      "rank": 7
+    }
+  ],
+  "emerging": [
+    {
+      "cluster_id": 5,
+      "scenario_id": 5,
+      "scenario": "Lured into other investments",
+      "n": 8,
+      "status": "emerging",
+      "pct_of_relevant": 0.5,
+      "pct_of_stop_events": 1.9,
+      "segment_fit": 0.48,
+      "specificity_share": 0.125,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 8
+      },
+      "outcomes": {
+        "stopped": 5,
+        "considering_stop": 2,
+        "paused": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 6,
+        "considering_stop": 2
+      },
+      "journey_stages": {
+        "month_12_plus": 1,
+        "month_2_3": 1
+      },
+      "journey_stage_known_pct": 25.0,
+      "source_distribution": {
+        "youtube": 4,
+        "reddit": 4
+      },
+      "groww_tagged": 0,
+      "segment_coverage_pct": 12.5,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Faster redemptions and payout clarity",
+          "n": 1
+        },
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 1
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Unsure about SIP and autopay rules",
+          "n": 1
+        }
+      ],
+      "median_date": "2026-06-08",
+      "quotes": [
+        {
+          "quote": "3 MFs paused, waiting to exit and redeploy into stocks",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1tnw9bg/portfolio_review_28yo_data_engineer_in_hyderabad/",
+          "date": "2026-05-26",
+          "post_id": "reddit:t3_1tnw9bg",
+          "outcome": "paused",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "Meine b close kiya h....kycg stocks me invest krna h",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=PDlCAvIkhQw&lc=Ugw3pWfB8aCkraayrx54AaABAg",
+          "date": "2026-06-11",
+          "post_id": "youtube:Ugw3pWfB8aCkraayrx54AaABAg",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "i totally stopped debt mf investment and chosen FDs",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=xRZK5t7Bo1I&lc=UgwE11WLrC_a5uP7gCJ4AaABAg",
+          "date": "2026-10-06",
+          "post_id": "youtube:UgwE11WLrC_a5uP7gCJ4AaABAg",
+          "outcome": "stopped",
+          "journey_stage": "month_12_plus"
+        },
+        {
+          "quote": "Have stopped playing since a year now.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1qswats/was_i_correct_in_stopping_this_policy_to_start_mf/",
+          "date": "2026-02-01",
+          "post_id": "reddit:t3_1qswats",
+          "outcome": "stopped",
+          "journey_stage": "month_2_3"
+        },
+        {
+          "quote": "Maine SIP Krna hi bnd kia tha bhot time phle",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=Gr4UbZHAhIA&lc=UgwvPcmEiK3IvrFy_Hx4AaABAg",
+          "date": "2026-06-20",
+          "post_id": "youtube:UgwvPcmEiK3IvrFy_Hx4AaABAg",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Reallocating funds to other assets",
+      "description": "Investors stop mutual fund SIPs to reallocate their capital into direct stocks, fixed deposits, or alternative assets.",
+      "actionability": 2,
+      "actionability_rationale": "Groww cannot dictate investor asset allocation choices, but can offer better portfolio visibility across asset classes within the app.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 9,
+      "scenario_id": 9,
+      "scenario": "Low balance on debit day",
+      "n": 8,
+      "status": "emerging",
+      "pct_of_relevant": 0.5,
+      "pct_of_stop_events": 1.9,
+      "segment_fit": 0.399,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "B. Money didn't move": 8
+      },
+      "outcomes": {
+        "stopped": 5,
+        "unknown": 3
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 5,
+        "considering_stop": 0
+      },
+      "journey_stages": {
+        "month_12_plus": 1,
+        "month_0_1": 1
+      },
+      "journey_stage_known_pct": 25.0,
+      "source_distribution": {
+        "reddit": 4,
+        "play_store": 3,
+        "youtube": 1
+      },
+      "groww_tagged": 4,
+      "segment_coverage_pct": 12.5,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 3
+        },
+        {
+          "theme": "Reliable autopay, mandates, and payment execution",
+          "n": 1
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Platform stability and safety fears",
+          "n": 1
+        },
+        {
+          "theme": "Unsure about market volatility strategy",
+          "n": 1
+        },
+        {
+          "theme": "Unsure about SIP and autopay rules",
+          "n": 1
+        }
+      ],
+      "median_date": "2025-10-09",
+      "quotes": [
+        {
+          "quote": "I just got debited 557 rupees for not having balance to complete Autopay in Groww for a mutual fund",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1o4uknh/i_just_got_debited_557_rupees_for_not_having/",
+          "date": "2025-10-12",
+          "post_id": "reddit:t3_1o4uknh",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "because of unfortunate reason I didn't maintain balance when I deposited amount they debited 3 times",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=8f307e00-e460-4851-a68e-aad0821b7ae9",
+          "date": "2025-03-07",
+          "post_id": "play_store:8f307e00-e460-4851-a68e-aad0821b7ae9",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "100 rupees sip bounce charges grow 180 per month and other bank charges ach rtn charges",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=44ff24f7-7b74-43a5-9e40-9b4d80c2aedf",
+          "date": "2025-01-27",
+          "post_id": "play_store:44ff24f7-7b74-43a5-9e40-9b4d80c2aedf",
+          "outcome": "unknown",
+          "journey_stage": "month_12_plus"
+        },
+        {
+          "quote": "due to insufficient funds vo nhi ho paya",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=bn8HKzFzoxg&lc=Ugwm8hJ8frkCxa_e7iV4AaABAg",
+          "date": "2025-10-09",
+          "post_id": "youtube:Ugwm8hJ8frkCxa_e7iV4AaABAg",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "missed SIP's for some month and there are about 15 or so.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1jr2i37/money_transferred_to_my_account_on_hold/",
+          "date": "2025-04-04",
+          "post_id": "reddit:t3_1jr2i37",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Insufficient bank balance on debit",
+      "description": "Investors face missed SIP installments and bank bounce charges when account balances are low on the debit date.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can send timely balance reminder alerts, allow easy date changes, and provide skip-installment options to prevent bounce charges.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 13,
+      "scenario_id": 13,
+      "scenario": "Fund stopped taking SIPs",
+      "n": 8,
+      "status": "emerging",
+      "pct_of_relevant": 0.5,
+      "pct_of_stop_events": 1.9,
+      "segment_fit": 0.445,
+      "specificity_share": 0.125,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "B. Money didn't move": 7,
+        "A. Chose to stop": 1
+      },
+      "outcomes": {
+        "stopped": 5,
+        "paused": 2,
+        "unknown": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 7,
+        "considering_stop": 0
+      },
+      "journey_stages": {
+        "month_2_3": 1,
+        "month_12_plus": 1
+      },
+      "journey_stage_known_pct": 25.0,
+      "source_distribution": {
+        "reddit": 7,
+        "tradingqna": 1
+      },
+      "groww_tagged": 5,
+      "segment_coverage_pct": 0.0,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Other",
+          "n": 1
+        },
+        {
+          "theme": "Advanced fund features and switching options",
+          "n": 1
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Order status and payment processing delays",
+          "n": 1
+        },
+        {
+          "theme": "Unsure about market volatility strategy",
+          "n": 1
+        }
+      ],
+      "median_date": "2026-03-14",
+      "quotes": [
+        {
+          "quote": "Got message of sip is cancelled by fund house.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1mk0hmt/got_message_of_sip_is_cancelled_by_fund_house/",
+          "date": "2025-08-07",
+          "post_id": "reddit:t3_1mk0hmt",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I forgot to cancel my SIP, and I see the amount got auto-deducted from my bank account yesterday.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1rth6ak/order_in_progress_for_icici_prudential_nasdaq_100/",
+          "date": "2026-03-14",
+          "post_id": "reddit:t3_1rth6ak",
+          "outcome": "unknown",
+          "journey_stage": "month_2_3"
+        },
+        {
+          "quote": "they have stopped taking investments",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1ripm0s/simple_ways_to_invest_in_nasdaq_100/",
+          "date": "2026-03-02",
+          "post_id": "reddit:t3_1ripm0s",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "I didn't pause these SIPs. This happened automatically.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1vv87ie/foreign_investment_via_mf/",
+          "date": "2026-08-22",
+          "post_id": "reddit:t3_1vv87ie",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "So, I cancelled the SIP.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1qfqwyc/are_icici_prudential_nasdaq100_index_fund_sip/",
+          "date": "2026-01-17",
+          "post_id": "reddit:t3_1qfqwyc",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Fund house stops accepting SIPs",
+      "description": "Investors experience automated SIP cancellations because the underlying AMC halts fresh inflows into the scheme.",
+      "actionability": 1,
+      "actionability_rationale": "AMC decisions to cap or restrict inflows into mutual fund schemes are entirely outside of Groww's operational control.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 6,
+      "scenario_id": 6,
+      "scenario": "Someone told them to stop or switch",
+      "n": 7,
+      "status": "emerging",
+      "pct_of_relevant": 0.4,
+      "pct_of_stop_events": 1.7,
+      "segment_fit": 0.51,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 6,
+        "Moved to another platform": 1
+      },
+      "outcomes": {
+        "considering_stop": 4,
+        "stopped": 3
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 3,
+        "considering_stop": 4
+      },
+      "journey_stages": {
+        "month_0_1": 1,
+        "month_4_6": 1,
+        "month_2_3": 1,
+        "month_12_plus": 1
+      },
+      "journey_stage_known_pct": 57.1,
+      "source_distribution": {
+        "reddit": 6,
+        "youtube": 1
+      },
+      "groww_tagged": 1,
+      "segment_coverage_pct": 57.1,
+      "top_unmet_need_themes": [],
+      "top_confusion_themes": [],
+      "median_date": "2025-12-08",
+      "quotes": [
+        {
+          "quote": "Since they are regular funds, I am going to stop them.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1mskijb/beginner_in_mutual_funds_looking_for_advise/",
+          "date": "2025-08-17",
+          "post_id": "reddit:t3_1mskijb",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "we actually cancelled it.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/IndiaInvestments/comments/1hfhmag/help_me_talk_my_friend_out_of_getting_ulips_for/m2cpnhv/",
+          "date": "2024-12-16",
+          "post_id": "reddit:t1_m2cpnhv",
+          "outcome": "stopped",
+          "journey_stage": "month_0_1"
+        },
+        {
+          "quote": "portfolio un app se scan kar k mutual fund withdrawal kar k naya suggested mutual fund lene ka sochne lagte hai",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=rVavcF0Otpg&lc=Ugwo7IdS5NOE3yAVIw94AaABAg.AVhVXeyDDiuAVoAqhBj7Qv",
+          "date": "2026-04-20",
+          "post_id": "youtube:Ugwo7IdS5NOE3yAVIw94AaABAg.AVhVXeyDDiuAVoAqhBj7Qv",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "He also wants her to stop investing into MF SIP because he is doing it",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1rd5ttb/need_solution_for_this_financial_issue/",
+          "date": "2026-02-24",
+          "post_id": "reddit:t3_1rd5ttb",
+          "outcome": "considering_stop",
+          "journey_stage": "month_12_plus"
+        },
+        {
+          "quote": "I am planning to stop in SIP and start investing through Groww app instead of NJ wealth",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1ph7f98/please_help/",
+          "date": "2025-12-08",
+          "post_id": "reddit:t3_1ph7f98",
+          "outcome": "considering_stop",
+          "journey_stage": "month_2_3"
+        }
+      ],
+      "title": "External advice triggers SIP cancellation",
+      "description": "Investors cancel SIPs after receiving external advice from agents, friends, or third-party advisors to switch funds.",
+      "actionability": 1,
+      "actionability_rationale": "Third-party financial advice given to investors outside the app is beyond Groww's direct control or influence.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 10,
+      "scenario_id": 10,
+      "scenario": "Bank changed, mandate on old account",
+      "n": 5,
+      "status": "emerging",
+      "pct_of_relevant": 0.3,
+      "pct_of_stop_events": 1.2,
+      "segment_fit": 0.43,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "B. Money didn't move": 4,
+        "A. Chose to stop": 1
+      },
+      "outcomes": {
+        "unknown": 4,
+        "considering_stop": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 0,
+        "considering_stop": 1
+      },
+      "journey_stages": {
+        "month_2_3": 1,
+        "month_12_plus": 1
+      },
+      "journey_stage_known_pct": 40.0,
+      "source_distribution": {
+        "play_store": 2,
+        "reddit": 2,
+        "youtube": 1
+      },
+      "groww_tagged": 3,
+      "segment_coverage_pct": 0.0,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Seamless KYC onboarding and profile management",
+          "n": 3
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Demands for account and mandate updates",
+          "n": 1
+        },
+        {
+          "theme": "Order status and payment processing delays",
+          "n": 1
+        }
+      ],
+      "median_date": "2025-09-01",
+      "quotes": [
+        {
+          "quote": "when my 2 mutual fund has changed to my new bank account then why one of my mutual fund is not changing it",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=cb02e779-a185-4674-8459-dd6188b4a70c",
+          "date": "2026-05-14",
+          "post_id": "play_store:cb02e779-a185-4674-8459-dd6188b4a70c",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "mera previous bank jisme autopay set hua tha wo bank ac band hogya hai",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=DQMNL1LXU9o&lc=Ugxq8goZ3p-PaBu_sqJ4AaABAg.AMWHu7aO1OdAMWIKhIzPh4",
+          "date": "2025-09-01",
+          "post_id": "youtube:Ugxq8goZ3p-PaBu_sqJ4AaABAg.AMWHu7aO1OdAMWIKhIzPh4",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "bank mandate for redemption is still not updated.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1t2308n/unable_to_change_bank_account_for_redemption_old/",
+          "date": "2026-05-02",
+          "post_id": "reddit:t3_1t2308n",
+          "outcome": "unknown",
+          "journey_stage": "month_12_plus"
+        },
+        {
+          "quote": "because i need to change The Autopay account.many times I uploaded The signed form.but nothing happened.",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=b24a4cae-e1cd-4e8e-8f42-21dae2ffc9ea",
+          "date": "2025-05-24",
+          "post_id": "play_store:b24a4cae-e1cd-4e8e-8f42-21dae2ffc9ea",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "Pause my SIPs for 2-3 months until my NRE account is active.",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1jbkzne/need_advice_on_managing_mf_investments_as_a_new/",
+          "date": "2025-03-15",
+          "post_id": "reddit:t3_1jbkzne",
+          "outcome": "considering_stop",
+          "journey_stage": "month_2_3"
+        }
+      ],
+      "title": "Bank account update fails autopay",
+      "description": "Investors stop SIPs when changing their primary bank account fails to update the linked autopay mandate.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can simplify the bank account modification workflow and enable fast, digital mandate updates for active SIPs.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 12,
+      "scenario_id": 12,
+      "scenario": "KYC issues",
+      "n": 4,
+      "status": "emerging",
+      "pct_of_relevant": 0.2,
+      "pct_of_stop_events": 1.0,
+      "segment_fit": 0.495,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "B. Money didn't move": 3,
+        "Moved to another platform": 1
+      },
+      "outcomes": {
+        "stopped": 2,
+        "considering_stop": 1,
+        "unknown": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 2,
+        "considering_stop": 1
+      },
+      "journey_stages": {
+        "month_7_12": 1,
+        "month_0_1": 1
+      },
+      "journey_stage_known_pct": 50.0,
+      "source_distribution": {
+        "play_store": 3,
+        "reddit": 1
+      },
+      "groww_tagged": 3,
+      "segment_coverage_pct": 0.0,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Seamless KYC onboarding and profile management",
+          "n": 2
+        },
+        {
+          "theme": "Timely processing and responsive customer support",
+          "n": 1
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "KYC and account onboarding issues",
+          "n": 3
+        },
+        {
+          "theme": "Confused by portfolio displays and calculations",
+          "n": 1
+        }
+      ],
+      "median_date": "2026-04-16",
+      "quotes": [
+        {
+          "quote": "they cancelled the order saying issue with kyc",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=4805e041-f17c-4710-8794-c02685ed763c",
+          "date": "2025-01-21",
+          "post_id": "play_store:4805e041-f17c-4710-8794-c02685ed763c",
+          "outcome": "stopped",
+          "journey_stage": "month_7_12"
+        },
+        {
+          "quote": "bought a few funds than kyc goes nill? not letting me buy sip",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=5d526c95-1fbc-4af6-bfe8-12e2deb649a4",
+          "date": "2026-04-16",
+          "post_id": "play_store:5d526c95-1fbc-4af6-bfe8-12e2deb649a4",
+          "outcome": "unknown",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "units were bounced and returned to amc due to - DPID Invalid/ inactive / Account Holder Related PAN Inoperative",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1wng4jh/units_were_bounced_and_returned_to_amc/",
+          "date": "2026-09-22",
+          "post_id": "reddit:t3_1wng4jh",
+          "outcome": "stopped",
+          "journey_stage": "month_0_1"
+        },
+        {
+          "quote": "me Grow chhodake Angle one me jane ki socha raha hu",
+          "source": "play_store",
+          "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=0d86de31-609d-43b8-ab3b-7418643f2bf8",
+          "date": "2025-12-26",
+          "post_id": "play_store:0d86de31-609d-43b8-ab3b-7418643f2bf8",
+          "outcome": "considering_stop",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "KYC issues block SIP orders",
+      "description": "Investors experience SIP cancellations or rejected transactions due to invalid PAN statuses or incomplete KYC requirements.",
+      "actionability": 2,
+      "actionability_rationale": "While regulatory KYC criteria are set externally, Groww can streamline verification tracking and proactively notify investors of status changes.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 4,
+      "scenario_id": 4,
+      "scenario": "Lost the reason to invest",
+      "n": 3,
+      "status": "emerging",
+      "pct_of_relevant": 0.2,
+      "pct_of_stop_events": 0.7,
+      "segment_fit": 0.583,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 3
+      },
+      "outcomes": {
+        "stopped": 2,
+        "considering_stop": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 2,
+        "considering_stop": 1
+      },
+      "journey_stages": {
+        "month_12_plus": 2,
+        "month_0_1": 1
+      },
+      "journey_stage_known_pct": 100.0,
+      "source_distribution": {
+        "reddit": 3
+      },
+      "groww_tagged": 0,
+      "segment_coverage_pct": 100.0,
+      "top_unmet_need_themes": [],
+      "top_confusion_themes": [],
+      "median_date": "2026-05-25",
+      "quotes": [
+        {
+          "quote": "Mirage Asset ELSS started for old tax regime, it has been stopped",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1tn20sk/portfolio_review_of_mf_and_nps_holding_along_with/",
+          "date": "2026-05-25",
+          "post_id": "reddit:t3_1tn20sk",
+          "outcome": "stopped",
+          "journey_stage": "month_12_plus"
+        },
+        {
+          "quote": "In 2024 when I stopped my SIPs, I was investing ₹2.5L/month",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/personalfinanceindia/comments/1shobcn/reddit_made_me_realize_why_equities_cant_make/",
+          "date": "2026-04-10",
+          "post_id": "reddit:t3_1shobcn",
+          "outcome": "stopped",
+          "journey_stage": "month_12_plus"
+        }
+      ],
+      "title": "Changing financial goals and regimes",
+      "description": "Investors stop SIPs when their tax-saving requirements or overall monthly allocation targets change over time.",
+      "actionability": 1,
+      "actionability_rationale": "Changes in tax regulations and individual goal requirements are personal investor decisions outside Groww's control.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 14,
+      "scenario_id": 14,
+      "scenario": "Temporary pause became permanent",
+      "n": 2,
+      "status": "emerging",
+      "pct_of_relevant": 0.1,
+      "pct_of_stop_events": 0.5,
+      "segment_fit": 0.445,
+      "specificity_share": 0.5,
+      "specificity_level": 2,
+      "kpi_branches": {
+        "C. Lapse and return": 2
+      },
+      "outcomes": {
+        "restarted": 1,
+        "paused": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 1,
+        "stopped_paused_reduced": 1,
+        "considering_stop": 0
+      },
+      "journey_stages": {
+        "month_12_plus": 1,
+        "month_7_12": 1
+      },
+      "journey_stage_known_pct": 100.0,
+      "source_distribution": {
+        "reddit": 1,
+        "youtube": 1
+      },
+      "groww_tagged": 0,
+      "segment_coverage_pct": 0.0,
+      "top_unmet_need_themes": [],
+      "top_confusion_themes": [],
+      "median_date": "2026-04-15",
+      "quotes": [
+        {
+          "quote": "Mera upstox 11 Monty pause huva hai.. sip",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=3ppARgxmrU8&lc=Ugxs_9cM4EuVxH20Q9B4AaABAg",
+          "date": "2026-04-15",
+          "post_id": "youtube:Ugxs_9cM4EuVxH20Q9B4AaABAg",
+          "outcome": "paused",
+          "journey_stage": "month_7_12"
+        },
+        {
+          "quote": "I just stopped my SIPs for a few months and then resumed",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1psrv0o/i_was_in_loss_for_32_months_straight_today_my/",
+          "date": "2025-12-22",
+          "post_id": "reddit:t3_1psrv0o",
+          "outcome": "restarted",
+          "journey_stage": "month_12_plus"
+        }
+      ],
+      "title": "Paused SIPs remain inactive long-term",
+      "description": "Investors pause their SIPs for a temporary period but fail to resume them afterwards.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can implement automated resume schedules and clear status notifications to help investors resume paused SIPs effortlessly.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 16,
+      "scenario_id": 16,
+      "scenario": "Avoidance or guilt",
+      "n": 2,
+      "status": "emerging",
+      "pct_of_relevant": 0.1,
+      "pct_of_stop_events": 0.5,
+      "segment_fit": 0.26,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "C. Lapse and return": 1,
+        "A. Chose to stop": 1
+      },
+      "outcomes": {
+        "restarted": 1,
+        "paused": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 1,
+        "stopped_paused_reduced": 1,
+        "considering_stop": 0
+      },
+      "journey_stages": {
+        "month_12_plus": 1
+      },
+      "journey_stage_known_pct": 50.0,
+      "source_distribution": {
+        "youtube": 1,
+        "reddit": 1
+      },
+      "groww_tagged": 0,
+      "segment_coverage_pct": 50.0,
+      "top_unmet_need_themes": [],
+      "top_confusion_themes": [],
+      "median_date": "2026-09-11",
+      "quotes": [
+        {
+          "quote": "Now I've started the SIPs again as investors are worried",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=4vKx825ZHWQ&lc=UgzeTFh2RPu5aY9cSXh4AaABAg",
+          "date": "2026-06-05",
+          "post_id": "youtube:UgzeTFh2RPu5aY9cSXh4AaABAg",
+          "outcome": "restarted",
+          "journey_stage": "unknown"
+        },
+        {
+          "quote": "Currently, I have paused all my mutual fund investments because I believe we'll witness a sharp drawdown",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1wdg52k/review_portfolio/",
+          "date": "2026-09-11",
+          "post_id": "reddit:t3_1wdg52k",
+          "outcome": "paused",
+          "journey_stage": "month_12_plus"
+        }
+      ],
+      "title": "Market drawdown fears pause investing",
+      "description": "Investors pause their SIPs due to market volatility concerns or overall market pullback expectations.",
+      "actionability": 2,
+      "actionability_rationale": "Groww cannot control investor sentiment or market drawdowns, but can provide clear, non-coercive educational material on market cycles.",
+      "guardrail_flags": []
+    },
+    {
+      "cluster_id": 15,
+      "scenario_id": 15,
+      "scenario": "Restarting is a hassle",
+      "n": 1,
+      "status": "emerging",
+      "pct_of_relevant": 0.1,
+      "pct_of_stop_events": 0.2,
+      "segment_fit": 0.42,
+      "specificity_share": 0.0,
+      "specificity_level": 1,
+      "kpi_branches": {
+        "A. Chose to stop": 1
+      },
+      "outcomes": {
+        "stopped": 1
+      },
+      "continuer_vs_dropoff": {
+        "continued_or_restarted": 0,
+        "stopped_paused_reduced": 1,
+        "considering_stop": 0
+      },
+      "journey_stages": {},
+      "journey_stage_known_pct": 0.0,
+      "source_distribution": {
+        "reddit": 1
+      },
+      "groww_tagged": 0,
+      "segment_coverage_pct": 0.0,
+      "top_unmet_need_themes": [
+        {
+          "theme": "Other",
+          "n": 1
+        }
+      ],
+      "top_confusion_themes": [
+        {
+          "theme": "Order status and payment processing delays",
+          "n": 1
+        }
+      ],
+      "median_date": "2026-09-09",
+      "quotes": [
+        {
+          "quote": "canceled my Active SIPs (the regular fund only)",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/MutualfundsIndia/comments/1wbmmpx/investing_directly_with_sbi_amc/",
+          "date": "2026-09-09",
+          "post_id": "reddit:t3_1wbmmpx",
+          "outcome": "stopped",
+          "journey_stage": "unknown"
+        }
+      ],
+      "title": "Hassle in restarting cancelled SIPs",
+      "description": "Investors cancel their existing regular SIPs and find the manual setup process to restart cumbersome.",
+      "actionability": 3,
+      "actionability_rationale": "Groww can offer a one-click SIP re-activation or quick setup workflow to reduce friction when starting fresh SIPs.",
+      "guardrail_flags": []
+    }
+  ],
+  "emerging_discovered_categories": [
+    {
+      "category": "portfolio_rebalancing",
+      "n": 5
+    },
+    {
+      "category": "portfolio_consolidation",
+      "n": 2
+    },
+    {
+      "category": "amc_investment_restriction",
+      "n": 1
+    },
+    {
+      "category": "fund_house_scandal",
+      "n": 1
+    },
+    {
+      "category": "fund_manager_change",
+      "n": 1
+    },
+    {
+      "category": "fund_house_restriction",
+      "n": 1
+    },
+    {
+      "category": "nri_global_allocation",
+      "n": 1
+    },
+    {
+      "category": "tax_regime_change",
+      "n": 1
+    }
+  ]
+}

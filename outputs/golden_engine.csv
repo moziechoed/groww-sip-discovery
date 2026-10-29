@@ -1,0 +1,65 @@
+post_id,bucket,source,text,is_relevant,outcome,kpi_branch,stop_scenario_ids,trigger_type,seeded_category_primary,journey_stage,outside_app_behaviour,segment_confidence,notes
+reddit:t3_1p0bz5h,ambiguous,reddit,"Investing advice. M23 currently doing SIP of Rs. 10,000 monthly. I started investing in these 2 flexicap funds (i didn’t know better before and now don’t want to withdraw from 1 fund as it will be taxed at 20% and on seeing there holdings they invest in very different stocks)
+I want to start investing Rs 30,000. Should i continue these or add a small cap (are they overvalued rn?) And how much should i invest in gold and bitcoin? I have high risk profile. Please advice.",true,continued,continuing,none,none,none,unknown,unknown,medium,status=ok
+reddit:t3_1ikp4fw,ambiguous,reddit,"Confused about SIP vs One-time investment. Hey everyone,
+I'm a complete newbie when it comes to investing, usually have my advisor do this for me. But recently I've started trying to learn how to invest in a couple of funds on my own. I'm using Growww, and I have this confusion about SIP vs One-time investment.
+When I select SIP, with 10k monthly - that comes up to a total investment of 1.2L for the year with a return of 6,641 (total 1,26,641 @ 5.53%)
+However, When I select One-time payment, with 1L - it comes up to a return of 17,360 (total 1,17,360 @ 17.36%)
+I know these numbers are based on past performances of the fund and subject to change depending on future performance. But what I don't understand is why invest as an SIP when I could do a lump-sum even at a lower amount and still get a better ROI?
+Am I missing something here? My only thought is that with an SIP you'd be able to buy at different rates every month which could give you some leverage or even be a disadvantage, you could also decide to stop the fund incase something happens.
+Help appreciated!",true,unknown,not_applicable,none,unknown,financial_literacy_gaps,pre_start,reddit_forums,low,status=evidence_span_failed
+tradingqna:p_538310,stratified,tradingqna,"I used to track mutual funds separately through AMC portals and broker statements, but after a point it became difficult to get a quick overall picture.
+What works better for me is to keep the tracking simple:
+Use MF Central/CAS to verify the actual holdings across AMCs.
+Use a spreadsheet for my own tracking of invested amount, current value and XIRR.
+For fund-level review, I mainly look at 1Y/3Y/5Y performance, benchmark comparison and whether the fund still fits my original reason for investing.
+I don’t check every fund every week. Monthly or quarterly review is enough for long-term holdings.
+One thing I learned is that tracking the portfolio and analysing the funds are two different things. Having all holdings in one place solves the first problem, but you still need a simple process to decide whether a fund deserves to remain in the portfolio.
+For me, reducing the number of places I have to check is more useful than having another app with 20 different metrics.",false,,,,,,,,,status=ok
+youtube:UgyaZ622d2oehm_Zupl4AaABAg,stratified,youtube,"Lekin maine Autopay kiya to ""UPI-Mandate successfully created towards mutual Funds **** Autopay for Rs15000.00 - SBI"" message mere number pay aya hain. Maine to sirf 2000 ka Autopay kiya tha. Ha sirf 1 rupya kata hai lekin for 15000 ke liye bolje kyun aya hai?",true,unknown,not_applicable,none,ux_friction,ux_friction,unknown,unknown,low,status=ok
+play_store:462b8a2b-80b6-46cf-9716-e87172f628a1,ambiguous,play_store,"Unfortunately I selected prime Verdict option in mutual fund. With this option we have to pay additional commission of 1% to groww, it will reduce the return. I don't have option go back to direct. I am planning to reedem from grow and put in coin.",true,considering_stop,platform_switch,17,other,feature_gaps,unknown,unknown,low,status=ok
+youtube:UgyRFM__FGwE3iCQvzJ4AaABAg,ambiguous,youtube,"I am 23 right now. Is 40 percent flexi cap, 35 percent mid cap, and 25 percent small cap good for long term investment(10 years and more)",false,,,,,,,,,status=ok
+reddit:t3_1jeqc8c,stratified,reddit,"Any recommendations on great one time fee Financial Planners? 30 M, Bangalore
+Okay so my basic issue is overdiversification of Mutual Funds - I have too many and they are not adequately split between the asset classes.
+Some of them are direct, some of them are regular. All of them are still profitable but I feel my XIRR is too low and I don’t know which ones to be kept open and which ones to close, which ones to be switched from Regular to Direct and when (to minimise LTCG) and how much should I be investing in each fund for my goals.
+Even though I know the basic investment terminologies and things like that I don’t have a lot of idea about these things or the time to spend in abundance to do all the fund research.
+Any tips or advice would be greatly appreciated of who would be able to help me regarding this. I am not interested in Commission based advisors atleast at the moment.
+I am not necessarily looking for someone based out of Bangalore. Even an online session and support works for me.",true,unknown,not_applicable,none,financial_literacy_gap,financial_literacy_gaps,unknown,unknown,medium,status=ok
+play_store:a57434a1-65c6-4b3b-b8a9-9369893e22db,stratified,play_store,Trying to switch my MF SIP investment from an ELSS fund to another fund from the same MF house. It is saying unable to switch since ELSS investments need to cover 3 yrs. I am trying for that amount which are already 3 years old still giving the same problem. In gist: unable to switch mf fund which is more than 3 years old.,true,unknown,not_applicable,none,ux_friction,ux_friction,month_12_plus,unknown,low,status=ok
+play_store:235f4128-8f71-469d-b954-39bf602f5ee7,ambiguous,play_store,Ye Chhor hai mete 5000 ki sip ka paisa nhi de rha hai 5000 ki one time investment kiya tha 2023 me aur 2025 me 7200 ka values hua tha last may 2025 me portfolio se delete kr giya jb mai bat kiya customer service me to bol rhe hai aapne redeem kiya hai koi bol rha hai aapka paisa refund ho gya hai jabki mera investment me 6 June 2025 ko cancel hua hai fir bhi ye mera paisa nhi de rhe hai,true,stopped,voluntary_stop,8,ux_friction,ux_friction,month_12_plus,unknown,low,status=ok
+reddit:t3_1pgceut,stratified,reddit,"Suggestion regarding SIP allocation and portfolio diversification. I am planning to restart my SIPs. Had to close few and withdraw amount for personal reasons.
+Risk appetite: Moderate to Agressive
+Goal: Child education, buying house in tier 1 city. Retirement planning as well.
+Horizon: 5 to 10 years
+Allocation: Up until now I have made SIPs worth 1.2L UTI Index fund: 55k 50% Motilal Midcap Index 150: 35k 30% Nippon small cap fund: 22k 20%
+Why these funds: Basically diversification into equity across Large cap using Index, Midcap also using Index and Small cap using active fund.
+App used: Groww
+Apart from this: I have direct stock investments of 4L
+In gold via SGB OF 1.4L
+As you can see, my portfolio is heavily into equity, almost all of it. I want to diversify into debt and commodities.
+Suggest me some options. I can make further monthly contributions of 30-40k",true,restarted,lapse_and_return,1,life_event_financial_pressure,life_event_financial_pressure,unknown,unknown,low,status=ok
+youtube:UgyLcrkvrtVt-x2TiKN4AaABAg,stratified,youtube,"Got it bro. I have a question, I have invested the last 5 years in one sip. But I want to cancel it now. But I don't want to withdraw an amount. Once I cancel the SIP and stay invested for the next 5 years or some x years. how do I withdraw later on. Could you tell me how to do that?",true,considering_stop,voluntary_stop,3,financial_literacy_gap,financial_literacy_gaps,month_12_plus,unknown,low,status=ok
+youtube:Ugwi6BkEP0WfN6UQ1yh4AaABAg,stratified,youtube,"Hi, Ankur sir , I have a doubt. I'm 22 years old, graduated last year, and I'm currently working full-time. I'm really confused about when the best time is to do an MBA. Some people say you should do it right after graduation, while others say you should first gain work experience and then pursue an MBA.
+Could you please make a video on this or reply to my comment? It would really help me because I'm feeling very confused and don't know if I'm making the right career decision. Thank you!",false,,,,,,,,,status=ok
+play_store:b712e442-3ce7-4614-88f3-43dfa035b092,stratified,play_store,Worst app after demat option is made compulsory all existing folio of SoA when i restart my sip in it . This app creates new folio in demat account instead of existing SoA folios,true,restarted,lapse_and_return,none,ux_friction,ux_friction,unknown,unknown,low,status=ok
+tradingqna:t_199065,stratified,tradingqna,"Pause in SIP of SBI Gold Fund
+Hello,
+I received an email yesterday that my SIP in SBI Gold Fund was being paused with immediate effect. My understanding was that all SIPs (AMC or through brokers) would be honoured and only the fresh investment would be stopped. Does the restriction apply to SIPs set up through brokers as well?
+Thanks !",true,paused,involuntary_payment_failure,13,ux_friction,ux_friction,unknown,unknown,low,status=ok
+app_store:14508693289,stratified,app_store,"SIP Activation not working. hello Groww team, I wanted to inform you that. I’m using this application from last 3 years for sip management. but now new sip activation is not working properly, I have tried my all possibilities to activate sip please check this issue asap and improve this flow.
+the issue is:
+when I click on sip activate autopay - with my phonepe or googlepay upi it shows something went wrong, and inside groww upi it shows no upi is activated please activate - i dont want to activate.
+suggestion:
+use less vibe coding and proper feature improvement thanks! previous version was far better than this.",true,unknown,involuntary_payment_failure,11,ux_friction,ux_friction,month_12_plus,unknown,low,status=ok
+play_store:cd6f2faf-1ac3-4c9c-b0bb-ea43f62fe28b,stratified,play_store,"i am groww platform user from 2019. From last month i saw an error in my mutual fund section, your kyc documents needed. I already submitted all documents, while account opening and also submitted again when an error appears. at that particular moment error was resolved, and after an hour it's showing your kyc needed.",true,unknown,not_applicable,none,ux_friction,ux_friction,month_12_plus,unknown,low,status=ok
+youtube:UgxCYj4o3FFiKATNnAh4AaABAg,ambiguous,youtube,"Maine 1000 select Kiya tha jab payment karne lga to 100000 pta nahi kaise bann gya ,vo to maine time pe dekh liya or payment cancel kardi",true,unknown,not_applicable,none,ux_friction,none,unknown,unknown,low,status=ok
+reddit:t3_1oc6szo,stratified,reddit,"Manage eNach mandate HDFC. Hi all, I created a eNach mandate for mutual fund autopay on coin zerodha, but I also wanted control just like upi autopay where we can pause the autopay, since hdfc has moved to new net banking portal, i could not find any way to manage the active eNach mandates, can anyone please help me figure this out or let me know the process to pause, cancel eNach mandates,?
+Thanks in advance.",true,unknown,not_applicable,none,unknown,none,unknown,unknown,low,status=evidence_span_failed
+reddit:t3_1nc8hin,ambiguous,reddit,"How to close tax saver mutual fund completely. I have started investing in multiple mutual funds years ago. One of them was icici elss tax saver fund. Since, I did not have proper knowledge I thought that from 1st SIP it will count the time of fund and after 3 years I can redeem whatever amount I want.
+But, now after doing much research and wow knowledge I came to know that each SIP deserves its own cooling period of 3 years. Well, in that case I want to know how can a person close this mutual fund. I mean, it will always have a latest SIP which will have some future date of 3 year. So, these funds can’t be closed?
+Also, since i thought ok maybe i can just remove the mandate from my bank, will it attract the failure charges of each missing mandate? Because there is no option of stopping SIP also.
+Any help in this regard will help a lot. Thanks",true,unknown,not_applicable,none,unknown,none,month_12_plus,unknown,low,status=evidence_span_failed
+reddit:t3_1uqtzcu,ambiguous,reddit,"ok this is random but did anyone else go back to debit card after using credit card for years. so i cancelled my cc like few days back, because of some late fee mess which got sorted eventually but it just left a bad taste. lesson learnt anyway been using my kotak 811 debit card new to it and it's honestly a mixed feeling
+Kinda miss the reward points, also had to redo autopay on like 4 different apps which was pretty annoying, forgot netflix and it paused lol
+but yeah no more checking statements at 2am for no reason. idk if that's the debit card doing that or just me finally chilling out about money in general
+anyone else done this switch or am i overthinking a random decision",false,,,,,,,,,status=ok

@@ -1,0 +1,3 @@
+ARCHIVED (PRD v1.2, C1): the Clean stage makes no LLM calls. Off-topic filtering is keyword rules only;
+borderline posts are kept with clean_borderline=true and resolved by the Enrich stage's is_relevant field.
+This prompt is intentionally unused and kept only as a record of the decision.

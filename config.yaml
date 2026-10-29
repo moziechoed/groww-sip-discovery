@@ -1,0 +1,183 @@
+# Groww SIP Continuation Discovery Engine — single config file (PRD v1.2, Architecture v1.1)
+# Budget caps can only be raised manually by the PM.
+
+run:
+  window_months: 24
+  target_min: 3000
+  target_max: 4000          # 5000 only if the 20-post cost test confirms it fits under ₹1,000
+  source_cap_pct: 40
+  prompt_version: v1
+  sample_size: 20           # every Gemini-calling stage runs on this many posts first
+
+keywords:
+  core: ["SIP stopped", "paused SIP", "cancel SIP", "first SIP", "SIP missed", "SIP returns",
+         "Groww SIP", "started investing", "mutual fund beginner", "SIP worth it",
+         "SIP band", "SIP ruk", "SIP chhod", "band kar diya"]
+  continuer: ["still going", "1 year SIP", "didn't stop SIP", "continued SIP",
+              "SIP anniversary", "never stopped", "kept my SIP", "SIP chalu hai", "band nahi kiya"]
+  use_continuer_group: false   # flip to true for targeted continuer re-collection (FR4.7).
+                               # App store collectors always match core + continuer in one pass (P1 decision).
+  # App-store matcher (P1). All matching is whole-word and case-insensitive.
+  # Anchors are SIP/MF terms that count as a match on their own. A space in a term also matches a hyphen
+  # or no space ("auto pay" matches "autopay" and "auto-pay"; "mandate" matches "e-mandate").
+  anchors: ["sip", "sips", "mutual fund", "mutual funds", "auto pay", "mandate",
+            "instalment", "installment", "folio", "nav", "xirr", "elss", "lump sum", "step up"]
+  # Roman Hinglish phrases (core group). Any phrase (here, in core or in continuer) that does not itself
+  # contain an anchor only counts when an anchor also appears in the same review.
+  hinglish: ["sip band", "sip bandh", "sip chalu", "sip ruk", "sip chhod", "band kar diya", "band nahi kiya",
+             "paisa kat", "paise kat", "paisa kata", "paise kate"]
+
+sources:
+  play_store:
+    enabled: true
+    priority: 1
+    app_id: "com.nextbillion.groww"
+    lang: en
+    country: in
+    stars: [1, 2, 3, 4, 5]        # stratified by star rating so recent 1-star complaints don't dominate
+    max_scan_per_star: 12000      # raised from 4000 after 200-review test showed ~4% match rate; stops at 24m cutoff or 2500 matched total
+    max_matched_total: 2500
+    page_size: 200
+  reddit:
+    enabled: true
+    priority: 1
+    subs: [IndiaInvestments, personalfinanceindia, MutualfundsIndia, FIREIndia,
+           IndianStreetBets, StockMarketIndia, IndianStockMarket, IndiaTax]
+    queries: ["SIP", "Groww SIP", "SIP stopped", "paused SIP", "cancel SIP",
+              "SIP missed", "mutual fund beginner", "autopay OR mandate",
+              "SIP band OR SIP chalu", "continued SIP OR 1 year SIP"]
+    sorts:
+      - {sort: "new", t: "all"}
+      - {sort: "top", t: "year"}
+      - {sort: "comments", t: "year"}
+    max_pages_per_stream: 3
+    max_comments_per_thread: 30
+    out_of_window_page_ratio_stop: 0.80
+    request_delay_sec: 10.0
+    rate_limit_cooldown_sec: 60.0
+    format: "auto"                # tries .json first; auto-switches to .rss on HTTP 403 WAF block
+    user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+  app_store:
+    enabled: true
+    priority: 2
+    app_id: "1404871703"          # verified 25 Oct via iTunes Lookup: "Groww Stocks, Mutual Fund, IPO",
+                                  # seller Billionbrains Garage Ventures Pvt Ltd, bundleId com.nextbillion.groww
+    country: in
+    max_pages: 10                 # RSS hard limit: 10 pages x 50 = ~500 most recent reviews (accepted)
+    cap_note: "RSS ~500"
+  youtube:
+    enabled: true
+    priority: 2
+    # 10 channels verified 26 Oct via channels.list + playlistItems.list (>=5 in-window SIP/MF videos each;
+    # @shashankudupa dropped because it had 0 in-window videos):
+    channels: [Groww, CARachanaRanade, LabourLawAdvisor, warikoo, pranjalkamra,
+               ETMONEY, VarsitybyZerodha, AkshatZayn, nehanagar, shankarnath]
+    search_queries: ["Groww SIP", "SIP stopped OR paused SIP", "first SIP mutual fund India",
+                     "Groww autopay mandate SIP", "1 year SIP review India", "why I stopped my SIP"]
+    max_upload_pages_per_channel: 10
+    max_comment_pages_per_video: 3
+    max_comments_per_video: 40
+    max_comments_per_channel: 200
+    max_matched_total: 1500
+    daily_quota_cap_units: 8000
+    description_lead_chars: 250
+  tradingqna:
+    enabled: true
+    priority: 3
+    base_url: "https://tradingqna.com"
+    queries: ["SIP stopped", "pause SIP", "cancel SIP", "SIP mandate", "autopay SIP",
+              "SIP installment failed", "first SIP", "Coin SIP", "step up SIP",
+              "ELSS SIP", "XIRR mutual fund", "mutual fund SIP"]
+    max_search_pages_per_query: 2
+    max_replies_per_topic: 20
+    max_matched_total: 400
+    request_delay_sec: 6.0
+    rate_limit_cooldown_sec: 60.0
+    platform_tag: "zerodha"
+  csv_seed:   {enabled: true,  priority: 3, path: data/seeds/}
+  twitter:    {enabled: false}
+
+collect:                           # Stage 1 network behaviour (no LLM calls)
+  page_delay_sec: 1.0              # polite pause between page fetches
+  max_retries: 3                   # transient errors (timeouts, 429, 5xx, silent empty pages)
+  backoff_base_sec: 2              # 2s, 4s, 8s
+  request_timeout_sec: 20
+  old_streak_stop: 20              # stop a newest-first stream after 20 consecutive out-of-window reviews
+
+clean:                             # Stage 2 rules-only cleaning (no LLM calls; PRD §9.2, Architecture §4.4)
+  min_words: 5
+  min_chars: 20
+  non_latin_max_ratio: 0.50        # drop if >50% of alphabetic chars are in ANY non-Latin script
+  near_dupe_threshold: 90.0        # rapidfuzz.fuzz.token_sort_ratio (whole-text similarity, not token_set_ratio)
+  near_dupe_min_chars: 40
+  reddit_stratification_damping: "sqrt"   # square-root damping across (YYYY-MM, subreddit) cells
+
+llm:
+  provider: gemini
+  model: "gemini-3.6-flash"        # verify exact ID via `python run.py --stage preflight` (models.list)
+  batch_size: 30                   # tune on the 20-post test; allowed range 25–40
+  max_retries: 3                   # transient errors (429/5xx) per batch; plus one JSON-repair retry
+  backoff_base_sec: 2              # 2s, 4s, 8s
+  inter_batch_pause_sec: 4
+  temperature: 0.1                 # 0–0.2 only
+  # Thinking control. Gemini 3+ uses `thinking_level`; Gemini 2.5 uses `thinking_budget`. Never both.
+  thinking_param: thinking_level
+  thinking_level_lowest: minimal   # if the model rejects "minimal", set to "low"
+  thinking_level_clustering: minimal   # raise to "low" only if Analyse/Surface quality needs it
+  max_input_chars_per_post: 1500
+  max_output_tokens:
+    enrich_per_post: 500           # floor per post; P7 uses max(this, measured avg x 1.5)
+    live: 800
+    test_call: 200
+
+enrich:
+  prompt_file: enrich_v3_20261027.txt   # FR3.4: versioned + dated. v3: v2 + 'should I stop MY SIP' = considering_stop, evidence must show outcome/trigger
+  output_floor_tokens_per_post: 500     # max_output_tokens per batch = n_posts x max(floor, measured avg x headroom); v1 test hit 350
+  output_headroom: 1.5
+  test_sample_size: 20                  # `--stage enrich --limit 20`: stratified, excludes golden-set posts
+  golden_size_stratified: 12
+  golden_size_ambiguous: 8
+  golden_seed: 42
+  require_golden_labels_before_full_run: true   # label data/seeds/golden_human.csv blind first
+  retry_missing_once: true
+  retry_evidence_once: true
+
+live:
+  session_call_limit: 3
+  daily_demo_cap: 50
+  min_confidence: medium
+  max_input_chars: 2000
+
+budget:
+  per_run_cap_inr: 300
+  project_cap_inr: 1000
+  usd_inr_rate: 96
+  input_price_per_m_usd: 0.75          # confirm at ai.google.dev/gemini-api/docs/pricing in P0
+  output_price_per_m_usd: 3.75         # thinking tokens bill at this price
+  cached_input_price_per_m_usd: 0.075
+  thinking_budget_tagging: 0           # mapped by llm_client to the SDK's lowest thinking setting
+  require_approval: true               # must stay true; there is no bypass
+  per_call_anomaly_multiplier: 3       # a single call > 3x its estimate stops the run
+  thinking_warn_ratio: 0.10            # warn if thinking tokens > 10% of output tokens
+  estimate_defaults:                   # replaced by measured averages after the 20-post test
+    avg_input_tokens_per_post: 350
+    avg_output_tokens_per_post: 200
+    prompt_overhead_tokens_per_call: 1500
+
+scoring:
+  specificity_thresholds:
+    high: 0.6     # share of cluster posts with verified evidence_span AND non-unknown checking_what → 3
+    medium: 0.3   # → 2; below → 1
+
+paths:
+  outputs: outputs
+  prompts: prompts
+  checkpoints: data/checkpoints
+  raw_dir: data/raw
+  clean_dir: data/clean
+  context_dir: data/context
+  enriched_dir: data/enriched
+  seeds_dir: data/seeds
+  drop_log: outputs/drop_log.csv
+  spend_log: outputs/spend_log.csv
+  corpus_stats: outputs/corpus_stats.json

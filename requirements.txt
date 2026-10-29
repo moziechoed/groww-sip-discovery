@@ -1,0 +1,17 @@
+# P0 core
+google-genai>=1.52
+pydantic>=2.6
+PyYAML>=6.0
+python-dotenv>=1.0
+pytest>=8.0
+
+# Later phases (P1–P10)
+pandas>=2.0
+rapidfuzz>=3.0
+google-play-scraper==1.2.7
+requests==2.34.2
+praw>=7.7
+google-api-python-client>=2.100
+pypdf>=4.0
+streamlit==1.65.0
+altair==6.2.2

@@ -1,0 +1,2115 @@
+{
+  "collect": {
+    "sources": {
+      "play_store": {
+        "status": "ok",
+        "window_start": "2024-10-25T12:41:47Z",
+        "window_end": "2026-10-25T12:41:47Z",
+        "scanned": 37697,
+        "matched": 1093,
+        "written_this_run": 1093,
+        "total_in_file": 1093,
+        "dropped": {
+          "no_keyword_match": 36544,
+          "out_of_window": 60
+        },
+        "keyword_group": {
+          "core": 1093
+        },
+        "oldest_date": "2024-10-25T14:10:47Z",
+        "newest_date": "2026-10-24T04:10:35Z",
+        "scan_limit": null,
+        "output": "data/raw/play_store.jsonl",
+        "app_id": "com.nextbillion.groww",
+        "per_star_cap": 12000,
+        "max_matched_total": 2500,
+        "per_star": {
+          "1": {
+            "scanned": 12000,
+            "matched": 501,
+            "end_reason": "scan_cap"
+          },
+          "2": {
+            "scanned": 1845,
+            "matched": 88,
+            "end_reason": "window_cutoff"
+          },
+          "3": {
+            "scanned": 3004,
+            "matched": 136,
+            "end_reason": "window_cutoff"
+          },
+          "4": {
+            "scanned": 8848,
+            "matched": 235,
+            "end_reason": "window_cutoff"
+          },
+          "5": {
+            "scanned": 12000,
+            "matched": 133,
+            "end_reason": "scan_cap"
+          }
+        },
+        "rating_mix_note": "Collected with equal-effort sampling per star rating (1\u20135), not the store's natural rating mix. Disclose in the Evidence Log."
+      },
+      "app_store": {
+        "status": "ok",
+        "window_start": "2024-10-25T12:47:18Z",
+        "window_end": "2026-10-25T12:47:18Z",
+        "scanned": 500,
+        "matched": 30,
+        "written_this_run": 30,
+        "total_in_file": 30,
+        "dropped": {
+          "no_keyword_match": 470
+        },
+        "keyword_group": {
+          "core": 30
+        },
+        "oldest_date": "2026-09-02T12:48:57Z",
+        "newest_date": "2026-10-22T04:51:46Z",
+        "scan_limit": null,
+        "output": "data/raw/app_store.jsonl",
+        "app_id": "1404871703",
+        "pages_fetched": 10,
+        "end_reason": "rss_page_limit",
+        "per_star": {
+          "5": {
+            "scanned": 398,
+            "matched": 20
+          },
+          "1": {
+            "scanned": 65,
+            "matched": 6
+          },
+          "4": {
+            "scanned": 21,
+            "matched": 2
+          },
+          "2": {
+            "scanned": 8,
+            "matched": 0
+          },
+          "3": {
+            "scanned": 8,
+            "matched": 2
+          }
+        },
+        "oldest_scanned_date": "2026-09-02T08:23:51Z",
+        "rss_cap_entries": 500,
+        "shortfall_vs_cap": 0,
+        "shortfall_note": "Apple's RSS feed exposes at most ~500 most recent reviews (10 pages x 50). 500 scanned, 30 matched SIP/MF terms; oldest review reached: 2026-09-02T08:23:51Z. Accepted per PRD (App Store cap); compensated by other sources."
+      },
+      "reddit": {
+        "status": "interrupted",
+        "window_start": "2024-10-25T14:35:09Z",
+        "window_end": "2026-10-25T14:35:09Z",
+        "scanned": 19211,
+        "matched": 4355,
+        "written_this_run": 4355,
+        "total_in_file": 4355,
+        "dropped": {
+          "no_keyword_match": 8391,
+          "out_of_window": 866,
+          "deleted_or_removed": 354,
+          "duplicate": 4929,
+          "bot_or_mod": 301,
+          "thread_comment_cap": 15
+        },
+        "keyword_group": {
+          "core": 4349,
+          "continuer": 6
+        },
+        "oldest_date": "2024-10-29T05:09:36Z",
+        "newest_date": "2026-10-25T19:41:35Z",
+        "scan_limit": null,
+        "output": "data/raw/reddit.jsonl",
+        "error": "Stopped by user (Ctrl+C)",
+        "active_format": "rss",
+        "format_fallback": "json_to_rss",
+        "requests_made": 783,
+        "posts_scanned": 8998,
+        "posts_matched": 3049,
+        "comments_scanned": 10213,
+        "comments_matched": 1306,
+        "comments_capped": 15,
+        "slices_stopped_out_of_window": 16,
+        "matched_via": {
+          "self": 1295,
+          "thread_context": 11
+        },
+        "threads_pending": 2640,
+        "threads_done": 409,
+        "thread_coverage": {
+          "threads_fetched": 409,
+          "total_comments_returned": 10213,
+          "threads_with_num_comments": 0,
+          "total_num_comments_reported": 0,
+          "samples": [
+            {
+              "post_id": "t3_1wpvnfd",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 17,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1u4mc8o",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 10,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1u4lsou",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 37,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1rm4p0e",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 2,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1rfv3xe",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 4,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1rftp3r",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 3,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1r00do5",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 18,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1o239y7",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 4,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1nx7v6p",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 49,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1n4o967",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 80,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1mua18m",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 50,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1msmm5o",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 31,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1mjtrjx",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 34,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1miin7n",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 40,
+              "num_comments": null
+            },
+            {
+              "post_id": "t3_1m6itl3",
+              "subreddit": "IndiaInvestments",
+              "comments_returned": 41,
+              "num_comments": null
+            }
+          ]
+        },
+        "per_sub": {
+          "IndiaInvestments": {
+            "posts_scanned": 632,
+            "posts_matched": 114,
+            "comments_scanned": 4150,
+            "comments_matched": 509,
+            "threads_fetched": 114
+          },
+          "personalfinanceindia": {
+            "posts_scanned": 3522,
+            "posts_matched": 1283,
+            "comments_scanned": 6063,
+            "comments_matched": 797,
+            "threads_fetched": 295
+          },
+          "MutualfundsIndia": {
+            "posts_scanned": 4620,
+            "posts_matched": 1650,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "threads_fetched": 0
+          },
+          "FIREIndia": {
+            "posts_scanned": 224,
+            "posts_matched": 2,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "threads_fetched": 0
+          }
+        }
+      },
+      "youtube": {
+        "status": "ok",
+        "window_start": "2024-10-26T07:02:46Z",
+        "window_end": "2026-10-26T07:02:46Z",
+        "scanned": 11128,
+        "matched": 1500,
+        "written_this_run": 1500,
+        "total_in_file": 1500,
+        "dropped": {
+          "no_keyword_match": 6084,
+          "too_short_or_timestamp": 1799,
+          "creator_or_channel_owner": 901,
+          "bot_or_spam": 20,
+          "video_comment_cap": 806
+        },
+        "keyword_group": {
+          "core": 1487,
+          "continuer": 13
+        },
+        "oldest_date": "2024-11-15T14:59:37Z",
+        "newest_date": "2026-10-25T18:05:40Z",
+        "scan_limit": null,
+        "output": "data/raw/youtube.jsonl",
+        "requests_made": 272,
+        "quota_units_this_run": 866,
+        "quota_units_today_pt": 866,
+        "quota_units_total": 866,
+        "quota_exhausted": false,
+        "videos_scanned": 3950,
+        "videos_queued": 482,
+        "videos_harvested": 141,
+        "videos_pending": 341,
+        "videos_done": 141,
+        "comments_scanned": 11128,
+        "comments_matched": 1500,
+        "comments_capped": 806,
+        "comments_capped_channel": 0,
+        "matched_via": {
+          "self": 1196,
+          "thread_context": 304
+        },
+        "matched_by_channel": {
+          "Groww": 3,
+          "CARachanaRanade": 40,
+          "LabourLawAdvisor": 74,
+          "warikoo": 29,
+          "pranjalkamra": 52,
+          "ETMONEY": 7,
+          "VarsitybyZerodha": 0,
+          "AkshatZayn": 65,
+          "nehanagar": 1,
+          "shankarnath": 75,
+          "CA SAI KRISHNA BORRA": 15,
+          "Apni Apps": 30,
+          "Sahi Trade": 7,
+          "Vinod Sharma": 0,
+          "Groww Tamil": 16,
+          "Mutual Funds with Groww": 27,
+          "Groww Kannada": 5,
+          "Manish Advice": 14,
+          "Hatu to hitech": 2,
+          "Humsafar Tech": 0,
+          "MySimpleGuide": 0,
+          "The Tut Academy": 0,
+          "Jane Sheeba": 2,
+          "Groww Malayalam": 15,
+          "Technical Deepak 2Td": 4,
+          "Fin Tricks": 1,
+          "Sanjay Kathuria ": 40,
+          "Sanjay Trick ": 15,
+          "Finox Trader": 1,
+          "Sagar Sinha ": 113,
+          "Amol Smart Money": 0,
+          "Kowshik Maridi": 12,
+          "Financial Fit Telugu": 2,
+          "ALL4GOOD": 0,
+          "Tech Deep": 0,
+          "Groww Telugu": 3,
+          "Pushkar Raj Thakur: Stock Market Educator \ud83d\udcc8": 0,
+          "Stock Market Telugu Tips": 6,
+          "Rich Grow Tech": 0,
+          "Milind Kushwaha - Stock Market Educator": 0,
+          "DigitalMohit": 16,
+          "GoodReturns": 0,
+          "Udayan Adhye": 40,
+          "Raj Kushwaha Finance Wala": 0,
+          "Rahul Jain": 21,
+          "FinnovationZ by Prasad": 40,
+          "Abhishek Kar": 17,
+          "Shivam Tech Info": 0,
+          "Tech Yadav": 40,
+          "Value Research": 29,
+          "Mayank Gupta": 18,
+          "Zero1 by Zerodha": 0,
+          "TradingKNews": 4,
+          "The Technical Assist": 0,
+          "Boss Wallah (Telugu)": 40,
+          "Pishukkan - Finance Simplified": 0,
+          "Money Honey Financial Services": 0,
+          "Dhanyatra": 0,
+          "Enrichwise ": 0,
+          "Steadrow Capitals": 0,
+          "Wealth Research Desk": 0,
+          "Vaani Wealth by Nidhi Anand": 0,
+          "ReLearnFinance": 0,
+          "5-Second-Finance": 0,
+          "Crypto Jargon": 0,
+          "The Money Podcast with Neeraj & Vrinda": 0,
+          "Paisa Panchayat": 0,
+          "NDTV Profit": 64,
+          "Money Nest By Varun Singh": 17,
+          "Finance Before Bed": 0,
+          "Bestan guide": 0,
+          "XY- Axis Education": 0,
+          "Nidhi Kunwar": 25,
+          "Computer Assistant Shiv": 40,
+          "Money Talks With Nikhil": 40,
+          "Dr. Anuj Pachhel": 0,
+          "Policybazaar": 6,
+          "Sharique Samsudheen": 0,
+          "Monty Money Mindset": 2,
+          "DAY TRADER \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41": 0,
+          "SANSKRITI IAS": 1,
+          "Manoj Dey": 38,
+          "Vinod Jgr": 7,
+          "Rahul Jain - Hindi": 0,
+          "Anandhi Insurance & Investments": 0,
+          "Financial Journey With Ankit": 1,
+          "Spreading Gyan": 18,
+          "Budget Padmanaban": 0,
+          "Greeb Trader": 14,
+          "money matter": 0,
+          "Vivek Paswan Tech": 0,
+          "House of Apps": 6,
+          "Finance and More Telugu": 4,
+          "Rinkal Lodhi": 1,
+          "Unique Offers Trick": 0,
+          "House of Apps English": 9,
+          "It's Your Help": 0,
+          "MR.G Pocket Money": 0,
+          "Your Solution": 1,
+          "Tech Mirchi": 0,
+          "Grow Business Finance Hub": 7,
+          "Gyan Ki Lake": 1,
+          "SM Tech": 0,
+          "Finance Focus": 2,
+          "TECHNO GREEDY": 0,
+          "Finance On Phone": 1,
+          "The Tech Rishi": 0,
+          "SUNRISE COMPUTER CENTRE": 1,
+          "Suman Kr": 0,
+          "Market Ki Class | Indrajeet": 0,
+          "the bald trader": 16,
+          "GMP Gain": 19,
+          "Abhijit Vaishnav": 40,
+          "StarSip Mutual Fund": 40,
+          "Wealth Dekho": 0,
+          "Money Ride": 40,
+          "Profit Plus": 5,
+          "ViSH investment": 40,
+          "Finance With Sharan": 26,
+          "Navinn": 0,
+          "MotiDevo - Motivational Devotional": 0,
+          "FinCalC TV": 1,
+          "Financial pandit": 0,
+          "Vijai Mantri": 18,
+          "Investing with Dhan": 1,
+          "Value Research Hindi": 0,
+          "Bhanu Brags": 0,
+          "moneycontrol": 3,
+          "Rakesh Bansal": 0,
+          "The Mutual Fund Talk": 3,
+          "Yadnya Investment Academy": 1,
+          "Kamlesh Bhagat": 0,
+          "Ayush On Money": 0,
+          "Boss Of Stock Market": 0
+        },
+        "per_channel": {
+          "Groww": {
+            "videos_scanned": 500,
+            "videos_queued": 25,
+            "videos_harvested": 3,
+            "comments_scanned": 69,
+            "comments_matched": 3,
+            "comments_capped": 0
+          },
+          "CARachanaRanade": {
+            "videos_scanned": 500,
+            "videos_queued": 9,
+            "videos_harvested": 3,
+            "comments_scanned": 218,
+            "comments_matched": 40,
+            "comments_capped": 0
+          },
+          "LabourLawAdvisor": {
+            "videos_scanned": 500,
+            "videos_queued": 8,
+            "videos_harvested": 3,
+            "comments_scanned": 549,
+            "comments_matched": 74,
+            "comments_capped": 29
+          },
+          "warikoo": {
+            "videos_scanned": 500,
+            "videos_queued": 7,
+            "videos_harvested": 3,
+            "comments_scanned": 214,
+            "comments_matched": 29,
+            "comments_capped": 0
+          },
+          "pranjalkamra": {
+            "videos_scanned": 300,
+            "videos_queued": 44,
+            "videos_harvested": 3,
+            "comments_scanned": 514,
+            "comments_matched": 52,
+            "comments_capped": 14
+          },
+          "ETMONEY": {
+            "videos_scanned": 300,
+            "videos_queued": 53,
+            "videos_harvested": 2,
+            "comments_scanned": 36,
+            "comments_matched": 7,
+            "comments_capped": 0
+          },
+          "VarsitybyZerodha": {
+            "videos_scanned": 350,
+            "videos_queued": 38,
+            "videos_harvested": 2,
+            "comments_scanned": 1,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "AkshatZayn": {
+            "videos_scanned": 200,
+            "videos_queued": 10,
+            "videos_harvested": 2,
+            "comments_scanned": 673,
+            "comments_matched": 65,
+            "comments_capped": 115
+          },
+          "nehanagar": {
+            "videos_scanned": 400,
+            "videos_queued": 20,
+            "videos_harvested": 2,
+            "comments_scanned": 4,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "shankarnath": {
+            "videos_scanned": 100,
+            "videos_queued": 43,
+            "videos_harvested": 2,
+            "comments_scanned": 469,
+            "comments_matched": 75,
+            "comments_capped": 10
+          },
+          "CA SAI KRISHNA BORRA": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 50,
+            "comments_matched": 15,
+            "comments_capped": 0
+          },
+          "Apni Apps": {
+            "videos_scanned": 0,
+            "videos_queued": 14,
+            "videos_harvested": 1,
+            "comments_scanned": 110,
+            "comments_matched": 30,
+            "comments_capped": 0
+          },
+          "Sahi Trade": {
+            "videos_scanned": 0,
+            "videos_queued": 4,
+            "videos_harvested": 3,
+            "comments_scanned": 31,
+            "comments_matched": 7,
+            "comments_capped": 0
+          },
+          "Vinod Sharma": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Groww Tamil": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 110,
+            "comments_matched": 16,
+            "comments_capped": 0
+          },
+          "Mutual Funds with Groww": {
+            "videos_scanned": 0,
+            "videos_queued": 7,
+            "videos_harvested": 1,
+            "comments_scanned": 85,
+            "comments_matched": 27,
+            "comments_capped": 0
+          },
+          "Groww Kannada": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 26,
+            "comments_matched": 5,
+            "comments_capped": 0
+          },
+          "Manish Advice": {
+            "videos_scanned": 0,
+            "videos_queued": 4,
+            "videos_harvested": 2,
+            "comments_scanned": 117,
+            "comments_matched": 14,
+            "comments_capped": 0
+          },
+          "Hatu to hitech": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 1,
+            "comments_scanned": 12,
+            "comments_matched": 2,
+            "comments_capped": 0
+          },
+          "Humsafar Tech": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "MySimpleGuide": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "The Tut Academy": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Jane Sheeba": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 6,
+            "comments_matched": 2,
+            "comments_capped": 0
+          },
+          "Groww Malayalam": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 46,
+            "comments_matched": 15,
+            "comments_capped": 0
+          },
+          "Technical Deepak 2Td": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 27,
+            "comments_matched": 4,
+            "comments_capped": 0
+          },
+          "Fin Tricks": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 6,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Sanjay Kathuria ": {
+            "videos_scanned": 0,
+            "videos_queued": 5,
+            "videos_harvested": 1,
+            "comments_scanned": 441,
+            "comments_matched": 40,
+            "comments_capped": 71
+          },
+          "Sanjay Trick ": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 87,
+            "comments_matched": 15,
+            "comments_capped": 0
+          },
+          "Finox Trader": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 5,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Sagar Sinha ": {
+            "videos_scanned": 0,
+            "videos_queued": 4,
+            "videos_harvested": 3,
+            "comments_scanned": 1128,
+            "comments_matched": 113,
+            "comments_capped": 132
+          },
+          "Amol Smart Money": {
+            "videos_scanned": 0,
+            "videos_queued": 13,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Kowshik Maridi": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 85,
+            "comments_matched": 12,
+            "comments_capped": 0
+          },
+          "Financial Fit Telugu": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 8,
+            "comments_matched": 2,
+            "comments_capped": 0
+          },
+          "ALL4GOOD": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Tech Deep": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 1,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Groww Telugu": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 1,
+            "comments_scanned": 18,
+            "comments_matched": 3,
+            "comments_capped": 0
+          },
+          "Pushkar Raj Thakur: Stock Market Educator \ud83d\udcc8": {
+            "videos_scanned": 0,
+            "videos_queued": 7,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Stock Market Telugu Tips": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 31,
+            "comments_matched": 6,
+            "comments_capped": 0
+          },
+          "Rich Grow Tech": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 2,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Milind Kushwaha - Stock Market Educator": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "DigitalMohit": {
+            "videos_scanned": 0,
+            "videos_queued": 7,
+            "videos_harvested": 4,
+            "comments_scanned": 90,
+            "comments_matched": 16,
+            "comments_capped": 0
+          },
+          "GoodReturns": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Udayan Adhye": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 388,
+            "comments_matched": 40,
+            "comments_capped": 83
+          },
+          "Raj Kushwaha Finance Wala": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Rahul Jain": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 57,
+            "comments_matched": 21,
+            "comments_capped": 0
+          },
+          "FinnovationZ by Prasad": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 423,
+            "comments_matched": 40,
+            "comments_capped": 44
+          },
+          "Abhishek Kar": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 88,
+            "comments_matched": 17,
+            "comments_capped": 0
+          },
+          "Shivam Tech Info": {
+            "videos_scanned": 0,
+            "videos_queued": 3,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Tech Yadav": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 129,
+            "comments_matched": 40,
+            "comments_capped": 3
+          },
+          "Value Research": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 77,
+            "comments_matched": 29,
+            "comments_capped": 0
+          },
+          "Mayank Gupta": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 145,
+            "comments_matched": 18,
+            "comments_capped": 0
+          },
+          "Zero1 by Zerodha": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "TradingKNews": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 8,
+            "comments_matched": 4,
+            "comments_capped": 0
+          },
+          "The Technical Assist": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Boss Wallah (Telugu)": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 390,
+            "comments_matched": 40,
+            "comments_capped": 94
+          },
+          "Pishukkan - Finance Simplified": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Money Honey Financial Services": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Dhanyatra": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Enrichwise ": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 24,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Steadrow Capitals": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Wealth Research Desk": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Vaani Wealth by Nidhi Anand": {
+            "videos_scanned": 0,
+            "videos_queued": 9,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "ReLearnFinance": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "5-Second-Finance": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Crypto Jargon": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 4,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "The Money Podcast with Neeraj & Vrinda": {
+            "videos_scanned": 0,
+            "videos_queued": 3,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Paisa Panchayat": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "NDTV Profit": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 447,
+            "comments_matched": 64,
+            "comments_capped": 66
+          },
+          "Money Nest By Varun Singh": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 73,
+            "comments_matched": 17,
+            "comments_capped": 0
+          },
+          "Finance Before Bed": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Bestan guide": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "XY- Axis Education": {
+            "videos_scanned": 0,
+            "videos_queued": 4,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Nidhi Kunwar": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 83,
+            "comments_matched": 25,
+            "comments_capped": 0
+          },
+          "Computer Assistant Shiv": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 244,
+            "comments_matched": 40,
+            "comments_capped": 7
+          },
+          "Money Talks With Nikhil": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 187,
+            "comments_matched": 40,
+            "comments_capped": 9
+          },
+          "Dr. Anuj Pachhel": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Policybazaar": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 52,
+            "comments_matched": 6,
+            "comments_capped": 0
+          },
+          "Sharique Samsudheen": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 11,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Monty Money Mindset": {
+            "videos_scanned": 0,
+            "videos_queued": 4,
+            "videos_harvested": 2,
+            "comments_scanned": 9,
+            "comments_matched": 2,
+            "comments_capped": 0
+          },
+          "DAY TRADER \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "SANSKRITI IAS": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 11,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Manoj Dey": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 690,
+            "comments_matched": 38,
+            "comments_capped": 0
+          },
+          "Vinod Jgr": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 27,
+            "comments_matched": 7,
+            "comments_capped": 0
+          },
+          "Rahul Jain - Hindi": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Anandhi Insurance & Investments": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Financial Journey With Ankit": {
+            "videos_scanned": 0,
+            "videos_queued": 4,
+            "videos_harvested": 2,
+            "comments_scanned": 14,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Spreading Gyan": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 334,
+            "comments_matched": 18,
+            "comments_capped": 0
+          },
+          "Budget Padmanaban": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Greeb Trader": {
+            "videos_scanned": 0,
+            "videos_queued": 6,
+            "videos_harvested": 2,
+            "comments_scanned": 37,
+            "comments_matched": 14,
+            "comments_capped": 0
+          },
+          "money matter": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Vivek Paswan Tech": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "House of Apps": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 15,
+            "comments_matched": 6,
+            "comments_capped": 0
+          },
+          "Finance and More Telugu": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 7,
+            "comments_matched": 4,
+            "comments_capped": 0
+          },
+          "Rinkal Lodhi": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 1,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Unique Offers Trick": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "House of Apps English": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 2,
+            "comments_scanned": 20,
+            "comments_matched": 9,
+            "comments_capped": 0
+          },
+          "It's Your Help": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "MR.G Pocket Money": {
+            "videos_scanned": 0,
+            "videos_queued": 3,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Your Solution": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 9,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Tech Mirchi": {
+            "videos_scanned": 0,
+            "videos_queued": 2,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Grow Business Finance Hub": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 16,
+            "comments_matched": 7,
+            "comments_capped": 0
+          },
+          "Gyan Ki Lake": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 1,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "SM Tech": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Finance Focus": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 4,
+            "comments_matched": 2,
+            "comments_capped": 0
+          },
+          "TECHNO GREEDY": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Finance On Phone": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 2,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "The Tech Rishi": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "SUNRISE COMPUTER CENTRE": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 14,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Suman Kr": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Market Ki Class | Indrajeet": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "the bald trader": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 53,
+            "comments_matched": 16,
+            "comments_capped": 0
+          },
+          "GMP Gain": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 185,
+            "comments_matched": 19,
+            "comments_capped": 0
+          },
+          "Abhijit Vaishnav": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 356,
+            "comments_matched": 40,
+            "comments_capped": 41
+          },
+          "StarSip Mutual Fund": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 446,
+            "comments_matched": 40,
+            "comments_capped": 62
+          },
+          "Wealth Dekho": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Money Ride": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 140,
+            "comments_matched": 40,
+            "comments_capped": 7
+          },
+          "Profit Plus": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 36,
+            "comments_matched": 5,
+            "comments_capped": 0
+          },
+          "ViSH investment": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 260,
+            "comments_matched": 40,
+            "comments_capped": 19
+          },
+          "Finance With Sharan": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 230,
+            "comments_matched": 26,
+            "comments_capped": 0
+          },
+          "Navinn": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "MotiDevo - Motivational Devotional": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "FinCalC TV": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 2,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Financial pandit": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Vijai Mantri": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 61,
+            "comments_matched": 18,
+            "comments_capped": 0
+          },
+          "Investing with Dhan": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 14,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Value Research Hindi": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Bhanu Brags": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "moneycontrol": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 13,
+            "comments_matched": 3,
+            "comments_capped": 0
+          },
+          "Rakesh Bansal": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "The Mutual Fund Talk": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 13,
+            "comments_matched": 3,
+            "comments_capped": 0
+          },
+          "Yadnya Investment Academy": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 8,
+            "comments_matched": 1,
+            "comments_capped": 0
+          },
+          "Kamlesh Bhagat": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 0,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Ayush On Money": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 0,
+            "comments_matched": 0,
+            "comments_capped": 0
+          },
+          "Boss Of Stock Market": {
+            "videos_scanned": 0,
+            "videos_queued": 1,
+            "videos_harvested": 1,
+            "comments_scanned": 1,
+            "comments_matched": 0,
+            "comments_capped": 0
+          }
+        }
+      },
+      "tradingqna": {
+        "status": "ok",
+        "window_start": "2024-10-26T11:44:01Z",
+        "window_end": "2026-10-26T11:44:01Z",
+        "scanned": 1088,
+        "matched": 207,
+        "written_this_run": 0,
+        "total_in_file": 207,
+        "dropped": {
+          "before_window": 497,
+          "empty_or_short": 14,
+          "no_keyword": 370
+        },
+        "keyword_group": {
+          "continuer": 1,
+          "core": 206
+        },
+        "oldest_date": "2024-10-28T01:13:23Z",
+        "newest_date": "2026-10-26T02:21:41Z",
+        "scan_limit": null,
+        "output": "data/raw/tradingqna.jsonl",
+        "requests_made": 126,
+        "topics_queued_remaining": 0,
+        "topics_harvested": 111,
+        "topics_scanned": 111,
+        "topics_matched": 60,
+        "replies_scanned": 977,
+        "replies_matched": 147,
+        "matched_via": {
+          "self": 181,
+          "thread_context": 26
+        },
+        "per_query": {
+          "Coin SIP": {
+            "hits": 100,
+            "topics_queued": 10
+          },
+          "ELSS SIP": {
+            "hits": 50,
+            "topics_queued": 4
+          },
+          "SIP installment failed": {
+            "hits": 4,
+            "topics_queued": 1
+          },
+          "SIP mandate": {
+            "hits": 50,
+            "topics_queued": 10
+          },
+          "SIP stopped": {
+            "hits": 50,
+            "topics_queued": 8
+          },
+          "XIRR mutual fund": {
+            "hits": 50,
+            "topics_queued": 16
+          },
+          "autopay SIP": {
+            "hits": 17,
+            "topics_queued": 2
+          },
+          "cancel SIP": {
+            "hits": 50,
+            "topics_queued": 6
+          },
+          "first SIP": {
+            "hits": 50,
+            "topics_queued": 6
+          },
+          "mutual fund SIP": {
+            "hits": 50,
+            "topics_queued": 5
+          },
+          "pause SIP": {
+            "hits": 50,
+            "topics_queued": 10
+          },
+          "step up SIP": {
+            "hits": 95,
+            "topics_queued": 33
+          }
+        },
+        "platform_tag": "zerodha"
+      }
+    },
+    "raw_posts_total": 7185,
+    "raw_posts_path": "data/raw/raw_posts.jsonl",
+    "updated_at": "2026-10-26T11:44:01Z"
+  },
+  "stages": {
+    "collect": {
+      "stage": "collect",
+      "records_in": 1088,
+      "records_out": 7185,
+      "dropped": {
+        "tradingqna:before_window": 497,
+        "tradingqna:empty_or_short": 14,
+        "tradingqna:no_keyword": 370
+      },
+      "failed": 0,
+      "llm_calls": 0,
+      "cost_inr": 0.0,
+      "time_taken_sec": 0.1,
+      "finished_at": "2026-10-26T11:44:01+00:00"
+    },
+    "clean": {
+      "stage": "clean",
+      "records_in": 7185,
+      "records_out": 4000,
+      "dropped": {
+        "app_store:too_short_or_junk": 1,
+        "play_store:too_short_or_junk": 28,
+        "play_store:off_topic": 2,
+        "play_store:language": 9,
+        "reddit:spam_promo": 17,
+        "reddit:off_topic": 1,
+        "reddit:too_short_or_junk": 15,
+        "tradingqna:spam_promo": 1,
+        "tradingqna:off_topic": 2,
+        "youtube:language": 44,
+        "youtube:too_short_or_junk": 40,
+        "reddit:duplicate": 55,
+        "youtube:duplicate": 13,
+        "reddit:source_cap": 2957
+      },
+      "failed": 0,
+      "llm_calls": 0,
+      "cost_inr": 0.0,
+      "time_taken_sec": 36.4,
+      "finished_at": "2026-10-26T15:57:16+00:00"
+    }
+  },
+  "context": {
+    "updated_at": "2026-10-26T11:46:50Z",
+    "files": {
+      "amfi_sip_monthly": {
+        "status": "ok",
+        "rows": 27,
+        "monthly_rows": 24,
+        "annual_summary_rows": 3,
+        "path": "data/context/amfi_sip_monthly.csv"
+      },
+      "factbook_demographics": {
+        "status": "ok",
+        "rows": 103,
+        "high_confidence": 99,
+        "low_confidence": 4,
+        "path": "data/context/factbook_demographics.csv"
+      },
+      "mfsh_index": {
+        "status": "ok",
+        "rows": 34,
+        "omitted_notes": [
+          "xirr: No standalone XIRR page exists in mutualfundssahihai.com's sitemap (return metrics covered on the site are CAGR / Annualised Return, Absolute Return, Trailing & Rolling Returns, and Total Return Index)."
+        ],
+        "path": "data/context/mfsh_index.csv"
+      }
+    }
+  },
+  "clean": {
+    "updated_at": "2026-10-26T15:57:16Z",
+    "records_in": 7185,
+    "records_out": 4000,
+    "dropped_total": 3185,
+    "clean_posts_path": "data/clean/clean_posts.jsonl",
+    "overflow_archive_path": "data/clean/source_cap_overflow.jsonl",
+    "drop_log_path": "outputs/drop_log.csv",
+    "per_source_in": {
+      "app_store": 30,
+      "play_store": 1093,
+      "reddit": 4355,
+      "tradingqna": 207,
+      "youtube": 1500
+    },
+    "per_source_out": {
+      "app_store": 29,
+      "play_store": 1054,
+      "reddit": 1310,
+      "tradingqna": 204,
+      "youtube": 1403
+    },
+    "per_source_share_pct": {
+      "app_store": 0.72,
+      "play_store": 26.35,
+      "reddit": 32.75,
+      "tradingqna": 5.1,
+      "youtube": 35.08
+    },
+    "dropped_by_source_and_reason": {
+      "app_store": {
+        "too_short_or_junk": 1
+      },
+      "play_store": {
+        "too_short_or_junk": 28,
+        "off_topic": 2,
+        "language": 9
+      },
+      "reddit": {
+        "spam_promo": 17,
+        "off_topic": 1,
+        "too_short_or_junk": 15,
+        "duplicate": 55,
+        "source_cap": 2957
+      },
+      "tradingqna": {
+        "spam_promo": 1,
+        "off_topic": 2
+      },
+      "youtube": {
+        "language": 44,
+        "too_short_or_junk": 40,
+        "duplicate": 13
+      }
+    },
+    "language_drops_by_script": {
+      "devanagari": {
+        "play_store": 9,
+        "youtube": 23
+      },
+      "malayalam": {
+        "youtube": 19
+      },
+      "telugu": {
+        "youtube": 2
+      }
+    },
+    "hinglish_count_by_source": {
+      "play_store": 55,
+      "reddit": 9,
+      "tradingqna": 2,
+      "youtube": 444
+    },
+    "hinglish_total": 510,
+    "pii_posts_scrubbed_by_source": {
+      "reddit": 34,
+      "tradingqna": 4,
+      "youtube": 1
+    },
+    "pii_scrubbed_by_source_and_type": {
+      "reddit": {
+        "account_num": 33,
+        "email": 9
+      },
+      "tradingqna": {
+        "account_num": 5,
+        "email": 1
+      },
+      "youtube": {
+        "account_num": 1
+      }
+    },
+    "borderline_count_by_source": {
+      "app_store": 11,
+      "play_store": 369,
+      "reddit": 56,
+      "tradingqna": 69,
+      "youtube": 927
+    },
+    "borderline_total": 1432,
+    "platform_tag_distribution": {
+      "groww": 1591,
+      "zerodha": 278,
+      "unspecified": 2029,
+      "other": 49,
+      "indmoney": 28,
+      "paytm_money": 12,
+      "mfcentral": 13
+    },
+    "reddit_sampling_audit": {
+      "before_total": 4267,
+      "after_total": 1310,
+      "overflow_archived": 2957,
+      "by_month": {
+        "2024-10": {
+          "before": 34,
+          "after": 19
+        },
+        "2024-11": {
+          "before": 65,
+          "after": 33
+        },
+        "2024-12": {
+          "before": 73,
+          "after": 41
+        },
+        "2025-01": {
+          "before": 91,
+          "after": 39
+        },
+        "2025-02": {
+          "before": 76,
+          "after": 39
+        },
+        "2025-03": {
+          "before": 50,
+          "after": 34
+        },
+        "2025-04": {
+          "before": 63,
+          "after": 36
+        },
+        "2025-05": {
+          "before": 69,
+          "after": 39
+        },
+        "2025-06": {
+          "before": 51,
+          "after": 34
+        },
+        "2025-07": {
+          "before": 121,
+          "after": 51
+        },
+        "2025-08": {
+          "before": 95,
+          "after": 45
+        },
+        "2025-09": {
+          "before": 47,
+          "after": 33
+        },
+        "2025-10": {
+          "before": 88,
+          "after": 45
+        },
+        "2025-11": {
+          "before": 137,
+          "after": 47
+        },
+        "2025-12": {
+          "before": 166,
+          "after": 55
+        },
+        "2026-01": {
+          "before": 150,
+          "after": 54
+        },
+        "2026-02": {
+          "before": 160,
+          "after": 59
+        },
+        "2026-03": {
+          "before": 200,
+          "after": 65
+        },
+        "2026-04": {
+          "before": 171,
+          "after": 56
+        },
+        "2026-05": {
+          "before": 242,
+          "after": 66
+        },
+        "2026-06": {
+          "before": 241,
+          "after": 76
+        },
+        "2026-07": {
+          "before": 225,
+          "after": 63
+        },
+        "2026-08": {
+          "before": 554,
+          "after": 92
+        },
+        "2026-09": {
+          "before": 621,
+          "after": 104
+        },
+        "2026-10": {
+          "before": 477,
+          "after": 85
+        }
+      },
+      "by_subreddit": {
+        "FIREIndia": {
+          "before": 2,
+          "after": 2
+        },
+        "IndiaInvestments": {
+          "before": 613,
+          "after": 294
+        },
+        "MutualfundsIndia": {
+          "before": 1625,
+          "after": 481
+        },
+        "personalfinanceindia": {
+          "before": 2027,
+          "after": 533
+        }
+      },
+      "by_quality_tier": {
+        "4": {
+          "before": 255,
+          "after": 255
+        },
+        "3": {
+          "before": 1346,
+          "after": 846
+        },
+        "2": {
+          "before": 306,
+          "after": 12
+        },
+        "1": {
+          "before": 1229,
+          "after": 158
+        },
+        "0": {
+          "before": 1131,
+          "after": 39
+        }
+      },
+      "by_theme_bucket": {
+        "stop_pause_cancel": {
+          "before_count": 1064,
+          "before_pct": 24.9,
+          "after_count": 738,
+          "after_pct": 56.3
+        },
+        "mandate_autopay_failed": {
+          "before_count": 358,
+          "before_pct": 8.4,
+          "after_count": 247,
+          "after_pct": 18.9
+        },
+        "returns_loss_market": {
+          "before_count": 1934,
+          "before_pct": 45.3,
+          "after_count": 699,
+          "after_pct": 53.4
+        },
+        "continuer_1yr": {
+          "before_count": 630,
+          "before_pct": 14.8,
+          "after_count": 382,
+          "after_pct": 29.2
+        },
+        "groww_mention": {
+          "before_count": 750,
+          "before_pct": 17.6,
+          "after_count": 283,
+          "after_pct": 21.6
+        },
+        "generic_portfolio_question": {
+          "before_count": 416,
+          "before_pct": 9.7,
+          "after_count": 80,
+          "after_pct": 6.1
+        }
+      }
+    },
+    "app_store_shortfall_note": "App Store RSS feed returned 30 SIP-matched reviews (29 after cleaning) vs the ~500 RSS feed ceiling (accepted per PRD v1.2 \u00a79.1 / FR2.7).",
+    "volume_warning": null
+  },
+  "enrich": {
+    "last_test": {
+      "posts_attempted": 20,
+      "schema_valid_first_pass_pct": 100.0,
+      "schema_valid_final_pct": 100.0,
+      "enrichment_failed": 0,
+      "evidence_needed": 12,
+      "evidence_verbatim_first_pass_pct": 100.0,
+      "evidence_downgraded": 0,
+      "retried_missing": 0,
+      "retried_evidence": 0,
+      "calls": 1,
+      "calls_split_max_tokens": 0,
+      "calls_split_invalid_json": 0,
+      "relevant": 12,
+      "consistency_fixes": 0,
+      "kpi_branch": {
+        "voluntary_stop": 3,
+        "continuing": 2,
+        "not_applicable": 13,
+        "lapse_and_return": 1,
+        "involuntary_payment_failure": 1
+      },
+      "stop_scenarios": {
+        "5": 1,
+        "8": 2,
+        "11": 2,
+        "16": 1
+      },
+      "outcome": {
+        "stopped": 3,
+        "continued": 2,
+        "unknown": 14,
+        "restarted": 1
+      },
+      "by_source": {
+        "youtube": {
+          "enriched": 5,
+          "relevant": 4
+        },
+        "reddit": {
+          "enriched": 5,
+          "relevant": 2
+        },
+        "play_store": {
+          "enriched": 5,
+          "relevant": 4
+        },
+        "tradingqna": {
+          "enriched": 3,
+          "relevant": 1
+        },
+        "app_store": {
+          "enriched": 2,
+          "relevant": 1
+        }
+      },
+      "run_type": "test",
+      "prompt_version": "enrich_v3_20261027",
+      "posts_written": 20,
+      "run_cost_inr": 1.3616,
+      "project_spend_inr": 8.2627,
+      "time_taken_sec": 10.0,
+      "finished_at": "2026-10-27T05:07:56+00:00",
+      "stopped_early": null,
+      "tokens_per_post": {
+        "input_incl_cached": 549.8,
+        "output": 132.9
+      },
+      "cost_per_post_inr": 0.0874
+    },
+    "last_full": {
+      "posts_attempted": 1110,
+      "schema_valid_first_pass_pct": 99.7,
+      "schema_valid_final_pct": 100.0,
+      "enrichment_failed": 0,
+      "evidence_needed": 368,
+      "evidence_verbatim_first_pass_pct": 53.3,
+      "evidence_downgraded": 30,
+      "retried_missing": 3,
+      "retried_evidence": 172,
+      "calls": 78,
+      "calls_split_max_tokens": 0,
+      "calls_split_invalid_json": 3,
+      "relevant": 368,
+      "consistency_fixes": 19,
+      "kpi_branch": {
+        "not_applicable": 935,
+        "voluntary_stop": 56,
+        "involuntary_payment_failure": 12,
+        "continuing": 105,
+        "lapse_and_return": 2
+      },
+      "stop_scenarios": {
+        "1": 7,
+        "2": 11,
+        "3": 14,
+        "5": 5,
+        "6": 2,
+        "7": 3,
+        "8": 6,
+        "9": 1,
+        "10": 1,
+        "11": 7,
+        "14": 1
+      },
+      "outcome": {
+        "unknown": 944,
+        "stopped": 28,
+        "continued": 105,
+        "considering_stop": 30,
+        "paused": 2,
+        "restarted": 1
+      },
+      "by_source": {
+        "youtube": {
+          "enriched": 1110,
+          "relevant": 368
+        }
+      },
+      "run_type": "full",
+      "prompt_version": "enrich_v3_20261027",
+      "posts_written": 1110,
+      "run_cost_inr": 89.5753,
+      "project_spend_inr": 395.6281,
+      "time_taken_sec": 884.7,
+      "finished_at": "2026-10-28T09:00:08+00:00",
+      "stopped_early": null,
+      "tokens_per_post": {
+        "input_incl_cached": 526.4,
+        "output": 166.5
+      },
+      "cost_per_post_inr": 0.0977
+    }
+  }
+}

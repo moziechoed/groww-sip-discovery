@@ -1,0 +1,126 @@
+{
+  "hash": "077153387df18676",
+  "prompt": "surface_v1_20261028.txt",
+  "cards": {
+    "1": {
+      "cluster_id": 1,
+      "title": "Investors face personal financial pressure",
+      "description": "Investors stop or pause their SIPs when facing unexpected expenses, job losses, or competing debt obligations.",
+      "actionability": 2,
+      "rationale": "Groww cannot solve an investor's personal cash crunch, but flexible pause and modification controls can reduce complete SIP cancellations."
+    },
+    "8": {
+      "cluster_id": 8,
+      "title": "Unexplained debit and cancellation charges",
+      "description": "Investors cancel SIPs or abandon the platform after experiencing unexpected debit deductions, bounce fees, or delayed support.",
+      "actionability": 3,
+      "rationale": "Groww can directly improve support turnaround, clarify debit timings, and provide transparent status updates for cancelled or pending orders."
+    },
+    "11": {
+      "cluster_id": 11,
+      "title": "Autopay execution and duplicate debits",
+      "description": "Investors stop SIPs when autopay fails to debit on time, deducts duplicate amounts, or remains stuck during cancellation.",
+      "actionability": 3,
+      "rationale": "Groww can directly improve mandate reliability, fix status syncing, and clarify bank autopay cancellation processes."
+    },
+    "2": {
+      "cluster_id": 2,
+      "title": "Underperforming SIP returns prompt exit",
+      "description": "Investors stop SIPs and redeem funds after observing flat or negative investment returns over time.",
+      "actionability": 2,
+      "rationale": "Groww cannot influence market returns, but better contextual information on long-term investing concepts can help investors make informed choices."
+    },
+    "3": {
+      "cluster_id": 3,
+      "title": "Confusion around SIP management rules",
+      "description": "Investors cancel their SIPs due to lack of clarity on how to pause, stop, or withdraw funds.",
+      "actionability": 3,
+      "rationale": "Groww can directly provide clear self-serve product guidance and intuitive in-app controls for pausing, stopping, and redeeming SIPs."
+    },
+    "7": {
+      "cluster_id": 7,
+      "title": "Stopping SIPs to consolidate portfolio",
+      "description": "Investors stop existing SIPs to clear portfolio clutter or switch to direct plans but delay restarting.",
+      "actionability": 3,
+      "rationale": "Groww can build seamless portfolio consolidation and fund-switching tools that allow investors to streamline investments without manual stops."
+    },
+    "17": {
+      "cluster_id": 17,
+      "title": "Switching SIPs to competing platforms",
+      "description": "Investors stop their active SIPs and migrate to other platforms seeking better portfolio tracking or features.",
+      "actionability": 2,
+      "rationale": "Groww can improve dashboard tracking, return analytics, and external folio consolidation, though user platform preference is partially external."
+    },
+    "5": {
+      "cluster_id": 5,
+      "title": "Reallocating funds to other assets",
+      "description": "Investors stop mutual fund SIPs to reallocate their capital into direct stocks, fixed deposits, or alternative assets.",
+      "actionability": 2,
+      "rationale": "Groww cannot dictate investor asset allocation choices, but can offer better portfolio visibility across asset classes within the app."
+    },
+    "9": {
+      "cluster_id": 9,
+      "title": "Insufficient bank balance on debit",
+      "description": "Investors face missed SIP installments and bank bounce charges when account balances are low on the debit date.",
+      "actionability": 3,
+      "rationale": "Groww can send timely balance reminder alerts, allow easy date changes, and provide skip-installment options to prevent bounce charges."
+    },
+    "13": {
+      "cluster_id": 13,
+      "title": "Fund house stops accepting SIPs",
+      "description": "Investors experience automated SIP cancellations because the underlying AMC halts fresh inflows into the scheme.",
+      "actionability": 1,
+      "rationale": "AMC decisions to cap or restrict inflows into mutual fund schemes are entirely outside of Groww's operational control."
+    },
+    "6": {
+      "cluster_id": 6,
+      "title": "External advice triggers SIP cancellation",
+      "description": "Investors cancel SIPs after receiving external advice from agents, friends, or third-party advisors to switch funds.",
+      "actionability": 1,
+      "rationale": "Third-party financial advice given to investors outside the app is beyond Groww's direct control or influence."
+    },
+    "10": {
+      "cluster_id": 10,
+      "title": "Bank account update fails autopay",
+      "description": "Investors stop SIPs when changing their primary bank account fails to update the linked autopay mandate.",
+      "actionability": 3,
+      "rationale": "Groww can simplify the bank account modification workflow and enable fast, digital mandate updates for active SIPs."
+    },
+    "12": {
+      "cluster_id": 12,
+      "title": "KYC issues block SIP orders",
+      "description": "Investors experience SIP cancellations or rejected transactions due to invalid PAN statuses or incomplete KYC requirements.",
+      "actionability": 2,
+      "rationale": "While regulatory KYC criteria are set externally, Groww can streamline verification tracking and proactively notify investors of status changes."
+    },
+    "4": {
+      "cluster_id": 4,
+      "title": "Changing financial goals and regimes",
+      "description": "Investors stop SIPs when their tax-saving requirements or overall monthly allocation targets change over time.",
+      "actionability": 1,
+      "rationale": "Changes in tax regulations and individual goal requirements are personal investor decisions outside Groww's control."
+    },
+    "14": {
+      "cluster_id": 14,
+      "title": "Paused SIPs remain inactive long-term",
+      "description": "Investors pause their SIPs for a temporary period but fail to resume them afterwards.",
+      "actionability": 3,
+      "rationale": "Groww can implement automated resume schedules and clear status notifications to help investors resume paused SIPs effortlessly."
+    },
+    "16": {
+      "cluster_id": 16,
+      "title": "Market drawdown fears pause investing",
+      "description": "Investors pause their SIPs due to market volatility concerns or overall market pullback expectations.",
+      "actionability": 2,
+      "rationale": "Groww cannot control investor sentiment or market drawdowns, but can provide clear, non-coercive educational material on market cycles."
+    },
+    "15": {
+      "cluster_id": 15,
+      "title": "Hassle in restarting cancelled SIPs",
+      "description": "Investors cancel their existing regular SIPs and find the manual setup process to restart cumbersome.",
+      "actionability": 3,
+      "rationale": "Groww can offer a one-click SIP re-activation or quick setup workflow to reduce friction when starting fresh SIPs."
+    }
+  },
+  "generated_at": "2026-10-29T04:15:25+00:00"
+}

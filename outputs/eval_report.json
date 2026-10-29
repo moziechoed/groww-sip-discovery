@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-10-28T10:30:47+00:00",
+  "n_golden": 20,
+  "n_human_relevant": 8,
+  "n_engine_relevant": 16,
+  "missing_from_enriched": [],
+  "per_field": {
+    "is_relevant": {
+      "agree": 12,
+      "n": 20,
+      "pct": 60.0
+    },
+    "outcome": {
+      "agree": 5,
+      "n": 8,
+      "pct": 62.5
+    },
+    "kpi_branch": {
+      "agree": 5,
+      "n": 8,
+      "pct": 62.5
+    },
+    "stop_scenario_ids": {
+      "agree": 6,
+      "n": 8,
+      "pct": 75.0
+    },
+    "trigger_type": {
+      "agree": 2,
+      "n": 8,
+      "pct": 25.0
+    },
+    "seeded_category_primary": {
+      "agree": 2,
+      "n": 8,
+      "pct": 25.0
+    },
+    "journey_stage": {
+      "agree": 7,
+      "n": 8,
+      "pct": 87.5
+    }
+  },
+  "overall": {
+    "agree": 39,
+    "n": 68,
+    "pct": 57.4
+  },
+  "overall_excluding_is_relevant": {
+    "agree": 27,
+    "n": 48,
+    "pct": 56.2
+  },
+  "event_relevance_vs_human_relevance": {
+    "agree": 18,
+    "n": 20,
+    "pct": 90.0,
+    "note": "Engine 'event' posts (relevant + KPI branch set) vs PM is_relevant. Defined after seeing the results, on the same 20 posts, so treat as a hypothesis, not a validated rate."
+  },
+  "stop_scenario_exact_set": {
+    "agree": 6,
+    "n": 8,
+    "pct": 75.0
+  },
+  "by_bucket": {
+    "ambiguous": {
+      "agree": 16,
+      "n": 26,
+      "pct": 61.5
+    },
+    "stratified": {
+      "agree": 23,
+      "n": 42,
+      "pct": 54.8
+    }
+  },
+  "optional_fields": {
+    "outside_app_behaviour": {
+      "agree": 1,
+      "n": 8,
+      "pct": 12.5
+    },
+    "segment_confidence": {
+      "agree": 1,
+      "n": 8,
+      "pct": 12.5
+    }
+  },
+  "weakest_field": "seeded_category_primary",
+  "weakest_field_confusion": [
+    {
+      "engine": "ux_friction",
+      "human": "ux_friction",
+      "count": 2
+    },
+    {
+      "engine": "ux_friction",
+      "human": "none",
+      "count": 2
+    },
+    {
+      "engine": "none",
+      "human": "financial_literacy_gaps",
+      "count": 1
+    },
+    {
+      "engine": "feature_gaps",
+      "human": "ux_friction",
+      "count": 1
+    },
+    {
+      "engine": "life_event_financial_pressure",
+      "human": "emotional_triggers",
+      "count": 1
+    },
+    {
+      "engine": "financial_literacy_gaps",
+      "human": "none",
+      "count": 1
+    }
+  ],
+  "relevance_confusion": {
+    "engine_true_human_true": 8,
+    "engine_true_human_false": 8,
+    "engine_false_human_true": 0,
+    "engine_false_human_false": 4
+  },
+  "ac9": {
+    "overall_target_pct": 70.0,
+    "outcome_target_pct": 75.0,
+    "overall_pass": false,
+    "outcome_pass": false
+  },
+  "notes": [
+    "Downstream fields are compared only on rows the PM marked relevant; sample sizes are small, so every rate has a wide margin of error.",
+    "Failure reasons are drafted (see reason_source) and must be reviewed by the PM."
+  ]
+}

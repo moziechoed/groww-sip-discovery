@@ -1,0 +1,4284 @@
+{
+  "generated_at": "2026-10-29T04:10:45+00:00",
+  "populations": {
+    "total_posts": 4000,
+    "relevant": 1731,
+    "labelled": 1486,
+    "evidence_failed_relevant": 245,
+    "event": 819,
+    "stop_event": 505,
+    "relevant_by_source": {
+      "reddit": 643,
+      "play_store": 583,
+      "youtube": 451,
+      "tradingqna": 47,
+      "app_store": 7
+    },
+    "event_by_source": {
+      "reddit": 399,
+      "youtube": 208,
+      "play_store": 194,
+      "tradingqna": 14,
+      "app_store": 4
+    },
+    "groww_tagged_relevant": 923,
+    "definitions": {
+      "relevant": "is_relevant and not enrichment_failed",
+      "labelled": "relevant and evidence verified (status ok)",
+      "event": "labelled and the post states a SIP change or failure (kpi_branch set)"
+    }
+  },
+  "label_confidence": {
+    "golden_agreement_pct": {
+      "is_relevant": 60.0,
+      "outcome": 62.5,
+      "kpi_branch": 62.5,
+      "stop_scenario_ids": 75.0,
+      "trigger_type": 25.0,
+      "seeded_category_primary": 25.0,
+      "journey_stage": 87.5,
+      "event_relevance": 90.0
+    },
+    "low_confidence_fields": [
+      "seeded_category_primary",
+      "trigger_type"
+    ],
+    "note": "Fields under 60% golden agreement are shown but not used for headline claims."
+  },
+  "kpi_sizing": {
+    "branches_among_labelled": {
+      "base_n": 1486,
+      "sources_balanced": [
+        "play_store",
+        "reddit",
+        "youtube",
+        "tradingqna"
+      ],
+      "values": [
+        {
+          "value": "not_applicable",
+          "label": "No SIP change stated",
+          "n": 667,
+          "pct": 44.9,
+          "balanced_pct": 46.1,
+          "by_source_pct": {
+            "play_store": 65.1,
+            "reddit": 16.0,
+            "youtube": 50.2,
+            "tradingqna": 53.3
+          }
+        },
+        {
+          "value": "voluntary_stop",
+          "label": "A. Chose to stop",
+          "n": 334,
+          "pct": 22.5,
+          "balanced_pct": 22.4,
+          "by_source_pct": {
+            "play_store": 8.3,
+            "reddit": 45.9,
+            "youtube": 15.3,
+            "tradingqna": 20.0
+          }
+        },
+        {
+          "value": "continuing",
+          "label": "Continuing",
+          "n": 314,
+          "pct": 21.1,
+          "balanced_pct": 19.3,
+          "by_source_pct": {
+            "play_store": 11.2,
+            "reddit": 25.3,
+            "youtube": 30.6,
+            "tradingqna": 10.0
+          }
+        },
+        {
+          "value": "involuntary_payment_failure",
+          "label": "B. Money didn't move",
+          "n": 123,
+          "pct": 8.3,
+          "balanced_pct": 9.8,
+          "by_source_pct": {
+            "play_store": 12.2,
+            "reddit": 7.2,
+            "youtube": 3.1,
+            "tradingqna": 16.7
+          }
+        },
+        {
+          "value": "platform_switch",
+          "label": "Moved to another platform",
+          "n": 30,
+          "pct": 2.0,
+          "balanced_pct": 1.4,
+          "by_source_pct": {
+            "play_store": 2.9,
+            "reddit": 2.9,
+            "youtube": 0.0,
+            "tradingqna": 0.0
+          }
+        },
+        {
+          "value": "lapse_and_return",
+          "label": "C. Lapse and return",
+          "n": 18,
+          "pct": 1.2,
+          "balanced_pct": 1.0,
+          "by_source_pct": {
+            "play_store": 0.4,
+            "reddit": 2.7,
+            "youtube": 0.7,
+            "tradingqna": 0.0
+          }
+        }
+      ]
+    },
+    "branches_among_events": {
+      "base_n": 819,
+      "sources_balanced": [
+        "reddit",
+        "youtube",
+        "play_store"
+      ],
+      "values": [
+        {
+          "value": "voluntary_stop",
+          "label": "A. Chose to stop",
+          "n": 334,
+          "pct": 40.8,
+          "balanced_pct": 36.4,
+          "by_source_pct": {
+            "reddit": 54.6,
+            "youtube": 30.8,
+            "play_store": 23.7
+          }
+        },
+        {
+          "value": "continuing",
+          "label": "Continuing",
+          "n": 314,
+          "pct": 38.3,
+          "balanced_pct": 41.2,
+          "by_source_pct": {
+            "reddit": 30.1,
+            "youtube": 61.5,
+            "play_store": 32.0
+          }
+        },
+        {
+          "value": "involuntary_payment_failure",
+          "label": "B. Money didn't move",
+          "n": 123,
+          "pct": 15.0,
+          "balanced_pct": 16.6,
+          "by_source_pct": {
+            "reddit": 8.5,
+            "youtube": 6.2,
+            "play_store": 35.1
+          }
+        },
+        {
+          "value": "platform_switch",
+          "label": "Moved to another platform",
+          "n": 30,
+          "pct": 3.7,
+          "balanced_pct": 3.9,
+          "by_source_pct": {
+            "reddit": 3.5,
+            "youtube": 0.0,
+            "play_store": 8.2
+          }
+        },
+        {
+          "value": "lapse_and_return",
+          "label": "C. Lapse and return",
+          "n": 18,
+          "pct": 2.2,
+          "balanced_pct": 1.9,
+          "by_source_pct": {
+            "reddit": 3.3,
+            "youtube": 1.4,
+            "play_store": 1.0
+          }
+        }
+      ]
+    },
+    "scenarios_any_mention": {
+      "base_n": 505,
+      "sources_balanced": [
+        "reddit",
+        "play_store",
+        "youtube"
+      ],
+      "values": [
+        {
+          "value": 8,
+          "label": "Lost trust in the platform",
+          "n": 107,
+          "pct": 21.2,
+          "balanced_pct": 25.0,
+          "by_source_pct": {
+            "reddit": 7.5,
+            "play_store": 57.6,
+            "youtube": 10.0
+          }
+        },
+        {
+          "value": 11,
+          "label": "Mandate or autopay problems",
+          "n": 82,
+          "pct": 16.2,
+          "balanced_pct": 17.4,
+          "by_source_pct": {
+            "reddit": 9.3,
+            "play_store": 34.1,
+            "youtube": 8.8
+          }
+        },
+        {
+          "value": 1,
+          "label": "Money pressure or a life event",
+          "n": 80,
+          "pct": 15.8,
+          "balanced_pct": 11.8,
+          "by_source_pct": {
+            "reddit": 24.0,
+            "play_store": 1.5,
+            "youtube": 10.0
+          }
+        },
+        {
+          "value": 2,
+          "label": "Returns below expectation",
+          "n": 71,
+          "pct": 14.1,
+          "balanced_pct": 12.6,
+          "by_source_pct": {
+            "reddit": 19.4,
+            "play_store": 2.3,
+            "youtube": 16.2
+          }
+        },
+        {
+          "value": 7,
+          "label": "Stopped to fix the portfolio, never finished",
+          "n": 61,
+          "pct": 12.1,
+          "balanced_pct": 8.2,
+          "by_source_pct": {
+            "reddit": 20.8,
+            "play_store": 0.0,
+            "youtube": 3.8
+          }
+        },
+        {
+          "value": 3,
+          "label": "Not understanding how a SIP works",
+          "n": 47,
+          "pct": 9.3,
+          "balanced_pct": 10.3,
+          "by_source_pct": {
+            "reddit": 9.7,
+            "play_store": 2.3,
+            "youtube": 18.8
+          }
+        },
+        {
+          "value": 17,
+          "label": "Moved to another platform",
+          "n": 39,
+          "pct": 7.7,
+          "balanced_pct": 7.2,
+          "by_source_pct": {
+            "reddit": 7.2,
+            "play_store": 14.4,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 5,
+          "label": "Lured into other investments",
+          "n": 12,
+          "pct": 2.4,
+          "balanced_pct": 3.1,
+          "by_source_pct": {
+            "reddit": 1.8,
+            "play_store": 0.0,
+            "youtube": 7.5
+          }
+        },
+        {
+          "value": 13,
+          "label": "Fund stopped taking SIPs",
+          "n": 12,
+          "pct": 2.4,
+          "balanced_pct": 1.5,
+          "by_source_pct": {
+            "reddit": 3.6,
+            "play_store": 0.8,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 6,
+          "label": "Someone told them to stop or switch",
+          "n": 11,
+          "pct": 2.2,
+          "balanced_pct": 2.1,
+          "by_source_pct": {
+            "reddit": 2.9,
+            "play_store": 0.8,
+            "youtube": 2.5
+          }
+        },
+        {
+          "value": 9,
+          "label": "Low balance on debit day",
+          "n": 10,
+          "pct": 2.0,
+          "balanced_pct": 1.9,
+          "by_source_pct": {
+            "reddit": 2.2,
+            "play_store": 2.3,
+            "youtube": 1.2
+          }
+        },
+        {
+          "value": 15,
+          "label": "Restarting is a hassle",
+          "n": 6,
+          "pct": 1.2,
+          "balanced_pct": 0.7,
+          "by_source_pct": {
+            "reddit": 2.2,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 12,
+          "label": "KYC issues",
+          "n": 5,
+          "pct": 1.0,
+          "balanced_pct": 1.0,
+          "by_source_pct": {
+            "reddit": 0.7,
+            "play_store": 2.3,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 10,
+          "label": "Bank changed, mandate on old account",
+          "n": 5,
+          "pct": 1.0,
+          "balanced_pct": 1.1,
+          "by_source_pct": {
+            "reddit": 0.7,
+            "play_store": 1.5,
+            "youtube": 1.2
+          }
+        },
+        {
+          "value": 4,
+          "label": "Lost the reason to invest",
+          "n": 4,
+          "pct": 0.8,
+          "balanced_pct": 0.5,
+          "by_source_pct": {
+            "reddit": 1.4,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 14,
+          "label": "Temporary pause became permanent",
+          "n": 3,
+          "pct": 0.6,
+          "balanced_pct": 0.6,
+          "by_source_pct": {
+            "reddit": 0.7,
+            "play_store": 0.0,
+            "youtube": 1.2
+          }
+        },
+        {
+          "value": 16,
+          "label": "Avoidance or guilt",
+          "n": 2,
+          "pct": 0.4,
+          "balanced_pct": 0.5,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 0.0,
+            "youtube": 1.2
+          }
+        }
+      ]
+    },
+    "scenarios_primary": {
+      "base_n": 505,
+      "sources_balanced": [
+        "reddit",
+        "play_store",
+        "youtube"
+      ],
+      "values": [
+        {
+          "value": 1,
+          "label": "Money pressure or a life event",
+          "n": 77,
+          "pct": 15.2,
+          "balanced_pct": 11.2,
+          "by_source_pct": {
+            "reddit": 23.3,
+            "play_store": 1.5,
+            "youtube": 8.8
+          }
+        },
+        {
+          "value": 8,
+          "label": "Lost trust in the platform",
+          "n": 72,
+          "pct": 14.3,
+          "balanced_pct": 17.4,
+          "by_source_pct": {
+            "reddit": 3.9,
+            "play_store": 40.9,
+            "youtube": 7.5
+          }
+        },
+        {
+          "value": 2,
+          "label": "Returns below expectation",
+          "n": 68,
+          "pct": 13.5,
+          "balanced_pct": 12.3,
+          "by_source_pct": {
+            "reddit": 18.3,
+            "play_store": 2.3,
+            "youtube": 16.2
+          }
+        },
+        {
+          "value": 11,
+          "label": "Mandate or autopay problems",
+          "n": 65,
+          "pct": 12.9,
+          "balanced_pct": 13.3,
+          "by_source_pct": {
+            "reddit": 7.5,
+            "play_store": 27.3,
+            "youtube": 5.0
+          }
+        },
+        {
+          "value": 3,
+          "label": "Not understanding how a SIP works",
+          "n": 39,
+          "pct": 7.7,
+          "balanced_pct": 9.2,
+          "by_source_pct": {
+            "reddit": 7.2,
+            "play_store": 1.5,
+            "youtube": 18.8
+          }
+        },
+        {
+          "value": 7,
+          "label": "Stopped to fix the portfolio, never finished",
+          "n": 38,
+          "pct": 7.5,
+          "balanced_pct": 5.1,
+          "by_source_pct": {
+            "reddit": 12.9,
+            "play_store": 0.0,
+            "youtube": 2.5
+          }
+        },
+        {
+          "value": 17,
+          "label": "Moved to another platform",
+          "n": 22,
+          "pct": 4.4,
+          "balanced_pct": 3.8,
+          "by_source_pct": {
+            "reddit": 4.7,
+            "play_store": 6.8,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 9,
+          "label": "Low balance on debit day",
+          "n": 9,
+          "pct": 1.8,
+          "balanced_pct": 1.8,
+          "by_source_pct": {
+            "reddit": 1.8,
+            "play_store": 2.3,
+            "youtube": 1.2
+          }
+        },
+        {
+          "value": 13,
+          "label": "Fund stopped taking SIPs",
+          "n": 9,
+          "pct": 1.8,
+          "balanced_pct": 1.0,
+          "by_source_pct": {
+            "reddit": 2.9,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 5,
+          "label": "Lured into other investments",
+          "n": 8,
+          "pct": 1.6,
+          "balanced_pct": 2.1,
+          "by_source_pct": {
+            "reddit": 1.4,
+            "play_store": 0.0,
+            "youtube": 5.0
+          }
+        },
+        {
+          "value": 6,
+          "label": "Someone told them to stop or switch",
+          "n": 8,
+          "pct": 1.6,
+          "balanced_pct": 1.6,
+          "by_source_pct": {
+            "reddit": 2.2,
+            "play_store": 0.0,
+            "youtube": 2.5
+          }
+        },
+        {
+          "value": 10,
+          "label": "Bank changed, mandate on old account",
+          "n": 5,
+          "pct": 1.0,
+          "balanced_pct": 1.1,
+          "by_source_pct": {
+            "reddit": 0.7,
+            "play_store": 1.5,
+            "youtube": 1.2
+          }
+        },
+        {
+          "value": 12,
+          "label": "KYC issues",
+          "n": 4,
+          "pct": 0.8,
+          "balanced_pct": 0.9,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 2.3,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 4,
+          "label": "Lost the reason to invest",
+          "n": 4,
+          "pct": 0.8,
+          "balanced_pct": 0.5,
+          "by_source_pct": {
+            "reddit": 1.4,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 16,
+          "label": "Avoidance or guilt",
+          "n": 2,
+          "pct": 0.4,
+          "balanced_pct": 0.5,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 0.0,
+            "youtube": 1.2
+          }
+        },
+        {
+          "value": 14,
+          "label": "Temporary pause became permanent",
+          "n": 2,
+          "pct": 0.4,
+          "balanced_pct": 0.5,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 0.0,
+            "youtube": 1.2
+          }
+        },
+        {
+          "value": 15,
+          "label": "Restarting is a hassle",
+          "n": 1,
+          "pct": 0.2,
+          "balanced_pct": 0.1,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        }
+      ]
+    },
+    "note": "Shares of stop-event posts (voluntary, involuntary, lapse, platform switch). balanced_pct averages per-source shares to undo Reddit down-sampling."
+  },
+  "q1_start": {
+    "start_reason_themes": {
+      "clustered": true,
+      "n_items": 58,
+      "unclustered": 0,
+      "themes": [
+        {
+          "theme": "Long term wealth creation",
+          "description": "Investors starting SIPs to build long-term wealth, compound savings, and achieve overall financial security.",
+          "n": 21,
+          "pct_of_items": 36.2,
+          "groww_n": 8,
+          "by_source": {
+            "reddit": 19,
+            "youtube": 2
+          },
+          "examples": [
+            "Gradually investing savings after starting investment journey in November",
+            "Long term wealth creation over 10-15 years",
+            "Build 1 Crore corpus in 10 years"
+          ]
+        },
+        {
+          "theme": "Funding specific life goals",
+          "description": "Investors beginning SIPs to save for upcoming major milestones like marriage, buying a home, or child education.",
+          "n": 7,
+          "pct_of_items": 12.1,
+          "groww_n": 4,
+          "by_source": {
+            "reddit": 7
+          },
+          "examples": [
+            "Long-term financial security for family",
+            "purchasing a home",
+            "Marriage in 5 years"
+          ]
+        },
+        {
+          "theme": "Saving on income taxes",
+          "description": "Investors initiating mutual fund investments primarily to utilize tax-saving instruments under Section 80C.",
+          "n": 6,
+          "pct_of_items": 10.3,
+          "groww_n": 1,
+          "by_source": {
+            "reddit": 5,
+            "youtube": 1
+          },
+          "examples": [
+            "Tax saving",
+            "Tax saving",
+            "tax saving under 80C"
+          ]
+        },
+        {
+          "theme": "Investing first income or savings",
+          "description": "New earners or students starting SIPs using surplus money from early jobs, stipends, or family.",
+          "n": 5,
+          "pct_of_items": 8.6,
+          "groww_n": 2,
+          "by_source": {
+            "reddit": 4,
+            "play_store": 1
+          },
+          "examples": [
+            "Father gave money for SIP",
+            "Followed a Save First, Spend Later approach",
+            "Savings from first job"
+          ]
+        },
+        {
+          "theme": "Influence of others and media",
+          "description": "Investors motivated to start SIPs after recommendations from colleagues, peer participation, or online educational content.",
+          "n": 5,
+          "pct_of_items": 8.6,
+          "groww_n": 3,
+          "by_source": {
+            "reddit": 4,
+            "youtube": 1
+          },
+          "examples": [
+            "Everyone around is investing in SIPs",
+            "Encouragement from colleague to save monthly",
+            "Started investing post-covid based on market dips and YouTube advice"
+          ]
+        },
+        {
+          "theme": "Other",
+          "description": "Miscellaneous or non-specific reasons for starting a mutual fund investment.",
+          "n": 5,
+          "pct_of_items": 8.6,
+          "groww_n": 0,
+          "by_source": {
+            "youtube": 3,
+            "reddit": 2
+          },
+          "examples": [
+            "Started investments after delaying for many years",
+            "Shagun amount might bring in more money",
+            "Started a new SIP"
+          ]
+        },
+        {
+          "theme": "Planning early retirement",
+          "description": "Investors starting SIPs specifically to achieve financial independence and retire early or on a timeline.",
+          "n": 5,
+          "pct_of_items": 8.6,
+          "groww_n": 2,
+          "by_source": {
+            "reddit": 5
+          },
+          "examples": [
+            "FIRE goal",
+            "Early retirement / Long-term wealth creation",
+            "Retirement at ~48"
+          ]
+        },
+        {
+          "theme": "Building emergency reserves",
+          "description": "Investors starting disciplined investments to construct safety nets and emergency funds alongside wealth generation.",
+          "n": 4,
+          "pct_of_items": 6.9,
+          "groww_n": 3,
+          "by_source": {
+            "reddit": 4
+          },
+          "examples": [
+            "Planning to start investment journey after creating emergency fund",
+            "Long-term wealth creation and emergency fund building",
+            "Build an emergency fund and wealth generation"
+          ]
+        }
+      ]
+    },
+    "expectation_themes": {
+      "clustered": true,
+      "n_items": 37,
+      "unclustered": 0,
+      "themes": [
+        {
+          "theme": "General long term wealth creation",
+          "description": "Investors expect long-term growth and capital accumulation over a decade or longer without specifying exact numerical targets.",
+          "n": 12,
+          "pct_of_items": 32.4,
+          "groww_n": 4,
+          "by_source": {
+            "reddit": 10,
+            "youtube": 2
+          },
+          "examples": [
+            "Maintain investing consistency for at least 10 years",
+            "Long-term wealth creation",
+            "Retirement plus Wealth Creation"
+          ]
+        },
+        {
+          "theme": "Specific return percentage expectations",
+          "description": "Investors expect precise annual growth rates, ranging from beating savings accounts to achieving 10% to 15% CAGR.",
+          "n": 6,
+          "pct_of_items": 16.2,
+          "groww_n": 2,
+          "by_source": {
+            "reddit": 4,
+            "youtube": 2
+          },
+          "examples": [
+            "11% CAGR from equity funds",
+            "15% CAGR wealth creation",
+            "Extract highest CAGR from Indian equity market long term"
+          ]
+        },
+        {
+          "theme": "Short term or early gains",
+          "description": "Investors expect noticeable returns, downside protection, or initial growth shortly after beginning their contributions.",
+          "n": 4,
+          "pct_of_items": 10.8,
+          "groww_n": 0,
+          "by_source": {
+            "reddit": 2,
+            "youtube": 2
+          },
+          "examples": [
+            "Expected better returns after 1 year of investing",
+            "Gains or protection from initial capital losses",
+            "Higher initial growth on small investments"
+          ]
+        },
+        {
+          "theme": "Funding specific life goals",
+          "description": "Investors expect accumulated SIP returns to pay for major life expenses such as home purchases or student loans.",
+          "n": 3,
+          "pct_of_items": 8.1,
+          "groww_n": 2,
+          "by_source": {
+            "reddit": 3
+          },
+          "examples": [
+            "Pay off student loan post-graduation using accumulated SIP returns",
+            "Long term wealth creation for buying flat or house in 7-8 years",
+            "Long term wealth creation to buy a house in Assam"
+          ]
+        },
+        {
+          "theme": "Stepping up investment amounts gradually",
+          "description": "Investors expect to steadily increase their monthly contribution amounts over time as their income grows.",
+          "n": 3,
+          "pct_of_items": 8.1,
+          "groww_n": 0,
+          "by_source": {
+            "reddit": 2,
+            "youtube": 1
+          },
+          "examples": [
+            "Gradually increase investment to 15k per month by end of year",
+            "Increase SIP amount as salary increases",
+            "Expects 15% returns and 7% annual step-up to make them rich"
+          ]
+        },
+        {
+          "theme": "Curiosity about future portfolio value",
+          "description": "Investors expect to understand what total returns their current monthly contributions will yield after a fixed number of years.",
+          "n": 3,
+          "pct_of_items": 8.1,
+          "groww_n": 0,
+          "by_source": {
+            "youtube": 3
+          },
+          "examples": [
+            "Returns after 20 years",
+            "Wants to know returns after 11 years",
+            "Wants to know returns for 5000 monthly SIP after 11 years"
+          ]
+        },
+        {
+          "theme": "Target corpus or wealth milestones",
+          "description": "Investors expect to accumulate specific large monetary sums like one crore or one hundred crores over time.",
+          "n": 3,
+          "pct_of_items": 8.1,
+          "groww_n": 0,
+          "by_source": {
+            "youtube": 3
+          },
+          "examples": [
+            "1 Cr as soon as possible",
+            "Build 100 crore corpus over 35 years",
+            "Reach 1 crore portfolio value"
+          ]
+        },
+        {
+          "theme": "Planning for retirement security",
+          "description": "Investors expect their regular contributions to build a sufficient financial nest egg over multi-decade time horizons.",
+          "n": 2,
+          "pct_of_items": 5.4,
+          "groww_n": 2,
+          "by_source": {
+            "reddit": 2
+          },
+          "examples": [
+            "Wealth creation over 20 years",
+            "Building retirement fund over 30 years"
+          ]
+        },
+        {
+          "theme": "Other",
+          "description": "Investors with expectations focused on specialized strategies like foreign currency hedging.",
+          "n": 1,
+          "pct_of_items": 2.7,
+          "groww_n": 1,
+          "by_source": {
+            "reddit": 1
+          },
+          "examples": [
+            "High growth and US dollar hedging"
+          ]
+        }
+      ]
+    },
+    "pre_start_posts": 125
+  },
+  "q2_behaviour_change": {
+    "journey_stage_among_events": {
+      "n": 819,
+      "known": 380,
+      "coverage_pct": 46.4,
+      "values": [
+        {
+          "value": "unknown",
+          "n": 439,
+          "pct": 53.6
+        },
+        {
+          "value": "month_12_plus",
+          "n": 242,
+          "pct": 29.5
+        },
+        {
+          "value": "month_0_1",
+          "n": 77,
+          "pct": 9.4
+        },
+        {
+          "value": "month_7_12",
+          "n": 28,
+          "pct": 3.4
+        },
+        {
+          "value": "month_4_6",
+          "n": 14,
+          "pct": 1.7
+        },
+        {
+          "value": "month_2_3",
+          "n": 14,
+          "pct": 1.7
+        },
+        {
+          "value": "post_stop",
+          "n": 5,
+          "pct": 0.6
+        }
+      ]
+    },
+    "stages": [
+      {
+        "stage": "month_0_1",
+        "n": 77,
+        "low_sample": false,
+        "outcomes": {
+          "continued": 45,
+          "stopped": 20,
+          "considering_stop": 7,
+          "unknown": 4,
+          "paused": 1
+        },
+        "top_triggers": [
+          {
+            "value": "none",
+            "n": 36
+          },
+          {
+            "value": "ux_friction",
+            "n": 22
+          },
+          {
+            "value": "financial_literacy_gap",
+            "n": 7
+          }
+        ],
+        "top_scenarios": [
+          {
+            "id": 11,
+            "label": "Mandate or autopay problems",
+            "n": 10
+          },
+          {
+            "id": 8,
+            "label": "Lost trust in the platform",
+            "n": 8
+          },
+          {
+            "id": 3,
+            "label": "Not understanding how a SIP works",
+            "n": 4
+          }
+        ],
+        "top_unmet_need_themes": [
+          {
+            "theme": "Reliable autopay, mandates, and payment execution",
+            "n": 5
+          },
+          {
+            "theme": "Timely processing and responsive customer support",
+            "n": 4
+          },
+          {
+            "theme": "Flexible SIP controls and modifications",
+            "n": 3
+          }
+        ]
+      },
+      {
+        "stage": "month_2_3",
+        "n": 14,
+        "low_sample": true,
+        "outcomes": {
+          "considering_stop": 4,
+          "continued": 4,
+          "stopped": 3,
+          "restarted": 1,
+          "paused": 1,
+          "unknown": 1
+        },
+        "top_triggers": [
+          {
+            "value": "none",
+            "n": 4
+          },
+          {
+            "value": "ux_friction",
+            "n": 3
+          },
+          {
+            "value": "life_event_financial_pressure",
+            "n": 2
+          }
+        ],
+        "top_scenarios": [
+          {
+            "id": 1,
+            "label": "Money pressure or a life event",
+            "n": 2
+          },
+          {
+            "id": 11,
+            "label": "Mandate or autopay problems",
+            "n": 1
+          },
+          {
+            "id": 10,
+            "label": "Bank changed, mandate on old account",
+            "n": 1
+          }
+        ],
+        "top_unmet_need_themes": [
+          {
+            "theme": "Reliable autopay, mandates, and payment execution",
+            "n": 1
+          },
+          {
+            "theme": "Flexible SIP controls and modifications",
+            "n": 1
+          },
+          {
+            "theme": "Other",
+            "n": 1
+          }
+        ]
+      },
+      {
+        "stage": "month_4_6",
+        "n": 14,
+        "low_sample": true,
+        "outcomes": {
+          "continued": 5,
+          "stopped": 4,
+          "considering_stop": 4,
+          "paused": 1
+        },
+        "top_triggers": [
+          {
+            "value": "ux_friction",
+            "n": 4
+          },
+          {
+            "value": "none",
+            "n": 3
+          },
+          {
+            "value": "returns_disappointment",
+            "n": 2
+          }
+        ],
+        "top_scenarios": [
+          {
+            "id": 2,
+            "label": "Returns below expectation",
+            "n": 2
+          },
+          {
+            "id": 11,
+            "label": "Mandate or autopay problems",
+            "n": 2
+          },
+          {
+            "id": 6,
+            "label": "Someone told them to stop or switch",
+            "n": 1
+          }
+        ],
+        "top_unmet_need_themes": [
+          {
+            "theme": "Timely processing and responsive customer support",
+            "n": 1
+          },
+          {
+            "theme": "Clear guidance on SIP management and rules",
+            "n": 1
+          }
+        ]
+      },
+      {
+        "stage": "month_7_12",
+        "n": 28,
+        "low_sample": true,
+        "outcomes": {
+          "continued": 15,
+          "considering_stop": 7,
+          "stopped": 4,
+          "restarted": 1,
+          "paused": 1
+        },
+        "top_triggers": [
+          {
+            "value": "none",
+            "n": 11
+          },
+          {
+            "value": "returns_disappointment",
+            "n": 7
+          },
+          {
+            "value": "ux_friction",
+            "n": 3
+          }
+        ],
+        "top_scenarios": [
+          {
+            "id": 2,
+            "label": "Returns below expectation",
+            "n": 3
+          },
+          {
+            "id": 7,
+            "label": "Stopped to fix the portfolio, never finished",
+            "n": 3
+          },
+          {
+            "id": 3,
+            "label": "Not understanding how a SIP works",
+            "n": 2
+          }
+        ],
+        "top_unmet_need_themes": [
+          {
+            "theme": "Consolidation of external folios and non-demat options",
+            "n": 2
+          },
+          {
+            "theme": "Seamless KYC onboarding and profile management",
+            "n": 1
+          },
+          {
+            "theme": "Clear dashboard tracking and return analytics",
+            "n": 1
+          }
+        ]
+      },
+      {
+        "stage": "month_12_plus",
+        "n": 242,
+        "low_sample": false,
+        "outcomes": {
+          "continued": 119,
+          "stopped": 49,
+          "considering_stop": 49,
+          "paused": 12,
+          "restarted": 7,
+          "unknown": 4,
+          "reduced": 2
+        },
+        "top_triggers": [
+          {
+            "value": "none",
+            "n": 87
+          },
+          {
+            "value": "returns_disappointment",
+            "n": 53
+          },
+          {
+            "value": "other",
+            "n": 28
+          }
+        ],
+        "top_scenarios": [
+          {
+            "id": 2,
+            "label": "Returns below expectation",
+            "n": 38
+          },
+          {
+            "id": 1,
+            "label": "Money pressure or a life event",
+            "n": 21
+          },
+          {
+            "id": 7,
+            "label": "Stopped to fix the portfolio, never finished",
+            "n": 17
+          }
+        ],
+        "top_unmet_need_themes": [
+          {
+            "theme": "Clear guidance on SIP management and rules",
+            "n": 8
+          },
+          {
+            "theme": "Consolidation of external folios and non-demat options",
+            "n": 7
+          },
+          {
+            "theme": "Advanced fund features and switching options",
+            "n": 3
+          }
+        ]
+      },
+      {
+        "stage": "post_stop",
+        "n": 5,
+        "low_sample": true,
+        "outcomes": {
+          "stopped": 3,
+          "restarted": 2
+        },
+        "top_triggers": [
+          {
+            "value": "ux_friction",
+            "n": 3
+          },
+          {
+            "value": "life_event_financial_pressure",
+            "n": 1
+          },
+          {
+            "value": "unknown",
+            "n": 1
+          }
+        ],
+        "top_scenarios": [
+          {
+            "id": 8,
+            "label": "Lost trust in the platform",
+            "n": 3
+          },
+          {
+            "id": 1,
+            "label": "Money pressure or a life event",
+            "n": 1
+          }
+        ],
+        "top_unmet_need_themes": [
+          {
+            "theme": "Faster redemptions and payout clarity",
+            "n": 1
+          }
+        ]
+      }
+    ],
+    "outcome_by_stage": {
+      "rows": [
+        "month_0_1",
+        "month_2_3",
+        "month_4_6",
+        "month_7_12",
+        "month_12_plus",
+        "post_stop"
+      ],
+      "cols": [
+        "considering_stop",
+        "continued",
+        "paused",
+        "reduced",
+        "restarted",
+        "stopped",
+        "unknown"
+      ],
+      "counts": [
+        [
+          7,
+          45,
+          1,
+          0,
+          0,
+          20,
+          4
+        ],
+        [
+          4,
+          4,
+          1,
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          4,
+          5,
+          1,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          7,
+          15,
+          1,
+          0,
+          1,
+          4,
+          0
+        ],
+        [
+          49,
+          119,
+          12,
+          2,
+          7,
+          49,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          0
+        ]
+      ]
+    }
+  },
+  "q3_triggers": {
+    "base": "drop-offs (paused/reduced/stopped) + considering_stop",
+    "n": 416,
+    "stop_scenarios": {
+      "base_n": 415,
+      "sources_balanced": [
+        "reddit",
+        "play_store",
+        "youtube"
+      ],
+      "values": [
+        {
+          "value": 1,
+          "label": "Money pressure or a life event",
+          "n": 68,
+          "pct": 16.4,
+          "balanced_pct": 11.6,
+          "by_source_pct": {
+            "reddit": 22.0,
+            "play_store": 2.4,
+            "youtube": 10.3
+          }
+        },
+        {
+          "value": 2,
+          "label": "Returns below expectation",
+          "n": 68,
+          "pct": 16.4,
+          "balanced_pct": 14.3,
+          "by_source_pct": {
+            "reddit": 20.1,
+            "play_store": 3.6,
+            "youtube": 19.1
+          }
+        },
+        {
+          "value": 8,
+          "label": "Lost trust in the platform",
+          "n": 63,
+          "pct": 15.2,
+          "balanced_pct": 22.4,
+          "by_source_pct": {
+            "reddit": 4.3,
+            "play_store": 55.4,
+            "youtube": 7.4
+          }
+        },
+        {
+          "value": 3,
+          "label": "Not understanding how a SIP works",
+          "n": 39,
+          "pct": 9.4,
+          "balanced_pct": 10.8,
+          "by_source_pct": {
+            "reddit": 7.9,
+            "play_store": 2.4,
+            "youtube": 22.1
+          }
+        },
+        {
+          "value": 7,
+          "label": "Stopped to fix the portfolio, never finished",
+          "n": 38,
+          "pct": 9.2,
+          "balanced_pct": 5.7,
+          "by_source_pct": {
+            "reddit": 14.2,
+            "play_store": 0.0,
+            "youtube": 2.9
+          }
+        },
+        {
+          "value": 11,
+          "label": "Mandate or autopay problems",
+          "n": 32,
+          "pct": 7.7,
+          "balanced_pct": 8.5,
+          "by_source_pct": {
+            "reddit": 5.1,
+            "play_store": 20.5,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 17,
+          "label": "Moved to another platform",
+          "n": 21,
+          "pct": 5.1,
+          "balanced_pct": 4.9,
+          "by_source_pct": {
+            "reddit": 5.1,
+            "play_store": 9.6,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 5,
+          "label": "Lured into other investments",
+          "n": 8,
+          "pct": 1.9,
+          "balanced_pct": 2.5,
+          "by_source_pct": {
+            "reddit": 1.6,
+            "play_store": 0.0,
+            "youtube": 5.9
+          }
+        },
+        {
+          "value": 6,
+          "label": "Someone told them to stop or switch",
+          "n": 8,
+          "pct": 1.9,
+          "balanced_pct": 1.8,
+          "by_source_pct": {
+            "reddit": 2.4,
+            "play_store": 0.0,
+            "youtube": 2.9
+          }
+        },
+        {
+          "value": 13,
+          "label": "Fund stopped taking SIPs",
+          "n": 8,
+          "pct": 1.9,
+          "balanced_pct": 0.9,
+          "by_source_pct": {
+            "reddit": 2.8,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 9,
+          "label": "Low balance on debit day",
+          "n": 6,
+          "pct": 1.4,
+          "balanced_pct": 1.1,
+          "by_source_pct": {
+            "reddit": 2.0,
+            "play_store": 1.2,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 4,
+          "label": "Lost the reason to invest",
+          "n": 4,
+          "pct": 1.0,
+          "balanced_pct": 0.5,
+          "by_source_pct": {
+            "reddit": 1.6,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 12,
+          "label": "KYC issues",
+          "n": 3,
+          "pct": 0.7,
+          "balanced_pct": 0.9,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 2.4,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 10,
+          "label": "Bank changed, mandate on old account",
+          "n": 1,
+          "pct": 0.2,
+          "balanced_pct": 0.1,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 15,
+          "label": "Restarting is a hassle",
+          "n": 1,
+          "pct": 0.2,
+          "balanced_pct": 0.1,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 16,
+          "label": "Avoidance or guilt",
+          "n": 1,
+          "pct": 0.2,
+          "balanced_pct": 0.1,
+          "by_source_pct": {
+            "reddit": 0.4,
+            "play_store": 0.0,
+            "youtube": 0.0
+          }
+        },
+        {
+          "value": 14,
+          "label": "Temporary pause became permanent",
+          "n": 1,
+          "pct": 0.2,
+          "balanced_pct": 0.5,
+          "by_source_pct": {
+            "reddit": 0.0,
+            "play_store": 0.0,
+            "youtube": 1.5
+          }
+        }
+      ]
+    },
+    "trigger_type": {
+      "n": 416,
+      "known": 391,
+      "coverage_pct": 94.0,
+      "values": [
+        {
+          "value": "ux_friction",
+          "n": 133,
+          "pct": 32.0
+        },
+        {
+          "value": "life_event_financial_pressure",
+          "n": 68,
+          "pct": 16.3
+        },
+        {
+          "value": "returns_disappointment",
+          "n": 64,
+          "pct": 15.4
+        },
+        {
+          "value": "other",
+          "n": 61,
+          "pct": 14.7
+        },
+        {
+          "value": "financial_literacy_gap",
+          "n": 34,
+          "pct": 8.2
+        },
+        {
+          "value": "unknown",
+          "n": 24,
+          "pct": 5.8
+        },
+        {
+          "value": "feature_gap",
+          "n": 13,
+          "pct": 3.1
+        },
+        {
+          "value": "social_peer_influence",
+          "n": 9,
+          "pct": 2.2
+        },
+        {
+          "value": "emotional",
+          "n": 9,
+          "pct": 2.2
+        },
+        {
+          "value": "none",
+          "n": 1,
+          "pct": 0.2
+        }
+      ]
+    },
+    "trigger_type_low_confidence": true
+  },
+  "q4_checking": {
+    "checking_frequency": {
+      "n": 1486,
+      "known": 10,
+      "coverage_pct": 0.7,
+      "values": [
+        {
+          "value": "unknown",
+          "n": 1476,
+          "pct": 99.3
+        },
+        {
+          "value": "daily",
+          "n": 6,
+          "pct": 0.4
+        },
+        {
+          "value": "monthly",
+          "n": 2,
+          "pct": 0.1
+        },
+        {
+          "value": "rarely",
+          "n": 2,
+          "pct": 0.1
+        }
+      ]
+    },
+    "checking_what_top": [
+      {
+        "value": "xirr",
+        "n": 33
+      },
+      {
+        "value": "returns percentage",
+        "n": 11
+      },
+      {
+        "value": "returns",
+        "n": 10
+      },
+      {
+        "value": "nav",
+        "n": 2
+      },
+      {
+        "value": "lifetime xirr",
+        "n": 2
+      },
+      {
+        "value": "invested amount",
+        "n": 2
+      },
+      {
+        "value": "returns and xirr",
+        "n": 2
+      },
+      {
+        "value": "portfolio returns",
+        "n": 2
+      },
+      {
+        "value": "current value",
+        "n": 2
+      },
+      {
+        "value": "xirr and total invested amount",
+        "n": 1
+      },
+      {
+        "value": "mutual fund nav during market fall",
+        "n": 1
+      },
+      {
+        "value": "day change",
+        "n": 1
+      }
+    ],
+    "checking_what_coverage_pct": 8.9
+  },
+  "q5_in_app_confusion": {
+    "all": {
+      "clustered": true,
+      "n_items": 573,
+      "unclustered": 13,
+      "themes": [
+        {
+          "theme": "Unsure about SIP and autopay rules",
+          "description": "Questions and confusion regarding how SIP cancelling, pausing, step-up, autopay limits, and missed installment policies work.",
+          "n": 108,
+          "pct_of_items": 18.8,
+          "groww_n": 50,
+          "by_source": {
+            "youtube": 90,
+            "reddit": 16,
+            "tradingqna": 2
+          },
+          "examples": [
+            "Unsure if cancelling SIP stops it automatically",
+            "Unsure if SIP resumes automatically after withdrawal",
+            "Unsure what happens after cancelling a SIP"
+          ]
+        },
+        {
+          "theme": "Order status and payment processing delays",
+          "description": "Worries about money being debited from bank accounts while orders, units, or status remain stuck in progress, failed, or missing.",
+          "n": 85,
+          "pct_of_items": 14.8,
+          "groww_n": 52,
+          "by_source": {
+            "play_store": 42,
+            "reddit": 22,
+            "youtube": 13,
+            "tradingqna": 7,
+            "app_store": 1
+          },
+          "examples": [
+            "Payment missing from dashboard after 3 months",
+            "Conflict between bank limit statement and app transaction failure error",
+            "Cancelled SIP status not updating"
+          ]
+        },
+        {
+          "theme": "Confused by portfolio displays and calculations",
+          "description": "Discrepancies and misunderstandings regarding portfolio holdings, returns metrics like XIRR, valuation updates, unit counts, and transaction histories.",
+          "n": 71,
+          "pct_of_items": 12.4,
+          "groww_n": 57,
+          "by_source": {
+            "play_store": 50,
+            "youtube": 12,
+            "reddit": 6,
+            "tradingqna": 2,
+            "app_store": 1
+          },
+          "examples": [
+            "Holding value versus redemption value mismatch",
+            "Groww dashboard missing investments shown in CAS statement",
+            "Invested and return amounts mismatch between Groww and MF Central"
+          ]
+        },
+        {
+          "theme": "Unsure about market volatility strategy",
+          "description": "Uncertainty on whether to pause, adjust, or continue SIP investments when market conditions or returns fluctuate.",
+          "n": 57,
+          "pct_of_items": 9.9,
+          "groww_n": 17,
+          "by_source": {
+            "youtube": 29,
+            "reddit": 23,
+            "tradingqna": 5
+          },
+          "examples": [
+            "Unsure whether to stay invested or withdraw during stock market drops",
+            "Whether to perform daily SWP or one-shot withdrawal to fund a daily SIP",
+            "Unsure if one-time payment merges with missed regular SIP"
+          ]
+        },
+        {
+          "theme": "Demat mode and folio duplication",
+          "description": "Confusion surrounding Demat vs SOA holding formats, unwanted folio creation, and external fund tracking issues.",
+          "n": 52,
+          "pct_of_items": 9.1,
+          "groww_n": 38,
+          "by_source": {
+            "reddit": 23,
+            "play_store": 16,
+            "tradingqna": 7,
+            "youtube": 6
+          },
+          "examples": [
+            "Dashboard showing incorrect mutual fund folio information",
+            "Source folios still displayed after consolidation and purchases getting rejected",
+            "Unauthorised creation of demat folios"
+          ]
+        },
+        {
+          "theme": "Withdrawal rules and taxation charges",
+          "description": "Questions and worries concerning redemption processes, timelines, exit loads, capital gains tax, and lock-in periods.",
+          "n": 46,
+          "pct_of_items": 8.0,
+          "groww_n": 20,
+          "by_source": {
+            "youtube": 29,
+            "reddit": 10,
+            "play_store": 6,
+            "tradingqna": 1
+          },
+          "examples": [
+            "Confused about exit load or tax charges on withdrawal after 1 year",
+            "Unable to initiate or complete SIP redemption",
+            "Difference between estimated redemption amount and final credited amount"
+          ]
+        },
+        {
+          "theme": "Demands for account and mandate updates",
+          "description": "Trouble setting up, updating, or changing bank details, mandates, phone numbers, contact info, and nominee details.",
+          "n": 40,
+          "pct_of_items": 7.0,
+          "groww_n": 31,
+          "by_source": {
+            "play_store": 16,
+            "reddit": 13,
+            "youtube": 8,
+            "tradingqna": 2,
+            "app_store": 1
+          },
+          "examples": [
+            "How to setup SIP mandate without debit card or netbanking",
+            "How to authenticate mandate for bank account with limited card facilities",
+            "No visibility into active autopay status or date after bank account change"
+          ]
+        },
+        {
+          "theme": "Platform stability and safety fears",
+          "description": "App crashes, technical bugs, accidental inputs, and fears over platform reliability or loss of funds.",
+          "n": 35,
+          "pct_of_items": 6.1,
+          "groww_n": 24,
+          "by_source": {
+            "play_store": 18,
+            "youtube": 10,
+            "reddit": 5,
+            "tradingqna": 2
+          },
+          "examples": [
+            "Groww wallet money cannot be used for mutual funds",
+            "SIP calculator tool not functioning",
+            "Surprised by SIP bounce and bank charges"
+          ]
+        },
+        {
+          "theme": "Needs guidance starting investments",
+          "description": "New investors looking for basic instructions on how to select funds, make payments, and initiate SIPs.",
+          "n": 24,
+          "pct_of_items": 4.2,
+          "groww_n": 9,
+          "by_source": {
+            "youtube": 17,
+            "reddit": 4,
+            "play_store": 3
+          },
+          "examples": [
+            "Cannot find app in laptop app store to start SIP",
+            "Does not know how to invest in SIP or which fund to pick",
+            "Confusing and hard to navigate for new beginners"
+          ]
+        },
+        {
+          "theme": "NAV timing and allotment concerns",
+          "description": "Confusion and complaints regarding NAV dates, cut-off times, price mismatches on purchase or switch, and non-working day orders.",
+          "n": 22,
+          "pct_of_items": 3.8,
+          "groww_n": 19,
+          "by_source": {
+            "play_store": 19,
+            "reddit": 1,
+            "tradingqna": 1,
+            "youtube": 1
+          },
+          "examples": [
+            "Unsure why SIP deduction timing delayed during market crash",
+            "Why money is debited on weekends when investment does not happen immediately",
+            "Mutual fund NAV displays a different date"
+          ]
+        },
+        {
+          "theme": "KYC and account onboarding issues",
+          "description": "Friction during registration, identity verification errors, Aadhaar/PAN prompts, and account setup failures.",
+          "n": 20,
+          "pct_of_items": 3.5,
+          "groww_n": 17,
+          "by_source": {
+            "play_store": 13,
+            "reddit": 4,
+            "youtube": 3
+          },
+          "examples": [
+            "App continuously prompts to update Aadhaar and PAN despite completing KYC",
+            "Unable to invest despite double KYC verification",
+            "App says verification incomplete despite submitting documents"
+          ]
+        }
+      ]
+    },
+    "groww_only_n": 342
+  },
+  "q6_outside_app": {
+    "n": 1486,
+    "known": 54,
+    "coverage_pct": 3.6,
+    "values": [
+      {
+        "value": "unknown",
+        "n": 1432,
+        "pct": 96.4
+      },
+      {
+        "value": "reddit_forums",
+        "n": 31,
+        "pct": 2.1
+      },
+      {
+        "value": "youtube",
+        "n": 15,
+        "pct": 1.0
+      },
+      {
+        "value": "advisor",
+        "n": 5,
+        "pct": 0.3
+      },
+      {
+        "value": "other",
+        "n": 1,
+        "pct": 0.1
+      },
+      {
+        "value": "news",
+        "n": 1,
+        "pct": 0.1
+      },
+      {
+        "value": "did_nothing",
+        "n": 1,
+        "pct": 0.1
+      }
+    ]
+  },
+  "q7_continuers_vs_dropoffs": {
+    "n": {
+      "continuer": 315,
+      "drop_off": 241,
+      "considering": 175
+    },
+    "fields": {
+      "journey_stage": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 126,
+            "pct": 40.0
+          },
+          "drop_off": {
+            "n": 140,
+            "pct": 58.1
+          },
+          "considering": {
+            "n": 103,
+            "pct": 58.9
+          }
+        },
+        {
+          "value": "month_12_plus",
+          "continuer": {
+            "n": 119,
+            "pct": 37.8
+          },
+          "drop_off": {
+            "n": 63,
+            "pct": 26.1
+          },
+          "considering": {
+            "n": 49,
+            "pct": 28.0
+          }
+        },
+        {
+          "value": "month_0_1",
+          "continuer": {
+            "n": 45,
+            "pct": 14.3
+          },
+          "drop_off": {
+            "n": 21,
+            "pct": 8.7
+          },
+          "considering": {
+            "n": 7,
+            "pct": 4.0
+          }
+        },
+        {
+          "value": "month_7_12",
+          "continuer": {
+            "n": 15,
+            "pct": 4.8
+          },
+          "drop_off": {
+            "n": 5,
+            "pct": 2.1
+          },
+          "considering": {
+            "n": 7,
+            "pct": 4.0
+          }
+        },
+        {
+          "value": "month_4_6",
+          "continuer": {
+            "n": 5,
+            "pct": 1.6
+          },
+          "drop_off": {
+            "n": 5,
+            "pct": 2.1
+          },
+          "considering": {
+            "n": 4,
+            "pct": 2.3
+          }
+        },
+        {
+          "value": "month_2_3",
+          "continuer": {
+            "n": 4,
+            "pct": 1.3
+          },
+          "drop_off": {
+            "n": 4,
+            "pct": 1.7
+          },
+          "considering": {
+            "n": 4,
+            "pct": 2.3
+          }
+        },
+        {
+          "value": "post_stop",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 3,
+            "pct": 1.2
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "pre_start",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        }
+      ],
+      "trigger_type": [
+        {
+          "value": "none",
+          "continuer": {
+            "n": 234,
+            "pct": 74.3
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "ux_friction",
+          "continuer": {
+            "n": 22,
+            "pct": 7.0
+          },
+          "drop_off": {
+            "n": 104,
+            "pct": 43.2
+          },
+          "considering": {
+            "n": 29,
+            "pct": 16.6
+          }
+        },
+        {
+          "value": "returns_disappointment",
+          "continuer": {
+            "n": 24,
+            "pct": 7.6
+          },
+          "drop_off": {
+            "n": 31,
+            "pct": 12.9
+          },
+          "considering": {
+            "n": 33,
+            "pct": 18.9
+          }
+        },
+        {
+          "value": "other",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 40,
+            "pct": 16.6
+          },
+          "considering": {
+            "n": 21,
+            "pct": 12.0
+          }
+        },
+        {
+          "value": "feature_gap",
+          "continuer": {
+            "n": 22,
+            "pct": 7.0
+          },
+          "drop_off": {
+            "n": 5,
+            "pct": 2.1
+          },
+          "considering": {
+            "n": 8,
+            "pct": 4.6
+          }
+        },
+        {
+          "value": "life_event_financial_pressure",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 25,
+            "pct": 10.4
+          },
+          "considering": {
+            "n": 43,
+            "pct": 24.6
+          }
+        },
+        {
+          "value": "financial_literacy_gap",
+          "continuer": {
+            "n": 8,
+            "pct": 2.5
+          },
+          "drop_off": {
+            "n": 15,
+            "pct": 6.2
+          },
+          "considering": {
+            "n": 19,
+            "pct": 10.9
+          }
+        },
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 14,
+            "pct": 5.8
+          },
+          "considering": {
+            "n": 10,
+            "pct": 5.7
+          }
+        },
+        {
+          "value": "social_peer_influence",
+          "continuer": {
+            "n": 4,
+            "pct": 1.3
+          },
+          "drop_off": {
+            "n": 3,
+            "pct": 1.2
+          },
+          "considering": {
+            "n": 6,
+            "pct": 3.4
+          }
+        },
+        {
+          "value": "emotional",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 3,
+            "pct": 1.2
+          },
+          "considering": {
+            "n": 6,
+            "pct": 3.4
+          }
+        }
+      ],
+      "is_first_time_investor": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 249,
+            "pct": 79.0
+          },
+          "drop_off": {
+            "n": 191,
+            "pct": 79.3
+          },
+          "considering": {
+            "n": 140,
+            "pct": 80.0
+          }
+        },
+        {
+          "value": "yes",
+          "continuer": {
+            "n": 47,
+            "pct": 14.9
+          },
+          "drop_off": {
+            "n": 21,
+            "pct": 8.7
+          },
+          "considering": {
+            "n": 16,
+            "pct": 9.1
+          }
+        },
+        {
+          "value": "no",
+          "continuer": {
+            "n": 19,
+            "pct": 6.0
+          },
+          "drop_off": {
+            "n": 29,
+            "pct": 12.0
+          },
+          "considering": {
+            "n": 19,
+            "pct": 10.9
+          }
+        }
+      ],
+      "platform_tag": [
+        {
+          "value": "unspecified",
+          "continuer": {
+            "n": 183,
+            "pct": 58.1
+          },
+          "drop_off": {
+            "n": 88,
+            "pct": 36.5
+          },
+          "considering": {
+            "n": 93,
+            "pct": 53.1
+          }
+        },
+        {
+          "value": "groww",
+          "continuer": {
+            "n": 109,
+            "pct": 34.6
+          },
+          "drop_off": {
+            "n": 113,
+            "pct": 46.9
+          },
+          "considering": {
+            "n": 55,
+            "pct": 31.4
+          }
+        },
+        {
+          "value": "zerodha",
+          "continuer": {
+            "n": 14,
+            "pct": 4.4
+          },
+          "drop_off": {
+            "n": 15,
+            "pct": 6.2
+          },
+          "considering": {
+            "n": 9,
+            "pct": 5.1
+          }
+        },
+        {
+          "value": "other",
+          "continuer": {
+            "n": 8,
+            "pct": 2.5
+          },
+          "drop_off": {
+            "n": 15,
+            "pct": 6.2
+          },
+          "considering": {
+            "n": 11,
+            "pct": 6.3
+          }
+        },
+        {
+          "value": "indmoney",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 5,
+            "pct": 2.1
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        },
+        {
+          "value": "paytm_money",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 3,
+            "pct": 1.2
+          },
+          "considering": {
+            "n": 3,
+            "pct": 1.7
+          }
+        },
+        {
+          "value": "mfcentral",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 2,
+            "pct": 0.8
+          },
+          "considering": {
+            "n": 3,
+            "pct": 1.7
+          }
+        }
+      ],
+      "segment_confidence": [
+        {
+          "value": "low",
+          "continuer": {
+            "n": 214,
+            "pct": 67.9
+          },
+          "drop_off": {
+            "n": 172,
+            "pct": 71.4
+          },
+          "considering": {
+            "n": 116,
+            "pct": 66.3
+          }
+        },
+        {
+          "value": "medium",
+          "continuer": {
+            "n": 58,
+            "pct": 18.4
+          },
+          "drop_off": {
+            "n": 42,
+            "pct": 17.4
+          },
+          "considering": {
+            "n": 39,
+            "pct": 22.3
+          }
+        },
+        {
+          "value": "high",
+          "continuer": {
+            "n": 43,
+            "pct": 13.7
+          },
+          "drop_off": {
+            "n": 27,
+            "pct": 11.2
+          },
+          "considering": {
+            "n": 20,
+            "pct": 11.4
+          }
+        }
+      ],
+      "employment": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 260,
+            "pct": 82.5
+          },
+          "drop_off": {
+            "n": 200,
+            "pct": 83.0
+          },
+          "considering": {
+            "n": 140,
+            "pct": 80.0
+          }
+        },
+        {
+          "value": "salaried",
+          "continuer": {
+            "n": 51,
+            "pct": 16.2
+          },
+          "drop_off": {
+            "n": 33,
+            "pct": 13.7
+          },
+          "considering": {
+            "n": 33,
+            "pct": 18.9
+          }
+        },
+        {
+          "value": "student",
+          "continuer": {
+            "n": 3,
+            "pct": 1.0
+          },
+          "drop_off": {
+            "n": 3,
+            "pct": 1.2
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "other",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 4,
+            "pct": 1.7
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "self_employed",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 2,
+            "pct": 1.1
+          }
+        }
+      ],
+      "income_stability": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 273,
+            "pct": 86.7
+          },
+          "drop_off": {
+            "n": 210,
+            "pct": 87.1
+          },
+          "considering": {
+            "n": 141,
+            "pct": 80.6
+          }
+        },
+        {
+          "value": "stable_monthly",
+          "continuer": {
+            "n": 41,
+            "pct": 13.0
+          },
+          "drop_off": {
+            "n": 28,
+            "pct": 11.6
+          },
+          "considering": {
+            "n": 29,
+            "pct": 16.6
+          }
+        },
+        {
+          "value": "unstable",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 2,
+            "pct": 0.8
+          },
+          "considering": {
+            "n": 3,
+            "pct": 1.7
+          }
+        },
+        {
+          "value": "variable",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 2,
+            "pct": 1.1
+          }
+        }
+      ],
+      "influencer": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 292,
+            "pct": 92.7
+          },
+          "drop_off": {
+            "n": 231,
+            "pct": 95.9
+          },
+          "considering": {
+            "n": 171,
+            "pct": 97.7
+          }
+        },
+        {
+          "value": "finfluencer_youtube",
+          "continuer": {
+            "n": 13,
+            "pct": 4.1
+          },
+          "drop_off": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        },
+        {
+          "value": "advisor",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 4,
+            "pct": 1.7
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "friends_peers",
+          "continuer": {
+            "n": 3,
+            "pct": 1.0
+          },
+          "drop_off": {
+            "n": 2,
+            "pct": 0.8
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        },
+        {
+          "value": "family",
+          "continuer": {
+            "n": 3,
+            "pct": 1.0
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        },
+        {
+          "value": "colleagues",
+          "continuer": {
+            "n": 2,
+            "pct": 0.6
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "self",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 2,
+            "pct": 0.8
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        },
+        {
+          "value": "other",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        }
+      ],
+      "source_of_money": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 274,
+            "pct": 87.0
+          },
+          "drop_off": {
+            "n": 218,
+            "pct": 90.5
+          },
+          "considering": {
+            "n": 146,
+            "pct": 83.4
+          }
+        },
+        {
+          "value": "salary",
+          "continuer": {
+            "n": 40,
+            "pct": 12.7
+          },
+          "drop_off": {
+            "n": 20,
+            "pct": 8.3
+          },
+          "considering": {
+            "n": 28,
+            "pct": 16.0
+          }
+        },
+        {
+          "value": "savings",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 2,
+            "pct": 0.8
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        },
+        {
+          "value": "other",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        }
+      ],
+      "outside_app_behaviour": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 299,
+            "pct": 94.9
+          },
+          "drop_off": {
+            "n": 232,
+            "pct": 96.3
+          },
+          "considering": {
+            "n": 156,
+            "pct": 89.1
+          }
+        },
+        {
+          "value": "reddit_forums",
+          "continuer": {
+            "n": 10,
+            "pct": 3.2
+          },
+          "drop_off": {
+            "n": 6,
+            "pct": 2.5
+          },
+          "considering": {
+            "n": 12,
+            "pct": 6.9
+          }
+        },
+        {
+          "value": "youtube",
+          "continuer": {
+            "n": 5,
+            "pct": 1.6
+          },
+          "drop_off": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "considering": {
+            "n": 5,
+            "pct": 2.9
+          }
+        },
+        {
+          "value": "advisor",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 2,
+            "pct": 0.8
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        },
+        {
+          "value": "other",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "news",
+          "continuer": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "drop_off": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "considering": {
+            "n": 1,
+            "pct": 0.6
+          }
+        }
+      ],
+      "checking_frequency": [
+        {
+          "value": "unknown",
+          "continuer": {
+            "n": 310,
+            "pct": 98.4
+          },
+          "drop_off": {
+            "n": 240,
+            "pct": 99.6
+          },
+          "considering": {
+            "n": 173,
+            "pct": 98.9
+          }
+        },
+        {
+          "value": "daily",
+          "continuer": {
+            "n": 2,
+            "pct": 0.6
+          },
+          "drop_off": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "considering": {
+            "n": 2,
+            "pct": 1.1
+          }
+        },
+        {
+          "value": "monthly",
+          "continuer": {
+            "n": 1,
+            "pct": 0.3
+          },
+          "drop_off": {
+            "n": 1,
+            "pct": 0.4
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        },
+        {
+          "value": "rarely",
+          "continuer": {
+            "n": 2,
+            "pct": 0.6
+          },
+          "drop_off": {
+            "n": 0,
+            "pct": 0.0
+          },
+          "considering": {
+            "n": 0,
+            "pct": 0.0
+          }
+        }
+      ]
+    },
+    "unmet_need_themes": {
+      "continuer": [
+        {
+          "theme": "Consolidation of external folios and non-demat options",
+          "n": 10,
+          "pct": 25.0
+        },
+        {
+          "theme": "Clear dashboard tracking and return analytics",
+          "n": 6,
+          "pct": 15.0
+        },
+        {
+          "theme": "Flexible SIP frequencies and payment options",
+          "n": 6,
+          "pct": 15.0
+        },
+        {
+          "theme": "Goal tagging and portfolio features",
+          "n": 5,
+          "pct": 12.5
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "n": 3,
+          "pct": 7.5
+        },
+        {
+          "theme": "Timely processing and responsive customer support",
+          "n": 2,
+          "pct": 5.0
+        }
+      ],
+      "drop_off": [
+        {
+          "theme": "Timely processing and responsive customer support",
+          "n": 14,
+          "pct": 19.4
+        },
+        {
+          "theme": "Reliable autopay, mandates, and payment execution",
+          "n": 14,
+          "pct": 19.4
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "n": 9,
+          "pct": 12.5
+        },
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 8,
+          "pct": 11.1
+        },
+        {
+          "theme": "Faster redemptions and payout clarity",
+          "n": 6,
+          "pct": 8.3
+        },
+        {
+          "theme": "Other",
+          "n": 6,
+          "pct": 8.3
+        }
+      ],
+      "considering": [
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "n": 21,
+          "pct": 40.4
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "n": 8,
+          "pct": 15.4
+        },
+        {
+          "theme": "Consolidation of external folios and non-demat options",
+          "n": 7,
+          "pct": 13.5
+        },
+        {
+          "theme": "Other",
+          "n": 5,
+          "pct": 9.6
+        },
+        {
+          "theme": "Seamless KYC onboarding and profile management",
+          "n": 3,
+          "pct": 5.8
+        },
+        {
+          "theme": "Reliable autopay, mandates, and payment execution",
+          "n": 3,
+          "pct": 5.8
+        }
+      ]
+    },
+    "note": "drop_off = paused, reduced or stopped (FR4.1); considering = considering_stop, shown separately."
+  },
+  "q8_segments": {
+    "cuts": {
+      "age_band": {
+        "known_n": 198,
+        "coverage_pct": 13.3,
+        "values": [
+          {
+            "value": "22_28",
+            "n": 98,
+            "low_sample": false,
+            "continuer_pct": 30.6,
+            "drop_off_pct": 36.7,
+            "considering_pct": 16.3,
+            "event_n": 84,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 17
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 11
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 9
+              }
+            ]
+          },
+          {
+            "value": "29_35",
+            "n": 61,
+            "low_sample": false,
+            "continuer_pct": 36.1,
+            "drop_off_pct": 24.6,
+            "considering_pct": 24.6,
+            "event_n": 55,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 14
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 6
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 3
+              }
+            ]
+          },
+          {
+            "value": "under_22",
+            "n": 23,
+            "low_sample": true,
+            "continuer_pct": 52.2,
+            "drop_off_pct": 8.7,
+            "considering_pct": 0.0,
+            "event_n": 14,
+            "top_scenarios": [
+              {
+                "id": 9,
+                "label": "Low balance on debit day",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "over_35",
+            "n": 16,
+            "low_sample": true,
+            "continuer_pct": 56.2,
+            "drop_off_pct": 12.5,
+            "considering_pct": 12.5,
+            "event_n": 13,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 1
+              },
+              {
+                "id": 4,
+                "label": "Lost the reason to invest",
+                "n": 1
+              }
+            ]
+          }
+        ]
+      },
+      "employment": {
+        "known_n": 160,
+        "coverage_pct": 10.8,
+        "values": [
+          {
+            "value": "salaried",
+            "n": 134,
+            "low_sample": false,
+            "continuer_pct": 38.1,
+            "drop_off_pct": 24.6,
+            "considering_pct": 24.6,
+            "event_n": 118,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 32
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 9
+              },
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 8
+              }
+            ]
+          },
+          {
+            "value": "student",
+            "n": 15,
+            "low_sample": true,
+            "continuer_pct": 20.0,
+            "drop_off_pct": 20.0,
+            "considering_pct": 0.0,
+            "event_n": 7,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              },
+              {
+                "id": 9,
+                "label": "Low balance on debit day",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "other",
+            "n": 7,
+            "low_sample": true,
+            "continuer_pct": 0.0,
+            "drop_off_pct": 57.1,
+            "considering_pct": 0.0,
+            "event_n": 4,
+            "top_scenarios": [
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 2
+              },
+              {
+                "id": 16,
+                "label": "Avoidance or guilt",
+                "n": 1
+              },
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "self_employed",
+            "n": 4,
+            "low_sample": true,
+            "continuer_pct": 25.0,
+            "drop_off_pct": 25.0,
+            "considering_pct": 50.0,
+            "event_n": 4,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 3
+              }
+            ]
+          }
+        ]
+      },
+      "years_of_work": {
+        "known_n": 21,
+        "coverage_pct": 1.4,
+        "values": [
+          {
+            "value": "5_plus",
+            "n": 11,
+            "low_sample": true,
+            "continuer_pct": 27.3,
+            "drop_off_pct": 27.3,
+            "considering_pct": 18.2,
+            "event_n": 8,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 2
+              },
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 1
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "0_1",
+            "n": 5,
+            "low_sample": true,
+            "continuer_pct": 40.0,
+            "drop_off_pct": 0.0,
+            "considering_pct": 40.0,
+            "event_n": 4,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              },
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "2_4",
+            "n": 5,
+            "low_sample": true,
+            "continuer_pct": 20.0,
+            "drop_off_pct": 40.0,
+            "considering_pct": 40.0,
+            "event_n": 5,
+            "top_scenarios": [
+              {
+                "id": 8,
+                "label": "Lost trust in the platform",
+                "n": 2
+              },
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 1
+              }
+            ]
+          }
+        ]
+      },
+      "city_tier": {
+        "known_n": 30,
+        "coverage_pct": 2.0,
+        "values": [
+          {
+            "value": "tier_1",
+            "n": 24,
+            "low_sample": true,
+            "continuer_pct": 45.8,
+            "drop_off_pct": 20.8,
+            "considering_pct": 20.8,
+            "event_n": 21,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 7
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 2
+              },
+              {
+                "id": 5,
+                "label": "Lured into other investments",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "tier_2",
+            "n": 6,
+            "low_sample": true,
+            "continuer_pct": 50.0,
+            "drop_off_pct": 33.3,
+            "considering_pct": 16.7,
+            "event_n": 6,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 1
+              },
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 1
+              }
+            ]
+          }
+        ]
+      },
+      "income_stability": {
+        "known_n": 120,
+        "coverage_pct": 8.1,
+        "values": [
+          {
+            "value": "stable_monthly",
+            "n": 108,
+            "low_sample": false,
+            "continuer_pct": 38.0,
+            "drop_off_pct": 25.9,
+            "considering_pct": 26.9,
+            "event_n": 99,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 31
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 8
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 6
+              }
+            ]
+          },
+          {
+            "value": "unstable",
+            "n": 9,
+            "low_sample": true,
+            "continuer_pct": 11.1,
+            "drop_off_pct": 22.2,
+            "considering_pct": 33.3,
+            "event_n": 6,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 3
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 1
+              },
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "variable",
+            "n": 3,
+            "low_sample": true,
+            "continuer_pct": 0.0,
+            "drop_off_pct": 33.3,
+            "considering_pct": 66.7,
+            "event_n": 3,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 3
+              }
+            ]
+          }
+        ]
+      },
+      "source_of_money": {
+        "known_n": 111,
+        "coverage_pct": 7.5,
+        "values": [
+          {
+            "value": "salary",
+            "n": 99,
+            "low_sample": false,
+            "continuer_pct": 40.4,
+            "drop_off_pct": 20.2,
+            "considering_pct": 28.3,
+            "event_n": 89,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 28
+              },
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 5
+              },
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 5
+              }
+            ]
+          },
+          {
+            "value": "other",
+            "n": 5,
+            "low_sample": true,
+            "continuer_pct": 0.0,
+            "drop_off_pct": 20.0,
+            "considering_pct": 0.0,
+            "event_n": 1,
+            "top_scenarios": [
+              {
+                "id": 9,
+                "label": "Low balance on debit day",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "savings",
+            "n": 4,
+            "low_sample": true,
+            "continuer_pct": 25.0,
+            "drop_off_pct": 50.0,
+            "considering_pct": 25.0,
+            "event_n": 4,
+            "top_scenarios": [
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "family",
+            "n": 2,
+            "low_sample": true,
+            "continuer_pct": 0.0,
+            "drop_off_pct": 0.0,
+            "considering_pct": 0.0,
+            "event_n": 0,
+            "top_scenarios": []
+          },
+          {
+            "value": "bonus",
+            "n": 1,
+            "low_sample": true,
+            "continuer_pct": 0.0,
+            "drop_off_pct": 0.0,
+            "considering_pct": 0.0,
+            "event_n": 0,
+            "top_scenarios": []
+          }
+        ]
+      },
+      "influencer": {
+        "known_n": 44,
+        "coverage_pct": 3.0,
+        "values": [
+          {
+            "value": "finfluencer_youtube",
+            "n": 19,
+            "low_sample": true,
+            "continuer_pct": 68.4,
+            "drop_off_pct": 0.0,
+            "considering_pct": 5.3,
+            "event_n": 15,
+            "top_scenarios": [
+              {
+                "id": 6,
+                "label": "Someone told them to stop or switch",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "advisor",
+            "n": 6,
+            "low_sample": true,
+            "continuer_pct": 16.7,
+            "drop_off_pct": 66.7,
+            "considering_pct": 0.0,
+            "event_n": 5,
+            "top_scenarios": [
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 2
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 1
+              },
+              {
+                "id": 6,
+                "label": "Someone told them to stop or switch",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "family",
+            "n": 6,
+            "low_sample": true,
+            "continuer_pct": 50.0,
+            "drop_off_pct": 16.7,
+            "considering_pct": 16.7,
+            "event_n": 5,
+            "top_scenarios": [
+              {
+                "id": 3,
+                "label": "Not understanding how a SIP works",
+                "n": 1
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "friends_peers",
+            "n": 6,
+            "low_sample": true,
+            "continuer_pct": 50.0,
+            "drop_off_pct": 33.3,
+            "considering_pct": 16.7,
+            "event_n": 6,
+            "top_scenarios": [
+              {
+                "id": 11,
+                "label": "Mandate or autopay problems",
+                "n": 1
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 1
+              },
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "colleagues",
+            "n": 3,
+            "low_sample": true,
+            "continuer_pct": 66.7,
+            "drop_off_pct": 33.3,
+            "considering_pct": 0.0,
+            "event_n": 3,
+            "top_scenarios": [
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "self",
+            "n": 3,
+            "low_sample": true,
+            "continuer_pct": 0.0,
+            "drop_off_pct": 66.7,
+            "considering_pct": 33.3,
+            "event_n": 3,
+            "top_scenarios": [
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 2
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 1
+              }
+            ]
+          },
+          {
+            "value": "other",
+            "n": 1,
+            "low_sample": true,
+            "continuer_pct": 100.0,
+            "drop_off_pct": 0.0,
+            "considering_pct": 0.0,
+            "event_n": 1,
+            "top_scenarios": []
+          }
+        ]
+      },
+      "is_first_time_investor": {
+        "known_n": 236,
+        "coverage_pct": 15.9,
+        "values": [
+          {
+            "value": "yes",
+            "n": 159,
+            "low_sample": false,
+            "continuer_pct": 29.6,
+            "drop_off_pct": 13.2,
+            "considering_pct": 10.1,
+            "event_n": 88,
+            "top_scenarios": [
+              {
+                "id": 11,
+                "label": "Mandate or autopay problems",
+                "n": 7
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 6
+              },
+              {
+                "id": 8,
+                "label": "Lost trust in the platform",
+                "n": 5
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "n": 77,
+            "low_sample": false,
+            "continuer_pct": 24.7,
+            "drop_off_pct": 37.7,
+            "considering_pct": 24.7,
+            "event_n": 73,
+            "top_scenarios": [
+              {
+                "id": 7,
+                "label": "Stopped to fix the portfolio, never finished",
+                "n": 13
+              },
+              {
+                "id": 2,
+                "label": "Returns below expectation",
+                "n": 11
+              },
+              {
+                "id": 1,
+                "label": "Money pressure or a life event",
+                "n": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "segment_confidence": {
+      "n": 1486,
+      "known": 1486,
+      "coverage_pct": 100.0,
+      "values": [
+        {
+          "value": "low",
+          "n": 1198,
+          "pct": 80.6
+        },
+        {
+          "value": "medium",
+          "n": 183,
+          "pct": 12.3
+        },
+        {
+          "value": "high",
+          "n": 105,
+          "pct": 7.1
+        }
+      ]
+    },
+    "segment_fit_mean": 0.448,
+    "note": "Cuts with n < 30 are flagged low_sample (FR4.3)."
+  },
+  "q9_unmet_needs": {
+    "themes": {
+      "clustered": true,
+      "n_items": 672,
+      "unclustered": 9,
+      "themes": [
+        {
+          "theme": "Clear guidance on SIP management and rules",
+          "description": "Investors seek clearer instructions, explanations, and guidance on rules regarding SIP setup, pauses, cancellations, redemptions, penalties, and tax implications.",
+          "n": 142,
+          "pct_of_items": 21.1,
+          "groww_n": 59,
+          "by_source": {
+            "youtube": 79,
+            "reddit": 49,
+            "tradingqna": 7,
+            "play_store": 7
+          },
+          "examples": [
+            "Clear authentication guidance for minor accounts",
+            "Guidance on how to start SIP and fund selection",
+            "Clear policy communication on bounce charges and alerts"
+          ]
+        },
+        {
+          "theme": "Other",
+          "description": "Miscellaneous investor needs regarding app usability, specific investment products, security, and market timing features.",
+          "n": 64,
+          "pct_of_items": 9.5,
+          "groww_n": 39,
+          "by_source": {
+            "play_store": 33,
+            "reddit": 17,
+            "youtube": 10,
+            "tradingqna": 4
+          },
+          "examples": [
+            "Ability to invest in mutual funds using wallet balance",
+            "Debit SIP amount only on business days when units are allocated",
+            "Ability to redeem or transfer mutual funds freely"
+          ]
+        },
+        {
+          "theme": "Reliable autopay, mandates, and payment execution",
+          "description": "Investors need smooth, automated SIP debit processing, reliable UPI/eNACH mandate setups, and no unexpected bank bounce charges.",
+          "n": 63,
+          "pct_of_items": 9.4,
+          "groww_n": 37,
+          "by_source": {
+            "reddit": 27,
+            "play_store": 20,
+            "youtube": 9,
+            "tradingqna": 5,
+            "app_store": 2
+          },
+          "examples": [
+            "Clear error resolution for mandate transaction limit issues",
+            "Smooth SIP autopay activation using third party UPI apps",
+            "Single aggregated debit for multiple SIP mandates on the same day"
+          ]
+        },
+        {
+          "theme": "Flexible SIP frequencies and payment options",
+          "description": "Investors want more choices for SIP execution timing, including daily or weekly frequencies, manual payment options, and lump-sum top-ups.",
+          "n": 61,
+          "pct_of_items": 9.1,
+          "groww_n": 55,
+          "by_source": {
+            "play_store": 44,
+            "youtube": 10,
+            "reddit": 3,
+            "tradingqna": 3,
+            "app_store": 1
+          },
+          "examples": [
+            "Option to setup weekly SIP frequency",
+            "Option for daily SIP",
+            "Weekly and biweekly SIP frequency options"
+          ]
+        },
+        {
+          "theme": "Timely processing and responsive customer support",
+          "description": "Investors require prompt order execution, quick refund handling for failed transactions, accurate status updates, and responsive support.",
+          "n": 55,
+          "pct_of_items": 8.2,
+          "groww_n": 44,
+          "by_source": {
+            "play_store": 42,
+            "reddit": 6,
+            "tradingqna": 3,
+            "youtube": 3,
+            "app_store": 1
+          },
+          "examples": [
+            "Reliable SIP processing and responsive support for failed orders",
+            "Transparent order processing and responsive customer support",
+            "Faster processing of mutual fund SIP orders"
+          ]
+        },
+        {
+          "theme": "Clear dashboard tracking and return analytics",
+          "description": "Investors want consolidated holdings views, accurate XIRR calculations, detailed return charts, and clear total investment displays.",
+          "n": 51,
+          "pct_of_items": 7.6,
+          "groww_n": 41,
+          "by_source": {
+            "play_store": 40,
+            "tradingqna": 5,
+            "reddit": 3,
+            "youtube": 2,
+            "app_store": 1
+          },
+          "examples": [
+            "Clear display of active autopay details and status",
+            "Proper display of invested mutual funds",
+            "XIRR calculation for overall portfolio performance"
+          ]
+        },
+        {
+          "theme": "Consolidation of external folios and non-demat options",
+          "description": "Investors want to import, sync, or switch external mutual fund holdings, manage SOA format investments, and consolidate direct folios.",
+          "n": 51,
+          "pct_of_items": 7.6,
+          "groww_n": 43,
+          "by_source": {
+            "play_store": 29,
+            "reddit": 19,
+            "youtube": 2,
+            "app_store": 1
+          },
+          "examples": [
+            "Accurate mutual fund holding statements and proper reconciliation",
+            "Proper updating and syncing of external mutual fund holdings",
+            "Automatic updating and sync of consolidated folios on dashboard"
+          ]
+        },
+        {
+          "theme": "Flexible SIP controls and modifications",
+          "description": "Investors want easy options to edit, step up, pause, skip, or cancel SIPs without deleting mandates or incurring penalties.",
+          "n": 47,
+          "pct_of_items": 7.0,
+          "groww_n": 27,
+          "by_source": {
+            "play_store": 23,
+            "youtube": 15,
+            "reddit": 7,
+            "tradingqna": 2
+          },
+          "examples": [
+            "Auto-hide cancelled or rejected SIPs after 30 days",
+            "Instant cancellation processing",
+            "Easy toggle to turn off or disable SIP autopay"
+          ]
+        },
+        {
+          "theme": "Seamless KYC onboarding and profile management",
+          "description": "Investors need smooth digital KYC verification, easy bank account updates, and hassle-free document processing for starting SIPs.",
+          "n": 44,
+          "pct_of_items": 6.5,
+          "groww_n": 39,
+          "by_source": {
+            "play_store": 24,
+            "youtube": 10,
+            "reddit": 9,
+            "tradingqna": 1
+          },
+          "examples": [
+            "Timely KYC verification",
+            "Faster KYC completion",
+            "Timely updating of contact details with AMC"
+          ]
+        },
+        {
+          "theme": "Faster redemptions and payout clarity",
+          "description": "Investors need quick mutual fund redemption processing, transparent NAV application dates, and timely credit of withdrawn funds.",
+          "n": 34,
+          "pct_of_items": 5.1,
+          "groww_n": 30,
+          "by_source": {
+            "play_store": 27,
+            "youtube": 5,
+            "reddit": 2
+          },
+          "examples": [
+            "Liquidity during fund crises",
+            "Timely redemption payout and effective customer support",
+            "Timely redemption processing and responsive customer support"
+          ]
+        },
+        {
+          "theme": "Advanced fund features and switching options",
+          "description": "Investors desire advanced mutual fund features like SWP, STP, direct plan conversions, fund switching, and pledging units for trading.",
+          "n": 27,
+          "pct_of_items": 4.0,
+          "groww_n": 22,
+          "by_source": {
+            "play_store": 19,
+            "reddit": 7,
+            "tradingqna": 1
+          },
+          "examples": [
+            "Advanced sorting and filtering options for mutual funds",
+            "STP option for mutual funds",
+            "Provide SWP and STP options for mutual funds"
+          ]
+        },
+        {
+          "theme": "Goal tagging and portfolio features",
+          "description": "Investors seek custom goal tagging, portfolio categorization, family account tracking, calculators, and custom fund notes.",
+          "n": 24,
+          "pct_of_items": 3.6,
+          "groww_n": 17,
+          "by_source": {
+            "play_store": 17,
+            "reddit": 4,
+            "tradingqna": 2,
+            "youtube": 1
+          },
+          "examples": [
+            "Working SIP calculator tool in app",
+            "Feature to add custom notes on mutual funds",
+            "Goal mapping and target textboxes for mutual fund SIP dashboard"
+          ]
+        }
+      ]
+    }
+  },
+  "co_occurrence": {
+    "scenario_stage_outcome": [
+      {
+        "scenario": 2,
+        "label": "Returns below expectation",
+        "journey_stage": "month_12_plus",
+        "outcome": "considering_stop",
+        "n": 19
+      },
+      {
+        "scenario": 2,
+        "label": "Returns below expectation",
+        "journey_stage": "month_12_plus",
+        "outcome": "stopped",
+        "n": 14
+      },
+      {
+        "scenario": 7,
+        "label": "Stopped to fix the portfolio, never finished",
+        "journey_stage": "month_12_plus",
+        "outcome": "stopped",
+        "n": 9
+      },
+      {
+        "scenario": 1,
+        "label": "Money pressure or a life event",
+        "journey_stage": "month_12_plus",
+        "outcome": "considering_stop",
+        "n": 9
+      },
+      {
+        "scenario": 8,
+        "label": "Lost trust in the platform",
+        "journey_stage": "month_0_1",
+        "outcome": "stopped",
+        "n": 7
+      },
+      {
+        "scenario": 7,
+        "label": "Stopped to fix the portfolio, never finished",
+        "journey_stage": "month_12_plus",
+        "outcome": "considering_stop",
+        "n": 7
+      },
+      {
+        "scenario": 1,
+        "label": "Money pressure or a life event",
+        "journey_stage": "month_12_plus",
+        "outcome": "stopped",
+        "n": 6
+      },
+      {
+        "scenario": 8,
+        "label": "Lost trust in the platform",
+        "journey_stage": "month_12_plus",
+        "outcome": "stopped",
+        "n": 5
+      },
+      {
+        "scenario": 11,
+        "label": "Mandate or autopay problems",
+        "journey_stage": "month_0_1",
+        "outcome": "stopped",
+        "n": 5
+      },
+      {
+        "scenario": 1,
+        "label": "Money pressure or a life event",
+        "journey_stage": "month_12_plus",
+        "outcome": "restarted",
+        "n": 5
+      }
+    ],
+    "trigger_stage_outcome": [
+      {
+        "trigger_type": "ux_friction",
+        "journey_stage": "unknown",
+        "outcome": "stopped",
+        "n": 71
+      },
+      {
+        "trigger_type": "ux_friction",
+        "journey_stage": "unknown",
+        "outcome": "unknown",
+        "n": 64
+      },
+      {
+        "trigger_type": "life_event_financial_pressure",
+        "journey_stage": "unknown",
+        "outcome": "considering_stop",
+        "n": 33
+      },
+      {
+        "trigger_type": "ux_friction",
+        "journey_stage": "unknown",
+        "outcome": "considering_stop",
+        "n": 21
+      },
+      {
+        "trigger_type": "returns_disappointment",
+        "journey_stage": "month_12_plus",
+        "outcome": "considering_stop",
+        "n": 18
+      },
+      {
+        "trigger_type": "returns_disappointment",
+        "journey_stage": "month_12_plus",
+        "outcome": "continued",
+        "n": 16
+      },
+      {
+        "trigger_type": "other",
+        "journey_stage": "month_12_plus",
+        "outcome": "stopped",
+        "n": 16
+      },
+      {
+        "trigger_type": "returns_disappointment",
+        "journey_stage": "month_12_plus",
+        "outcome": "stopped",
+        "n": 14
+      },
+      {
+        "trigger_type": "ux_friction",
+        "journey_stage": "month_0_1",
+        "outcome": "stopped",
+        "n": 13
+      },
+      {
+        "trigger_type": "feature_gap",
+        "journey_stage": "unknown",
+        "outcome": "continued",
+        "n": 12
+      }
+    ]
+  },
+  "categories": {
+    "seeded_primary": {
+      "n": 1486,
+      "known": 1093,
+      "coverage_pct": 73.6,
+      "values": [
+        {
+          "value": "ux_friction",
+          "n": 490,
+          "pct": 33.0
+        },
+        {
+          "value": "none",
+          "n": 393,
+          "pct": 26.4
+        },
+        {
+          "value": "financial_literacy_gaps",
+          "n": 216,
+          "pct": 14.5
+        },
+        {
+          "value": "feature_gaps",
+          "n": 173,
+          "pct": 11.6
+        },
+        {
+          "value": "emotional_triggers",
+          "n": 110,
+          "pct": 7.4
+        },
+        {
+          "value": "life_event_financial_pressure",
+          "n": 85,
+          "pct": 5.7
+        },
+        {
+          "value": "social_peer_influence",
+          "n": 19,
+          "pct": 1.3
+        }
+      ]
+    },
+    "discovered": [
+      {
+        "value": "portfolio_rebalancing",
+        "n": 5,
+        "status": "emerging"
+      },
+      {
+        "value": "portfolio_consolidation",
+        "n": 2,
+        "status": "emerging"
+      },
+      {
+        "value": "amc_investment_restriction",
+        "n": 1,
+        "status": "emerging"
+      },
+      {
+        "value": "fund_house_scandal",
+        "n": 1,
+        "status": "emerging"
+      },
+      {
+        "value": "fund_manager_change",
+        "n": 1,
+        "status": "emerging"
+      },
+      {
+        "value": "fund_house_restriction",
+        "n": 1,
+        "status": "emerging"
+      },
+      {
+        "value": "nri_global_allocation",
+        "n": 1,
+        "status": "emerging"
+      },
+      {
+        "value": "tax_regime_change",
+        "n": 1,
+        "status": "emerging"
+      }
+    ]
+  },
+  "continuer_floor": {
+    "continued": 315,
+    "labelled": 1486,
+    "pct": 21.2,
+    "target": ">= 15.0% or >= 300 posts",
+    "met": true
+  },
+  "outcomes": {
+    "n": 1486,
+    "known": 749,
+    "coverage_pct": 50.4,
+    "values": [
+      {
+        "value": "unknown",
+        "n": 737,
+        "pct": 49.6
+      },
+      {
+        "value": "continued",
+        "n": 315,
+        "pct": 21.2
+      },
+      {
+        "value": "stopped",
+        "n": 205,
+        "pct": 13.8
+      },
+      {
+        "value": "considering_stop",
+        "n": 175,
+        "pct": 11.8
+      },
+      {
+        "value": "paused",
+        "n": 31,
+        "pct": 2.1
+      },
+      {
+        "value": "restarted",
+        "n": 18,
+        "pct": 1.2
+      },
+      {
+        "value": "reduced",
+        "n": 5,
+        "pct": 0.3
+      }
+    ]
+  },
+  "platform_tag": {
+    "n": 1731,
+    "known": 1731,
+    "coverage_pct": 100.0,
+    "values": [
+      {
+        "value": "groww",
+        "n": 923,
+        "pct": 53.3
+      },
+      {
+        "value": "unspecified",
+        "n": 623,
+        "pct": 36.0
+      },
+      {
+        "value": "zerodha",
+        "n": 96,
+        "pct": 5.5
+      },
+      {
+        "value": "other",
+        "n": 60,
+        "pct": 3.5
+      },
+      {
+        "value": "indmoney",
+        "n": 14,
+        "pct": 0.8
+      },
+      {
+        "value": "mfcentral",
+        "n": 8,
+        "pct": 0.5
+      },
+      {
+        "value": "paytm_money",
+        "n": 7,
+        "pct": 0.4
+      }
+    ]
+  }
+}

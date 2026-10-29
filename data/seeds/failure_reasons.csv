@@ -1,0 +1,30 @@
+post_id,field,likely_reason,reason_source
+reddit:t3_1ikp4fw,is_relevant,Definition gap: the guide counts own autopay/mandate/KYC problems or own confusion about how a SIP works as relevant; the PM judged this post out of scope. (asks SIP vs lump sum on Groww before starting),drafted by Claude 28 Oct; PM to confirm
+youtube:UgyaZ622d2oehm_Zupl4AaABAg,is_relevant,Definition gap: the guide counts own autopay/mandate/KYC problems or own confusion about how a SIP works as relevant; the PM judged this post out of scope. (UPI mandate amount differs from the SIP amount),drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1jeqc8c,is_relevant,"Engine over-tag: a request for a planner to fix an over-diversified portfolio is generic portfolio selection, which the guide marks irrelevant.",drafted by Claude 28 Oct; PM to confirm
+play_store:b712e442-3ce7-4614-88f3-43dfa035b092,is_relevant,Definition gap: the guide counts own autopay/mandate/KYC problems or own confusion about how a SIP works as relevant; the PM judged this post out of scope. (restarting a SIP created a new demat folio),drafted by Claude 28 Oct; PM to confirm
+play_store:cd6f2faf-1ac3-4c9c-b0bb-ea43f62fe28b,is_relevant,Definition gap: the guide counts own autopay/mandate/KYC problems or own confusion about how a SIP works as relevant; the PM judged this post out of scope. (repeated 'KYC needed' error in the mutual fund section),drafted by Claude 28 Oct; PM to confirm
+youtube:UgxCYj4o3FFiKATNnAh4AaABAg,is_relevant,"Definition gap: the guide counts own autopay/mandate/KYC problems or own confusion about how a SIP works as relevant; the PM judged this post out of scope. (autopay showed 1,00,000 for a 1,000 SIP; payment cancelled)",drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1oc6szo,is_relevant,"Definition gap: the guide counts own autopay/mandate/KYC problems or own confusion about how a SIP works as relevant; the PM judged this post out of scope. (cannot pause/cancel an eNACH SIP mandate; Zerodha Coin, not Groww)",drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1nc8hin,is_relevant,Definition gap: the guide counts own autopay/mandate/KYC problems or own confusion about how a SIP works as relevant; the PM judged this post out of scope. (wants to stop an ELSS SIP; misunderstood per-instalment lock-in),drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1p0bz5h,outcome,Label vs text: the post says the SIP is running ('currently doing SIP'); no pause is stated. The engine followed the guide's 'only as stated' rule.,drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1p0bz5h,kpi_branch,Follows from the outcome disagreement (continued → continuing).,drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1p0bz5h,trigger_type,Follows from the outcome disagreement: with no change stated the engine gave no trigger.,drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1p0bz5h,seeded_category_primary,Follows from the outcome disagreement: no category without a trigger.,drafted by Claude 28 Oct; PM to confirm
+play_store:462b8a2b-80b6-46cf-9716-e87172f628a1,trigger_type,"Taxonomy overlap: being stuck in a regular plan fits literacy gap, feature gap and 'other'; the definitions do not separate them.",drafted by Claude 28 Oct; PM to confirm
+play_store:462b8a2b-80b6-46cf-9716-e87172f628a1,seeded_category_primary,Taxonomy overlap (see trigger_type).,drafted by Claude 28 Oct; PM to confirm
+play_store:a57434a1-65c6-4b3b-b8a9-9369893e22db,outcome,Engine under-tag: trying to switch an ELSS SIP to another fund is weighing a change to one's own SIP (considering_stop); the engine read it as a complaint with no change.,drafted by Claude 28 Oct; PM to confirm
+play_store:a57434a1-65c6-4b3b-b8a9-9369893e22db,kpi_branch,Follows from the outcome disagreement.,drafted by Claude 28 Oct; PM to confirm
+play_store:a57434a1-65c6-4b3b-b8a9-9369893e22db,stop_scenario_ids,Follows from the outcome disagreement: no scenario without a stop branch.,drafted by Claude 28 Oct; PM to confirm
+play_store:235f4128-8f71-469d-b954-39bf602f5ee7,trigger_type,Ambiguous post: money not returned and portfolio deleted reads as UX/support failure (engine) or returns disappointment (PM).,drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1pgceut,outcome,Engine over-reach: 'planning to restart' is not yet restarted; the guide needs the restart to have happened.,drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1pgceut,kpi_branch,Follows from the outcome disagreement (restarted → lapse_and_return).,drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1pgceut,seeded_category_primary,Taxonomy overlap: 'personal reasons' maps to life event (engine) or emotional trigger (PM).,drafted by Claude 28 Oct; PM to confirm
+reddit:t3_1pgceut,journey_stage,No timing is stated in the post; the PM inferred 12+ months from the amount invested.,drafted by Claude 28 Oct; PM to confirm
+youtube:UgyLcrkvrtVt-x2TiKN4AaABAg,stop_scenario_ids,Engine over-inference: a 'how do I withdraw later' question was read as not understanding SIPs; no cause is stated.,drafted by Claude 28 Oct; PM to confirm
+youtube:UgyLcrkvrtVt-x2TiKN4AaABAg,trigger_type,Engine over-inference (see stop_scenario_ids).,drafted by Claude 28 Oct; PM to confirm
+youtube:UgyLcrkvrtVt-x2TiKN4AaABAg,seeded_category_primary,Engine over-inference (see stop_scenario_ids).,drafted by Claude 28 Oct; PM to confirm
+tradingqna:t_199065,trigger_type,"Taxonomy gap: a fund-side/regulatory stop has no trigger_type; the engine forced ux_friction, the PM chose unknown.",drafted by Claude 28 Oct; PM to confirm
+tradingqna:t_199065,seeded_category_primary,Taxonomy gap (see trigger_type).,drafted by Claude 28 Oct; PM to confirm
+app_store:14508693289,trigger_type,Taxonomy overlap: failing autopay setup is listed under ux_friction in the guide; the PM chose feature_gap.,drafted by Claude 28 Oct; PM to confirm
+app_store:14508693289,seeded_category_primary,Taxonomy overlap (see trigger_type).,drafted by Claude 28 Oct; PM to confirm
